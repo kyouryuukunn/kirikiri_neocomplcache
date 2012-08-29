@@ -19,6 +19,14 @@ function! s:source.get_keyword_pos(cur_text) "{{{
   if neocomplcache#within_comment()
     return -1
   endif
+	if exists('g:kirikiri_neocomplcache_list')
+		for l:file in g:kirikiri_neocomplcache_list
+			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^a-z]\|$\)\|^@'.l:file.tagname.' .*'.l:file.typename.'=\([^a-z]\|$\)'
+					return matchend(a:cur_text, '^@.*'.l:file.typename.'=\|\[.*'.l:file.typename.'=')
+			endif
+		endfor
+	endif
+
 	if a:cur_text =~ '^@\([^a-z]\|$\)\|\[\([^a-z]\|$\)'
     return matchend(a:cur_text, '^@\([^a-z]\|$\)\|\[\([^a-z]\|$\)')
 	elseif a:cur_text =~ '^@.* \|\[.* '
@@ -31,8 +39,8 @@ function! s:source.get_complete_words(cur_keyword_pos, cur_keyword_str) "{{{
   let l:line = getline('.')
 	if l:line =~ '^@\([^a-z]\|$\)\|\[\([^a-z]\|$\)'
  "{{{ tagname
-		if exists('g:kirikiri_macro')
-			for l:macro in g:kirikiri_macro
+		if exists('g:kirikiri_neocomplcache_macro_list')
+			for l:macro in g:kirikiri_neocomplcache_macro_list
 				call add(l:list,{'word': l:macro.tag,'menu': l:macro.menu})
 			endfor
 		endif
@@ -207,10 +215,19 @@ function! s:source.get_complete_words(cur_keyword_pos, cur_keyword_str) "{{{
  "}}}
   return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
   endif
-
+ "{{{ filename
+	if exists('g:kirikiri_neocomplcache_list')
+		for l:file in g:kirikiri_neocomplcache_list
+			if search('\['.l:file.tagname.' [^]]*'.l:file.typename.'=\%#\|^@'.l:file.tagname.' .*'.l:file.typename.'=\%#','bcn',line('.'))
+					call extend(l:list,l:file.list)
+					return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
+			endif
+		endfor
+	endif
+ "}}}
  " {{{ typename
-	if exists('g:kirikiri_macro')
-		for l:macro in g:kirikiri_macro
+	if exists('g:kirikiri_neocomplcache_macro_list')
+		for l:macro in g:kirikiri_neocomplcache_macro_list
 			if search('\['.l:macro.tag.'\>[^]]*\%#\|^@'.l:macro.tag.'\>','bcn',line('.'))
 				for l:type in l:macro.macrotype
 					call add(l:list,{'word': l:type.type.'=','menu': l:type.typemenu})
@@ -742,8 +759,7 @@ videosegloopタグで設定したセグメントループを解除します。
    call add(l:list, {'word': 'time=',		'menu': '(必)指定した時間で現在の曲のフェードアウトが行われた後、同じ時間で 指定した曲のフェードインが行われます。'})
    call add(l:list, {'word': 'overlap=',		'menu': 'overlap に時間を設定すると、その時間分、フェードアウトとフェード インの時間が重なります。省略すると 0 であると見なされます。 クロスフェードを行うときに指定します。'})
    call add(l:list, {'word': 'volume=',		'menu': '次の曲のフェード後に到達させる BGM の音量を % で指定します。'})
- "}}}
-  endif
+  endif "}}}
   return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
 endfunction "}}}
 
