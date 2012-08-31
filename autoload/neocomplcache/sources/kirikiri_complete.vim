@@ -430,14 +430,13 @@ function! s:source.get_keyword_pos(cur_text) "{{{
   if neocomplcache#within_comment()
     return -1
   endif
-	if exists('s:type_list')
+	if a:cur_text =~ '=\([^a-z0-9]\|$\|[a-z0-0]*=\)'
 		for l:file in s:type_list
 			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^a-z0-9]\|$\)\|^@'.l:file.tagname.' .*'.l:file.typename.'=\([^a-z0-9]\|$\)'
 					return matchend(a:cur_text, '^@.*'.l:file.typename.'=\|\[.*'.l:file.typename.'=')
 			endif
 		endfor
 	endif
-
 	if a:cur_text =~ '^@\([^a-z0-9]\|$\)\|\[\([^a-z0-9]\|$\)'
     return matchend(a:cur_text, '^@\([^a-z0-9]\|$\)\|\[\([^a-z0-9]\|$\)')
 	elseif a:cur_text =~ '^@.* \|\[.* '
@@ -627,7 +626,7 @@ function! s:source.get_complete_words(cur_keyword_pos, cur_keyword_str) "{{{
   return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
   endif
  "{{{ filename
-	if exists('s:type_list')
+	if l:line =~ '=\([^a-z0-9]\|$\|[a-z0-0]*=\)'
 		for l:file in s:type_list
 			if search('\['.l:file.tagname.' [^]]*'.l:file.typename.'=\%#\|^@'.l:file.tagname.' .*'.l:file.typename.'=\%#','bcn',line('.'))
 					call extend(l:list,l:file.list)
