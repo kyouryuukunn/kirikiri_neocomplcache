@@ -430,9 +430,9 @@ function! s:source.get_keyword_pos(cur_text) "{{{
   if neocomplcache#within_comment()
     return -1
   endif
-	if a:cur_text =~ '=\([^a-z0-9]\|$\|[a-z0-0]*=\)'
+	if a:cur_text =~ '=\([^a-z0-9"]\|$\|[a-z0-0"]*=\)'
 		for l:file in s:type_list
-			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^a-z0-9]\|$\)\|^@'.l:file.tagname.' .*'.l:file.typename.'=\([^a-z0-9]\|$\)'
+			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^a-z0-9"]\|$\)\|^@'.l:file.tagname.' .*'.l:file.typename.'=\([^a-z0-9"]\|$\)'
 					return matchend(a:cur_text, '^@.*'.l:file.typename.'=\|\[.*'.l:file.typename.'=')
 			endif
 		endfor
