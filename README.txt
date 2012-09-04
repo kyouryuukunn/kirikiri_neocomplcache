@@ -51,3 +51,8 @@ let g:kirikiri_neocomplcache_list = [
 			\{'tagname': 'playbgm\|fadein',		'typename': 'storage',		'list': s:kirikiri_bgm_list},
 			\{'tagname': 'playse',			'typename': 'storage',		'list': s:kirikiri_se_list}
 			\]
+
+バグ
+かなりの頻度でneocomplcacheが停止する。いったん停止するとvimを再起動しないと動
+作しなくなる。このプラグインに限らずneocomplcache自体が停止する。
+原因不明、誰か助けて……
