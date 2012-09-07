@@ -4,7 +4,7 @@ neocomplcache用プラグイン
 必要な設定
 マクロも補完するためには次のようにする
 let g:kirikiri_neocomplcache_macro_list = [
-			\{'tag': 'マクロ名','menu': '必要なら説明','macrotype': [{'type': 'マクロの属性','typemenu': '必要なら説明'}]},
+			\{'tag': 'マクロ名','menu': '必要なら説明','macrotype': [{'type': 'マクロの属性名','typemenu': '必要なら説明'}]},
 			\]
 例
 @macro name=haikei
@@ -21,13 +21,14 @@ let g:kirikiri_neocomplcache_macro_list = [
 			\]
 
 
-属性の引き数も補完するためには次のようなリストをつくってから
+属性値も補完するためには次のようなリストをつくってから
 let s:kirikiri_example_list = [
-			\{'word': 'ファイル名','menu': '必要なら説明も'}
+			\{'word': '属性値','menu': '必要なら説明も'}
 			\]
 このように登録する
 let g:kirikiri_neocomplcache_list = [
-			\{'tagname': '対象とするタグの名前,複数あるときは\|で区切る', 'typename': '補完する属性','list': s:kirikiri_picture_list}
+			\{'tagname': '対象とするタグの名前,複数あるときは\|で区切る', 
+			\'typename': '補完する属性名','list': s:kirikiri_example_list}
 			\]
 
 例
@@ -44,12 +45,24 @@ let s:kirikiri_se_list = []
 
 
 let g:kirikiri_neocomplcache_list = [
-			\{'tagname': 'image',			'typename': 'storage',		'list': s:kirikiri_picture_list},
-			\{'tagname': 'trans',			'typename': 'rule',		'list': s:kirikiri_rule_list},
-			\{'tagname': 'link\|jump\|call',	'typename': 'storage',		'list': s:kirikiri_scenario_list},
-			\{'tagname': 'link\|jump\|call',	'typename': 'target',		'list': s:kirikiri_label_list},
-			\{'tagname': 'playbgm\|fadein',		'typename': 'storage',		'list': s:kirikiri_bgm_list},
-			\{'tagname': 'playse',			'typename': 'storage',		'list': s:kirikiri_se_list}
+			\{'tagname': 'image',
+			\'typename': 'storage',
+			\'list': s:kirikiri_picture_list},
+			\{'tagname': 'trans',
+			\'typename': 'rule',
+			\'list': s:kirikiri_rule_list},
+			\{'tagname': 'link\|jump\|call',
+			\'typename': 'storage',	
+			\'list': s:kirikiri_scenario_list},
+			\{'tagname': 'link\|jump\|call',
+			\'typename': 'target',		
+			\'list': s:kirikiri_label_list},
+			\{'tagname': 'playbgm\|fadein',		
+			\'typename': 'storage',		
+			\'list': s:kirikiri_bgm_list},
+			\{'tagname': 'playse',			
+			\'typename': 'storage',		
+			\'list': s:kirikiri_se_list}
 			\]
 
 バグ
