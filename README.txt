@@ -1,10 +1,16 @@
 吉里吉里/Kagのタグと属性を補完するための
-neocomplcache用プラグイン
+neocomplcacheのsource
 
 必要な設定
+neocomplcacheをインストールする
+
+ファイルタイプをkirikiriにする
+autocmd BufNew,BufRead *.ks	set filetype=kirikiri
+
 マクロも補完するためには次のようにする
 let g:kirikiri_neocomplcache_macro_list = [
-			\{'tag': 'マクロ名','menu': '必要なら説明','macrotype': [{'type': 'マクロの属性名','typemenu': '必要なら説明'}]},
+			\{'tag': 'マクロ名','menu': '必要なら説明',
+			\'macrotype': [{'type': 'マクロの属性名','typemenu': '必要なら説明'}]},
 			\]
 例
 @macro name=haikei
@@ -14,10 +20,14 @@ let g:kirikiri_neocomplcache_macro_list = [
 @macro name=tu
 @trans method=universal rule=%rule time=%time vague=%vague
 @endmacro
-このようにマクロを設定した場合なら
+このようにマクロを設定した場合なら次のように設定する
 let g:kirikiri_neocomplcache_macro_list = [
-			\{'tag': 'haikei','menu': '','macrotype': [{'type': 'storage','typemenu': ''}]},
-			\{'tag': 'tu','menu': '','macrotype': [{'type': 'rule','typemenu': ''},{'type': 'time','typemenu': ''},{'type': 'vague','typemenu': ''}]},
+			\{'tag': 'haikei','menu': '',
+			\'macrotype': [{'type': 'storage','typemenu': ''}]},
+			\{'tag': 'tu','menu': '',
+			\'macrotype': [{'type': 'rule','typemenu': ''},
+				      \{'type': 'time','typemenu': ''},
+				      \{'type': 'vague','typemenu': ''}]},
 			\]
 
 
@@ -65,7 +75,3 @@ let g:kirikiri_neocomplcache_list = [
 			\'list': s:kirikiri_se_list}
 			\]
 
-バグ
-かなりの頻度でneocomplcacheが停止する。いったん停止するとvimを再起動しないと動
-作しなくなる。このプラグインに限らずneocomplcache自体が停止する。
-原因不明、誰か助けて……
