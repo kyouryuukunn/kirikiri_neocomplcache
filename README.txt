@@ -1,4 +1,4 @@
-吉里吉里/Kagのタグと属性を補完するための
+vimで吉里吉里/Kagのタグと属性を補完するための
 neocomplcacheのsource
 
 必要な設定
