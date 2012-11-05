@@ -3,7 +3,7 @@ neocomplcacheのsource
   
 必要な設定  
 neocomplcacheをインストールする  
-  
+```  
 ファイルタイプをkirikiriにする  
 autocmd BufNew,BufRead *.ks	set filetype=kirikiri  
   
@@ -74,6 +74,7 @@ let g:kirikiri_neocomplcache_list = [
 			\'typename': 'storage',		  
 			\'list': s:kirikiri_se_list}  
 			\]  
+```
   
 こんな感じ  
 ![](http://akakyouryuu.blog.fc2.com/img/neo1.png/)  
