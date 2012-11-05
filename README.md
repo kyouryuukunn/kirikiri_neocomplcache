@@ -76,8 +76,8 @@ let g:kirikiri_neocomplcache_list = [
 			\]
 
 ‚±‚ñ‚ÈŠ´‚¶
-![](http://akakyouryuu.blog.fc2.com/img/neo1.png)
-![](http://akakyouryuu.blog.fc2.com/img/neo2.png)
-![](http://akakyouryuu.blog.fc2.com/img/neo3.png)
-![](http://akakyouryuu.blog.fc2.com/img/neo4.png)
-![](http://akakyouryuu.blog.fc2.com/img/neo5.png)
+![1.](http://akakyouryuu.blog.fc2.com/img/neo1.png)
+![2.](http://akakyouryuu.blog.fc2.com/img/neo2.png)
+![3.](http://akakyouryuu.blog.fc2.com/img/neo3.png)
+![4.](http://akakyouryuu.blog.fc2.com/img/neo4.png)
+![5.](http://akakyouryuu.blog.fc2.com/img/neo5.png)
