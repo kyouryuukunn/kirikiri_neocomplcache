@@ -75,3 +75,9 @@ let g:kirikiri_neocomplcache_list = [
 			\'list': s:kirikiri_se_list}
 			\]
 
+‚±‚ñ‚ÈŠ´‚¶
+(http://akakyouryuu.blog.fc2.com/img/neo1.png)
+(http://akakyouryuu.blog.fc2.com/img/neo2.png)
+(http://akakyouryuu.blog.fc2.com/img/neo3.png)
+(http://akakyouryuu.blog.fc2.com/img/neo4.png)
+(http://akakyouryuu.blog.fc2.com/img/neo5.png)
