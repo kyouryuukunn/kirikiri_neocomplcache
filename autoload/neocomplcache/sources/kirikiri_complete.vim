@@ -429,16 +429,16 @@ function! s:source.get_keyword_pos(cur_text) "{{{
   if neocomplcache#within_comment()
     return -1
   endif
-	if a:cur_text =~ '=\([^&%*a-z0-9"]\|$\)'
+	if a:cur_text =~ '=\([^&%*_a-z0-9"]\|$\)' " ëÆê´ílÇÃï‚äÆ
 		for l:file in s:type_list
-			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^&%*a-z0-9"]\|$\)\|^\s*@'.l:file.tagname.' .*'.l:file.typename.'=\([^&%*a-z0-9"]\|$\)'
+			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^&%*_a-z0-9"]\|$\)\|^\s*@'.l:file.tagname.' .*'.l:file.typename.'=\([^&%*_a-z0-9"]\|$\)'
 					return matchend(a:cur_text, '^\s*@.*'.l:file.typename.'=\|\[.*'.l:file.typename.'=')
 			endif
 		endfor
 	endif
-	if a:cur_text =~ '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)'
+	if a:cur_text =~ '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)' " É^ÉOÇÃï‚äÆ
     return matchend(a:cur_text, '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)')
-	elseif a:cur_text =~ '^\s*@.* \|\[.* '
+	elseif a:cur_text =~ '^\s*@.* \|\[.* ' " ëÆê´ñºÇÃï‚äÆ
     return matchend(a:cur_text, '^\s*@.* \|\[.* ')
   endif
 endfunction "}}}
