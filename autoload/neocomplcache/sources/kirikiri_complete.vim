@@ -184,7 +184,7 @@ function! s:source.initialize()
 				\{'tagname': 'image',		'typename': 'visible',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'image',		'typename': 'left',		'list': [{'word': ' ','menu': '左端位置(pixel単位)'}]},
 				\{'tagname': 'image',		'typename': 'top',		'list': [{'word': ' ','menu': '上端位置(pixel単位)'}]},
-				\{'tagname': 'image',		'typename': 'pos',		'list': [{'word': 'left_center'},{'word': 'center'},{'word': 'right_center'},{'word': 'right'}]},
+				\{'tagname': 'image',		'typename': 'pos',		'list': [{'word': 'left_center'},{'word': 'center'},{'word': 'right_center'},{'word': 'right'},{'word': 'left'}]},
 				\{'tagname': 'image',		'typename': 'opacity',		'list': [{'word': ' ','menu': '不透明度 ( 0 (全くの透明) ～ 255 (全くの不透明 ) )'}]},
 				\{'tagname': 'image',		'typename': 'mapimage',		'list': [{'word': ' ','menu': '画像ファイル名'}]},
 				\{'tagname': 'image',		'typename': 'mapaction',		'list': [{'word': ' ','menu': '領域アクション定義ファイル名'}]},
