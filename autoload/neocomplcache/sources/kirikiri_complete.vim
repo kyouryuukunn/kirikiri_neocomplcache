@@ -687,10 +687,10 @@ if search('\[animstart [^]]*\%#\|^\s*@animstart ','bcn',line('.'))
    call add(l:list, {'word': 'countpage=',		'menu': '他のラベルに移行するときに、このタグのある 場所のラベルを「読んだ」とみなすかどうかを指定します。'})
   elseif search('\[cancelvideoevent [^]]*\%#\|^\s*@cancelvideoevent ','bcn',line('.'))
    call add(l:list, {'word': 'slot=',		'menu': 'ムービーオブジェクト番号(0～)	この操作を行うムービーオブジェクト番号を指定します。'})
-videoeventタグで設定したピリオドイベントを解除します。
+"videoeventタグで設定したピリオドイベントを解除します。
   elseif search('\[cancelvideosegloop [^]]*\%#\|^\s*@cancelvideosegloop ','bcn',line('.'))
    call add(l:list, {'word': 'slot=',		'menu': 'ムービーオブジェクト番号(0～)	この操作を行うムービーオブジェクト番号を指定します。'})
-videosegloopタグで設定したセグメントループを解除します。
+"videosegloopタグで設定したセグメントループを解除します。
   elseif search('\[ch [^]]*\%#\|^\s*@ch ','bcn',line('.'))
    call add(l:list, {'word': 'text=',		'menu': '(必)ここで指定した文字が表示されます。'})
   elseif search('\[checkbox [^]]*\%#\|^\s*@checkbox ','bcn',line('.'))
