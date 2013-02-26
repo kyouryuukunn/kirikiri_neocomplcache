@@ -1,18 +1,18 @@
-vim‚Å‹g—¢‹g—¢/Kag‚Ìƒ^ƒO‚Æ‘®«‚ğ•âŠ®‚·‚é‚½‚ß‚Ì  
-neocomplcache‚Ìsource  
+vimã§å‰é‡Œå‰é‡Œ/Kagã®ã‚¿ã‚°ã¨å±æ€§ã‚’è£œå®Œã™ã‚‹ãŸã‚ã®  
+neocomplcacheã®source  
   
   
-•K—v‚Èİ’è  
-neocomplcache‚ğƒCƒ“ƒXƒg[ƒ‹‚·‚é  
-ƒtƒ@ƒCƒ‹ƒ^ƒCƒv‚ğkirikiri‚É‚·‚é  
+å¿…è¦ãªè¨­å®š  
+neocomplcacheã‚’ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã™ã‚‹  
+ãƒ•ã‚¡ã‚¤ãƒ«ã‚¿ã‚¤ãƒ—ã‚’kirikiriã«ã™ã‚‹  
 autocmd BufNew,BufRead *.ks	set filetype=kirikiri  
   
-ƒ}ƒNƒ‚à•âŠ®‚·‚é‚½‚ß‚É‚ÍŸ‚Ì‚æ‚¤‚É‚·‚é  
+ãƒã‚¯ãƒ­ã‚‚è£œå®Œã™ã‚‹ãŸã‚ã«ã¯æ¬¡ã®ã‚ˆã†ã«ã™ã‚‹  
 let g:kirikiri_neocomplcache_macro_list = [  
-			\{'tag': 'ƒ}ƒNƒ–¼','menu': '•K—v‚È‚çà–¾',  
-			\'macrotype': [{'type': 'ƒ}ƒNƒ‚Ì‘®«–¼','typemenu': '•K—v‚È‚çà–¾'}]},  
+			\{'tag': 'ãƒã‚¯ãƒ­å','menu': 'å¿…è¦ãªã‚‰èª¬æ˜',  
+			\'macrotype': [{'type': 'ãƒã‚¯ãƒ­ã®å±æ€§å','typemenu': 'å¿…è¦ãªã‚‰èª¬æ˜'}]},  
 			\]  
-—á  
+ä¾‹  
 @macro name=haikei  
 @image storage=%storage layer=base page=fore  
 @endmacro  
@@ -20,7 +20,7 @@ let g:kirikiri_neocomplcache_macro_list = [
 @macro name=tu  
 @trans method=universal rule=%rule time=%time vague=%vague  
 @endmacro  
-‚±‚Ì‚æ‚¤‚Éƒ}ƒNƒ‚ğİ’è‚µ‚½ê‡‚È‚çŸ‚Ì‚æ‚¤‚Éİ’è‚·‚é  
+ã“ã®ã‚ˆã†ã«ãƒã‚¯ãƒ­ã‚’è¨­å®šã—ãŸå ´åˆãªã‚‰æ¬¡ã®ã‚ˆã†ã«è¨­å®šã™ã‚‹  
 let g:kirikiri_neocomplcache_macro_list = [  
 			\{'tag': 'haikei','menu': '',  
 			\'macrotype': [{'type': 'storage','typemenu': ''}]},  
@@ -31,17 +31,17 @@ let g:kirikiri_neocomplcache_macro_list = [
 			\]  
   
   
-‘®«’l‚à•âŠ®‚·‚é‚½‚ß‚É‚ÍŸ‚Ì‚æ‚¤‚ÈƒŠƒXƒg‚ğ‚Â‚­‚Á‚Ä‚©‚ç  
+å±æ€§å€¤ã‚‚è£œå®Œã™ã‚‹ãŸã‚ã«ã¯æ¬¡ã®ã‚ˆã†ãªãƒªã‚¹ãƒˆã‚’ã¤ãã£ã¦ã‹ã‚‰  
 let s:kirikiri_example_list = [  
-			\{'word': '‘®«’l','menu': '•K—v‚È‚çà–¾‚à'}  
+			\{'word': 'å±æ€§å€¤','menu': 'å¿…è¦ãªã‚‰èª¬æ˜ã‚‚'}  
 			\]  
-‚±‚Ì‚æ‚¤‚É“o˜^‚·‚é  
+ã“ã®ã‚ˆã†ã«ç™»éŒ²ã™ã‚‹  
 let g:kirikiri_neocomplcache_list = [  
-			\{'tagname': '‘ÎÛ‚Æ‚·‚éƒ^ƒO‚Ì–¼‘O,•¡”‚ ‚é‚Æ‚«‚Í\|‚Å‹æØ‚é',   
-			\'typename': '•âŠ®‚·‚é‘®«–¼','list': s:kirikiri_example_list}  
+			\{'tagname': 'å¯¾è±¡ã¨ã™ã‚‹ã‚¿ã‚°ã®åå‰,è¤‡æ•°ã‚ã‚‹ã¨ãã¯\|ã§åŒºåˆ‡ã‚‹',   
+			\'typename': 'è£œå®Œã™ã‚‹å±æ€§å','list': s:kirikiri_example_list}  
 			\]  
   
-—á  
+ä¾‹  
 let s:kirikiri_picture_list = [  
 			\{'word': '01.jpg','menu': ''},  
 			\{'word': '02.jpg','menu': ''},  
@@ -75,4 +75,4 @@ let g:kirikiri_neocomplcache_list = [
 			\'list': s:kirikiri_se_list}  
 			\]  
   
-‚±‚ñ‚ÈŠ´‚¶  
+ã“ã‚“ãªæ„Ÿã˜  
