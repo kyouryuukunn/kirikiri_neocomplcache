@@ -13,54 +13,54 @@ function! s:source.initialize()
 	let s:type_list = [
 				\{'tagname': 'animstart',	'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'animstart',	'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'animstart',	'typename': 'seg',		'list': [{'word': ' ','menu': '1 ˆÈã‚Ì®”'}]},
-				\{'tagname': 'animstart',	'typename': 'target',		'list': [{'word': ' ','menu': 'ŠJnƒ‰ƒxƒ‹–¼'}]},
+				\{'tagname': 'animstart',	'typename': 'seg',		'list': [{'word': ' ','menu': '1 ä»¥ä¸Šã®æ•´æ•°'}]},
+				\{'tagname': 'animstart',	'typename': 'target',		'list': [{'word': ' ','menu': 'é–‹å§‹ãƒ©ãƒ™ãƒ«å'}]},
 				\{'tagname': 'animstop',	'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'animstop',	'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'animstop',	'typename': 'seg',		'list': [{'word': ' ','menu': '1 ˆÈã‚Ì®”'}]},
+				\{'tagname': 'animstop',	'typename': 'seg',		'list': [{'word': ' ','menu': '1 ä»¥ä¸Šã®æ•´æ•°'}]},
 				\{'tagname': 'autowc',		'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'autowc',		'typename': 'ch',		'list': [{'word': ' ','menu': '‘ÎÛ‚Ì•¶š'}]},
-				\{'tagname': 'autowc',		'typename': 'time',		'list': [{'word': ' ','menu': 'ƒEƒFƒCƒg(•¶š”’PˆÊ)'}]},
+				\{'tagname': 'autowc',		'typename': 'ch',		'list': [{'word': ' ','menu': 'å¯¾è±¡ã®æ–‡å­—'}]},
+				\{'tagname': 'autowc',		'typename': 'time',		'list': [{'word': ' ','menu': 'ã‚¦ã‚§ã‚¤ãƒˆ(æ–‡å­—æ•°å˜ä½)'}]},
 				\{'tagname': 'backlay',		'typename': 'layer',		'list': [{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'base'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
-				\{'tagname': 'bgmopt',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'bgmopt',		'typename': 'gvolume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'button',		'typename': 'graphic',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'button',		'typename': 'graphickey',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
-				\{'tagname': 'button',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'button',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
+				\{'tagname': 'bgmopt',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'bgmopt',		'typename': 'gvolume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'button',		'typename': 'graphic',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'button',		'typename': 'graphickey',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
+				\{'tagname': 'button',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'button',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
 				\{'tagname': 'button',		'typename': 'recthit',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'button',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'button',		'typename': 'hint',		'list': [{'word': ' ','menu': 'ƒqƒ“ƒg‚Æ‚µ‚Ä•\¦‚³‚¹‚é•¶š—ñ'}]},
-				\{'tagname': 'button',		'typename': 'onenter',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'button',		'typename': 'onleave',		'list': [{'word': ' ','menu': 'TJS ®'}]},
+				\{'tagname': 'button',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'button',		'typename': 'hint',		'list': [{'word': ' ','menu': 'ãƒ’ãƒ³ãƒˆã¨ã—ã¦è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—åˆ—'}]},
+				\{'tagname': 'button',		'typename': 'onenter',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'button',		'typename': 'onleave',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
 				\{'tagname': 'button',		'typename': 'countpage',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'button',		'typename': 'clickse',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'button',		'typename': 'clicksebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'button',		'typename': 'enterse',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'button',		'typename': 'entersebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'button',		'typename': 'leavese',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'button',		'typename': 'leavesebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'call',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'call',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'call',		'typename': 'countpage',		'list': [{'word': ' ','menu': 'false(ƒfƒtƒHƒ‹ƒg) ‚Ü‚½‚Í true'}]},
-				\{'tagname': 'cancelvideoevent',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'cancelvideosegloop',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'ch',		'typename': 'text',		'list': [{'word': ' ','menu': '•¶š'}]},
-				\{'tagname': 'checkbox',	'typename': 'name',		'list': [{'word': ' ','menu': '•Ï”–¼'}]},
-				\{'tagname': 'checkbox',	'typename': 'bgcolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'checkbox',	'typename': 'opacity',		'list': [{'word': ' ','menu': '0(Š®‘S“§–¾) ` 255(Š®‘S•s“§–¾)'}]},
-				\{'tagname': 'checkbox',	'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'clearvideolayer',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
+				\{'tagname': 'button',		'typename': 'clickse',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'button',		'typename': 'clicksebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'button',		'typename': 'enterse',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'button',		'typename': 'entersebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'button',		'typename': 'leavese',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'button',		'typename': 'leavesebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'call',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'call',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'call',		'typename': 'countpage',		'list': [{'word': ' ','menu': 'false(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ã¾ãŸã¯ true'}]},
+				\{'tagname': 'cancelvideoevent',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'cancelvideosegloop',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'ch',		'typename': 'text',		'list': [{'word': ' ','menu': 'æ–‡å­—'}]},
+				\{'tagname': 'checkbox',	'typename': 'name',		'list': [{'word': ' ','menu': 'å¤‰æ•°å'}]},
+				\{'tagname': 'checkbox',	'typename': 'bgcolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'checkbox',	'typename': 'opacity',		'list': [{'word': ' ','menu': '0(å®Œå…¨é€æ˜) ï½ 255(å®Œå…¨ä¸é€æ˜)'}]},
+				\{'tagname': 'checkbox',	'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'clearvideolayer',	'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
 				\{'tagname': 'clearvideolayer',	'typename': 'channel',		'list': [{'word': '1'},{'word': '2'}]},
-				\{'tagname': 'click',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'click',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'click',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'click',		'typename': 'se',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'click',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
+				\{'tagname': 'click',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'click',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'click',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'click',		'typename': 'se',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'click',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
 				\{'tagname': 'clickskip',	'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'close',		'typename': 'ask',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'copybookmark',	'typename': 'from',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”'}]},
-				\{'tagname': 'copybookmark',	'typename': 'to',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”'}]},
+				\{'tagname': 'copybookmark',	'typename': 'from',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°'}]},
+				\{'tagname': 'copybookmark',	'typename': 'to',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°'}]},
 				\{'tagname': 'copylay',		'typename': 'srclayer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'copylay',		'typename': 'destlayer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'copylay',		'typename': 'srcpage',		'list': [{'word': 'fore'},{'word': 'back'}]},
@@ -68,55 +68,55 @@ function! s:source.initialize()
 				\{'tagname': 'current',		'typename': 'layer',		'list': [{'word': 'message0'},{'word': 'message1'}]},
 				\{'tagname': 'current',		'typename': 'page',		'list': [{'word': 'fore','menu': 'default'},{'word': 'back'}]},
 				\{'tagname': 'current',		'typename': 'withback',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'cursor',		'typename': 'default',		'list': [{'word': ' ','menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'cursor',		'typename': 'pointed',		'list': [{'word': ' ','menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'cursor',		'typename': 'click',		'list': [{'word': ' ','menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'cursor',		'typename': 'draggable',		'list': [{'word': ' ','menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'deffont',		'typename': 'size',		'list': [{'word': ' ','menu': '•¶šƒTƒCƒY(pixel’PˆÊ)'}]},
-				\{'tagname': 'deffont',		'typename': 'face',		'list': [{'word': 'user','menu': 'ƒtƒHƒ“ƒg–¼ ‚Ü‚½‚Í "user"'}]},
-				\{'tagname': 'deffont',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'deffont',		'typename': 'rubysize',		'list': [{'word': ' ','menu': 'ƒ‹ƒr‚Ì•¶šƒTƒCƒY(pixel’PˆÊ)'}]},
-				\{'tagname': 'deffont',		'typename': 'rubyoffset',		'list': [{'word': ' ','menu': 'ƒ‹ƒr‚Ì•\¦ƒIƒtƒZƒbƒg(pixel’PˆÊ)'}]},
+				\{'tagname': 'cursor',		'typename': 'default',		'list': [{'word': ' ','menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'cursor',		'typename': 'pointed',		'list': [{'word': ' ','menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'cursor',		'typename': 'click',		'list': [{'word': ' ','menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'cursor',		'typename': 'draggable',		'list': [{'word': ' ','menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'deffont',		'typename': 'size',		'list': [{'word': ' ','menu': 'æ–‡å­—ã‚µã‚¤ã‚º(pixelå˜ä½)'}]},
+				\{'tagname': 'deffont',		'typename': 'face',		'list': [{'word': 'user','menu': 'ãƒ•ã‚©ãƒ³ãƒˆå ã¾ãŸã¯ "user"'}]},
+				\{'tagname': 'deffont',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'deffont',		'typename': 'rubysize',		'list': [{'word': ' ','menu': 'ãƒ«ãƒ“ã®æ–‡å­—ã‚µã‚¤ã‚º(pixelå˜ä½)'}]},
+				\{'tagname': 'deffont',		'typename': 'rubyoffset',		'list': [{'word': ' ','menu': 'ãƒ«ãƒ“ã®è¡¨ç¤ºã‚ªãƒ•ã‚»ãƒƒãƒˆ(pixelå˜ä½)'}]},
 				\{'tagname': 'deffont',		'typename': 'shadow',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'deffont',		'typename': 'edge',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'deffont',		'typename': 'edgecolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'deffont',		'typename': 'shadowcolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
+				\{'tagname': 'deffont',		'typename': 'edgecolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'deffont',		'typename': 'shadowcolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
 				\{'tagname': 'deffont',		'typename': 'bold',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'defstyle',	'typename': 'linespacing',		'list': [{'word': ' ','menu': 'sŠÔ (pixel’PˆÊ)'}]},
-				\{'tagname': 'defstyle',	'typename': 'pitch',		'list': [{'word': ' ','menu': 'šŠÔƒIƒtƒZƒbƒg(pixel’PˆÊ)'}]},
-				\{'tagname': 'defstyle',	'typename': 'linesize',		'list': [{'word': ' ','menu': '—\–ñƒTƒCƒY(pixel’PˆÊ)'}]},
-				\{'tagname': 'delay',		'typename': 'speed',		'list': [{'word': ' ','menu': '"nowait" ‚Ü‚½‚Í "user" ‚Ü‚½‚ÍƒEƒFƒCƒg‚Ì’l(ms’PˆÊ)'}]},
+				\{'tagname': 'defstyle',	'typename': 'linespacing',		'list': [{'word': ' ','menu': 'è¡Œé–“ (pixelå˜ä½)'}]},
+				\{'tagname': 'defstyle',	'typename': 'pitch',		'list': [{'word': ' ','menu': 'å­—é–“ã‚ªãƒ•ã‚»ãƒƒãƒˆ(pixelå˜ä½)'}]},
+				\{'tagname': 'defstyle',	'typename': 'linesize',		'list': [{'word': ' ','menu': 'äºˆç´„ã‚µã‚¤ã‚º(pixelå˜ä½)'}]},
+				\{'tagname': 'delay',		'typename': 'speed',		'list': [{'word': ' ','menu': '"nowait" ã¾ãŸã¯ "user" ã¾ãŸã¯ã‚¦ã‚§ã‚¤ãƒˆã®å€¤(mså˜ä½)'}]},
 				\{'tagname': 'disablestore',	'typename': 'store',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
 				\{'tagname': 'disablestore',	'typename': 'restore',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'edit',		'typename': 'name',		'list': [{'word': ' ','menu': '•Ï”–¼'}]},
-				\{'tagname': 'edit',		'typename': 'length',		'list': [{'word': ' ','menu': '• (pixel ’PˆÊ)'}]},
-				\{'tagname': 'edit',		'typename': 'bgcolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'edit',		'typename': 'opacity',		'list': [{'word': ' ','menu': '0(Š®‘S“§–¾) ` 255(Š®‘S•s“§–¾)'}]},
-				\{'tagname': 'edit',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'edit',		'typename': 'maxchars',		'list': [{'word': ' ','menu': 'Å‘å•¶š”'}]},
-				\{'tagname': 'elsif',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'emb',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'erasebookmark',	'typename': 'place',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”(0‚ªƒfƒtƒHƒ‹ƒg)'}]},
-				\{'tagname': 'erasemacro',	'typename': 'name',		'list': [{'word': ' ','menu': 'ƒ^ƒO–¼'}]},
-				\{'tagname': 'eval',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'fadebgm',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'fadebgm',		'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'fadeinbgm',	'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ƒtƒ@ƒCƒ‹–¼ ‚Ü‚½‚Í CD ƒgƒ‰ƒbƒN”Ô†'}]},
-				\{'tagname': 'fadeinbgm',	'typename': 'start',		'list': [{'word': ' ','menu': 'BGM ŠJnˆÊ’uw’è'}]},
+				\{'tagname': 'edit',		'typename': 'name',		'list': [{'word': ' ','menu': 'å¤‰æ•°å'}]},
+				\{'tagname': 'edit',		'typename': 'length',		'list': [{'word': ' ','menu': 'å¹… (pixel å˜ä½)'}]},
+				\{'tagname': 'edit',		'typename': 'bgcolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'edit',		'typename': 'opacity',		'list': [{'word': ' ','menu': '0(å®Œå…¨é€æ˜) ï½ 255(å®Œå…¨ä¸é€æ˜)'}]},
+				\{'tagname': 'edit',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'edit',		'typename': 'maxchars',		'list': [{'word': ' ','menu': 'æœ€å¤§æ–‡å­—æ•°'}]},
+				\{'tagname': 'elsif',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'emb',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'erasebookmark',	'typename': 'place',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°(0ãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)'}]},
+				\{'tagname': 'erasemacro',	'typename': 'name',		'list': [{'word': ' ','menu': 'ã‚¿ã‚°å'}]},
+				\{'tagname': 'eval',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'fadebgm',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'fadebgm',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'fadeinbgm',	'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ãƒ•ã‚¡ã‚¤ãƒ«å ã¾ãŸã¯ CD ãƒˆãƒ©ãƒƒã‚¯ç•ªå·'}]},
+				\{'tagname': 'fadeinbgm',	'typename': 'start',		'list': [{'word': ' ','menu': 'BGM é–‹å§‹ä½ç½®æŒ‡å®š'}]},
 				\{'tagname': 'fadeinbgm',	'typename': 'loop',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'fadeinbgm',	'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'fadeinse', 	'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'fadeinse', 	'typename': 'storage',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'fadeinse', 	'typename': 'start',		'list': [{'word': ' ','menu': 'SE ŠJnˆÊ’uw’è'}]},
-				\{'tagname': 'fadeinse', 	'typename': 'time',		'list': [{'word': ' ','menu': 'ƒtƒF[ƒhƒCƒ“ŠÔ(ms)'}]},
+				\{'tagname': 'fadeinbgm',	'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'fadeinse', 	'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'fadeinse', 	'typename': 'storage',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'fadeinse', 	'typename': 'start',		'list': [{'word': ' ','menu': 'SE é–‹å§‹ä½ç½®æŒ‡å®š'}]},
+				\{'tagname': 'fadeinse', 	'typename': 'time',		'list': [{'word': ' ','menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³æ™‚é–“(ms)'}]},
 				\{'tagname': 'fadeinse', 	'typename': 'loop',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'fadeoutbgm',	'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'fadeoutse',	'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'fadeoutse',	'typename': 'time',		'list': [{'word': ' ','menu': 'ƒtƒF[ƒhƒAƒEƒgŠÔ(ms)'}]},
-				\{'tagname': 'fadepausebg',	'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'fadese',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'fadese',		'typename': 'time',		'list': [{'word': ' ','menu': 'ƒtƒF[ƒhŠÔ(ms)'}]},
-				\{'tagname': 'fadese',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
+				\{'tagname': 'fadeoutbgm',	'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'fadeoutse',	'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'fadeoutse',	'typename': 'time',		'list': [{'word': ' ','menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆæ™‚é–“(ms)'}]},
+				\{'tagname': 'fadepausebg',	'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'fadese',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'fadese',		'typename': 'time',		'list': [{'word': ' ','menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰æ™‚é–“(ms)'}]},
+				\{'tagname': 'fadese',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
 				\{'tagname': 'font',		'typename': 'size',		'list': [{'word': 'default'}]},
 				\{'tagname': 'font',		'typename': 'face',		'list': [{'word': 'default'},{'word': 'user'}]},
 				\{'tagname': 'font',		'typename': 'color',		'list': [{'word': 'default'}]},
@@ -130,293 +130,293 @@ function! s:source.initialize()
 				\{'tagname': 'font',		'typename': 'bold',		'list': [{'word': 'true'},{'word': 'false'},{'word': 'default'}]},
 				\{'tagname': 'freeimage',	'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'freeimage',	'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'glyph',		'typename': 'line',		'list': [{'word': ' ','menu': 's––ƒNƒŠƒbƒN‘Ò‚¿‹L†ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'glyph',		'typename': 'linekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
-				\{'tagname': 'glyph',		'typename': 'page',		'list': [{'word': ' ','menu': '‰üƒy[ƒWƒNƒŠƒbƒN‘Ò‚¿‹L†ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'glyph',		'typename': 'pagekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
+				\{'tagname': 'glyph',		'typename': 'line',		'list': [{'word': ' ','menu': 'è¡Œæœ«ã‚¯ãƒªãƒƒã‚¯å¾…ã¡è¨˜å·ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'glyph',		'typename': 'linekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
+				\{'tagname': 'glyph',		'typename': 'page',		'list': [{'word': ' ','menu': 'æ”¹ãƒšãƒ¼ã‚¸ã‚¯ãƒªãƒƒã‚¯å¾…ã¡è¨˜å·ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'glyph',		'typename': 'pagekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
 				\{'tagname': 'glyph',		'typename': 'fix',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'glyph',		'typename': 'left',		'list': [{'word': ' ','menu': '¶’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'glyph',		'typename': 'top',		'list': [{'word': ' ','menu': 'ã’[ˆÊ’u(pixel’PˆÊ)'}]},
+				\{'tagname': 'glyph',		'typename': 'left',		'list': [{'word': ' ','menu': 'å·¦ç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'glyph',		'typename': 'top',		'list': [{'word': ' ','menu': 'ä¸Šç«¯ä½ç½®(pixelå˜ä½)'}]},
 				\{'tagname': 'goback',		'typename': 'ask',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'gotostart',	'typename': 'ask',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'graph',		'typename': 'storage',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'graph',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
+				\{'tagname': 'graph',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'graph',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
 				\{'tagname': 'graph',		'typename': 'char',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'graph',		'typename': 'alt',		'list': [{'word': ' ','menu': '‘ã‘Ö•¶š'}]},
-				\{'tagname': 'hact',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS®'}]},
-				\{'tagname': 'hch',		'typename': 'text',		'list': [{'word': ' ','menu': '•¶š'}]},
+				\{'tagname': 'graph',		'typename': 'alt',		'list': [{'word': ' ','menu': 'ä»£æ›¿æ–‡å­—'}]},
+				\{'tagname': 'hact',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJSå¼'}]},
+				\{'tagname': 'hch',		'typename': 'text',		'list': [{'word': ' ','menu': 'æ–‡å­—'}]},
 				\{'tagname': 'hch',		'typename': 'expand',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'history',		'typename': 'output',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'history',		'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'hr',		'typename': 'repage',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'if',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'ignore',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'image',		'typename': 'storage',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'if',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'ignore',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'image',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'image',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'image',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'image',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
+				\{'tagname': 'image',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
 				\{'tagname': 'image',		'typename': 'mode',		'list': [{'word': 'alpha','menu': 'default'},{'word': 'transp'},{'word': 'opaque'},{'word': 'rect'},{'word': 'add'},{'word': 'sub'},{'word': 'mul'},{'word': 'dodge'},{'word': 'darken'},{'word': 'lighten'},{'word': 'screen'},{'word': 'psadd'},{'word': 'pssub'},{'word': 'psmul'},{'word': 'psscreen'},{'word': 'psoverlay'},{'word': 'pshlight'},{'word': 'psslight'},{'word': 'psdodge'},{'word': 'psdodge5'},{'word': 'psburn'},{'word': 'pslighten'},{'word': 'psdarken'},{'word': 'psdiff'},{'word': 'psdiff5'},{'word': 'psexcl'}]},
 				\{'tagname': 'image',		'typename': 'grayscale',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'image',		'typename': 'rgamma',		'list': [{'word': ' ','menu': 'ƒKƒ“ƒ}•â³’l (0.1 ` 1.0(ƒfƒtƒHƒ‹ƒg) ` 9.9)'}]},
-				\{'tagname': 'image',		'typename': 'ggamma',		'list': [{'word': ' ','menu': 'ƒKƒ“ƒ}•â³’l (0.1 ` 1.0(ƒfƒtƒHƒ‹ƒg) ` 9.9)'}]},
-				\{'tagname': 'image',		'typename': 'bgamma',		'list': [{'word': ' ','menu': 'ƒKƒ“ƒ}•â³’l (0.1 ` 1.0(ƒfƒtƒHƒ‹ƒg) ` 9.9)'}]},
-				\{'tagname': 'image',		'typename': 'rfloor',		'list': [{'word': ' ','menu': '‹P“xÅ’á’l ( 0(ƒfƒtƒHƒ‹ƒg) ` 255 )'}]},
-				\{'tagname': 'image',		'typename': 'gfloor',		'list': [{'word': ' ','menu': '‹P“xÅ’á’l ( 0(ƒfƒtƒHƒ‹ƒg) ` 255 )'}]},
-				\{'tagname': 'image',		'typename': 'bfloor',		'list': [{'word': ' ','menu': '‹P“xÅ’á’l ( 0(ƒfƒtƒHƒ‹ƒg) ` 255 )'}]},
-				\{'tagname': 'image',		'typename': 'rceil',		'list': [{'word': ' ','menu': '‹P“xÅ‚’l ( 0 ` 255(ƒfƒtƒHƒ‹ƒg) )'}]},
-				\{'tagname': 'image',		'typename': 'gceil',		'list': [{'word': ' ','menu': '‹P“xÅ‚’l ( 0 ` 255(ƒfƒtƒHƒ‹ƒg) )'}]},
-				\{'tagname': 'image',		'typename': 'bceil',		'list': [{'word': ' ','menu': '‹P“xÅ‚’l ( 0 ` 255(ƒfƒtƒHƒ‹ƒg) )'}]},
-				\{'tagname': 'image',		'typename': 'mcolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'image',		'typename': 'mopacity',		'list': [{'word': ' ','menu': '•s“§–¾“x(0 ` 255)'}]},
-				\{'tagname': 'image',		'typename': 'lightcolor',		'list': [{'word': ' ','menu': '0xAARRGGBBŒ`®'}]},
-				\{'tagname': 'image',		'typename': 'lighttype',		'list': [{'word': ' ','menu': 'mode ‚Æ“¯‚¶'}]},
-				\{'tagname': 'image',		'typename': 'shadow',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'image',		'typename': 'shadowopacity',		'list': [{'word': ' ','menu': '”Z“xw’è(0`255)'}]},
-				\{'tagname': 'image',		'typename': 'shadowx',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’l'}]},
-				\{'tagname': 'image',		'typename': 'shadowy',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’l'}]},
-				\{'tagname': 'image',		'typename': 'shadowblur',		'list': [{'word': ' ','menu': '”’lw’è(0`)'}]},
-				\{'tagname': 'image',		'typename': 'clipleft',		'list': [{'word': ' ','menu': 'ƒNƒŠƒbƒv‹éŒ`¶’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'image',		'typename': 'cliptop',		'list': [{'word': ' ','menu': 'ƒNƒŠƒbƒv‹éŒ`ã’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'image',		'typename': 'clipwidth',		'list': [{'word': ' ','menu': 'ƒNƒŠƒbƒv‹éŒ`•(pixel’PˆÊ)'}]},
-				\{'tagname': 'image',		'typename': 'clipheight',		'list': [{'word': ' ','menu': 'ƒNƒŠƒbƒv‹éŒ`‚‚³(pixel’PˆÊ)'}]},
+				\{'tagname': 'image',		'typename': 'rgamma',		'list': [{'word': ' ','menu': 'ã‚¬ãƒ³ãƒè£œæ­£å€¤ (0.1 ï½ 1.0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 9.9)'}]},
+				\{'tagname': 'image',		'typename': 'ggamma',		'list': [{'word': ' ','menu': 'ã‚¬ãƒ³ãƒè£œæ­£å€¤ (0.1 ï½ 1.0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 9.9)'}]},
+				\{'tagname': 'image',		'typename': 'bgamma',		'list': [{'word': ' ','menu': 'ã‚¬ãƒ³ãƒè£œæ­£å€¤ (0.1 ï½ 1.0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 9.9)'}]},
+				\{'tagname': 'image',		'typename': 'rfloor',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€ä½å€¤ ( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 255 )'}]},
+				\{'tagname': 'image',		'typename': 'gfloor',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€ä½å€¤ ( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 255 )'}]},
+				\{'tagname': 'image',		'typename': 'bfloor',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€ä½å€¤ ( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ 255 )'}]},
+				\{'tagname': 'image',		'typename': 'rceil',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€é«˜å€¤ ( 0 ï½ 255(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) )'}]},
+				\{'tagname': 'image',		'typename': 'gceil',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€é«˜å€¤ ( 0 ï½ 255(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) )'}]},
+				\{'tagname': 'image',		'typename': 'bceil',		'list': [{'word': ' ','menu': 'è¼åº¦æœ€é«˜å€¤ ( 0 ï½ 255(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) )'}]},
+				\{'tagname': 'image',		'typename': 'mcolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'image',		'typename': 'mopacity',		'list': [{'word': ' ','menu': 'ä¸é€æ˜åº¦(0 ï½ 255)'}]},
+				\{'tagname': 'image',		'typename': 'lightcolor',		'list': [{'word': ' ','menu': '0xAARRGGBBå½¢å¼'}]},
+				\{'tagname': 'image',		'typename': 'lighttype',		'list': [{'word': ' ','menu': 'mode ã¨åŒã˜'}]},
+				\{'tagname': 'image',		'typename': 'shadow',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'image',		'typename': 'shadowopacity',		'list': [{'word': ' ','menu': 'æ¿ƒåº¦æŒ‡å®š(0ï½255)'}]},
+				\{'tagname': 'image',		'typename': 'shadowx',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å€¤'}]},
+				\{'tagname': 'image',		'typename': 'shadowy',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å€¤'}]},
+				\{'tagname': 'image',		'typename': 'shadowblur',		'list': [{'word': ' ','menu': 'æ•°å€¤æŒ‡å®š(0ï½)'}]},
+				\{'tagname': 'image',		'typename': 'clipleft',		'list': [{'word': ' ','menu': 'ã‚¯ãƒªãƒƒãƒ—çŸ©å½¢å·¦ç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'image',		'typename': 'cliptop',		'list': [{'word': ' ','menu': 'ã‚¯ãƒªãƒƒãƒ—çŸ©å½¢ä¸Šç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'image',		'typename': 'clipwidth',		'list': [{'word': ' ','menu': 'ã‚¯ãƒªãƒƒãƒ—çŸ©å½¢å¹…(pixelå˜ä½)'}]},
+				\{'tagname': 'image',		'typename': 'clipheight',		'list': [{'word': ' ','menu': 'ã‚¯ãƒªãƒƒãƒ—çŸ©å½¢é«˜ã•(pixelå˜ä½)'}]},
 				\{'tagname': 'image',		'typename': 'flipud',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'image',		'typename': 'fliplr',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'image',		'typename': 'visible',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'image',		'typename': 'left',		'list': [{'word': ' ','menu': '¶’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'image',		'typename': 'top',		'list': [{'word': ' ','menu': 'ã’[ˆÊ’u(pixel’PˆÊ)'}]},
+				\{'tagname': 'image',		'typename': 'left',		'list': [{'word': ' ','menu': 'å·¦ç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'image',		'typename': 'top',		'list': [{'word': ' ','menu': 'ä¸Šç«¯ä½ç½®(pixelå˜ä½)'}]},
 				\{'tagname': 'image',		'typename': 'pos',		'list': [{'word': 'left_center'},{'word': 'center'},{'word': 'right_center'},{'word': 'right'},{'word': 'left'}]},
-				\{'tagname': 'image',		'typename': 'opacity',		'list': [{'word': ' ','menu': '•s“§–¾“x ( 0 (‘S‚­‚Ì“§–¾) ` 255 (‘S‚­‚Ì•s“§–¾ ) )'}]},
-				\{'tagname': 'image',		'typename': 'mapimage',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'image',		'typename': 'mapaction',		'list': [{'word': ' ','menu': '—ÌˆæƒAƒNƒVƒ‡ƒ“’è‹`ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'image',		'typename': 'index',		'list': [{'word': ' ','menu': '³‚Ì®”'}]},
-				\{'tagname': 'input',		'typename': 'name',		'list': [{'word': ' ','menu': '•Ï”–¼'}]},
-				\{'tagname': 'input',		'typename': 'prompt',		'list': [{'word': ' ','menu': 'ƒvƒƒ“ƒvƒg‚Æ‚µ‚Ä•\¦‚·‚é•¶š—ñ'}]},
-				\{'tagname': 'input',		'typename': 'title',		'list': [{'word': ' ','menu': 'ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚Ìƒ^ƒCƒgƒ‹'}]},
-				\{'tagname': 'jump',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'jump',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
+				\{'tagname': 'image',		'typename': 'opacity',		'list': [{'word': ' ','menu': 'ä¸é€æ˜åº¦ ( 0 (å…¨ãã®é€æ˜) ï½ 255 (å…¨ãã®ä¸é€æ˜ ) )'}]},
+				\{'tagname': 'image',		'typename': 'mapimage',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'image',		'typename': 'mapaction',		'list': [{'word': ' ','menu': 'é ˜åŸŸã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'image',		'typename': 'index',		'list': [{'word': ' ','menu': 'æ­£ã®æ•´æ•°'}]},
+				\{'tagname': 'input',		'typename': 'name',		'list': [{'word': ' ','menu': 'å¤‰æ•°å'}]},
+				\{'tagname': 'input',		'typename': 'prompt',		'list': [{'word': ' ','menu': 'ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã¨ã—ã¦è¡¨ç¤ºã™ã‚‹æ–‡å­—åˆ—'}]},
+				\{'tagname': 'input',		'typename': 'title',		'list': [{'word': ' ','menu': 'ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã®ã‚¿ã‚¤ãƒˆãƒ«'}]},
+				\{'tagname': 'jump',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'jump',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
 				\{'tagname': 'jump',		'typename': 'countpage',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'laycount',	'typename': 'layers',		'list': [{'word': ' ','menu': '0 ‚Ü‚½‚Í³‚Ì®”'}]},
-				\{'tagname': 'laycount',	'typename': 'messages',		'list': [{'word': ' ','menu': '³‚Ì®”'}]},
+				\{'tagname': 'laycount',	'typename': 'layers',		'list': [{'word': ' ','menu': '0 ã¾ãŸã¯æ­£ã®æ•´æ•°'}]},
+				\{'tagname': 'laycount',	'typename': 'messages',		'list': [{'word': ' ','menu': 'æ­£ã®æ•´æ•°'}]},
 				\{'tagname': 'layopt',		'typename': 'layer',		'list': [{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'layopt',		'typename': 'page',		'list': [{'word': 'fore','menu': 'default'},{'word': 'back'}]},
 				\{'tagname': 'layopt',		'typename': 'visible',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'layopt',		'typename': 'left',		'list': [{'word': ' ','menu': '¶’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'layopt',		'typename': 'top',		'list': [{'word': ' ','menu': 'ã’[ˆÊ’u(pixel’PˆÊ)'}]},
-				\{'tagname': 'layopt',		'typename': 'opacity',		'list': [{'word': ' ','menu': '•s“§–¾“x ( 0 (‘S‚­‚Ì“§–¾) ` 255 (‘S‚­‚Ì•s“§–¾ ) )'}]},
+				\{'tagname': 'layopt',		'typename': 'left',		'list': [{'word': ' ','menu': 'å·¦ç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'layopt',		'typename': 'top',		'list': [{'word': ' ','menu': 'ä¸Šç«¯ä½ç½®(pixelå˜ä½)'}]},
+				\{'tagname': 'layopt',		'typename': 'opacity',		'list': [{'word': ' ','menu': 'ä¸é€æ˜åº¦ ( 0 (å…¨ãã®é€æ˜) ï½ 255 (å…¨ãã®ä¸é€æ˜ ) )'}]},
 				\{'tagname': 'layopt',		'typename': 'autohide',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'layopt',		'typename': 'index',		'list': [{'word': ' ','menu': '³‚Ì®”'}]},
-				\{'tagname': 'link',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'link',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'link',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'link',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'link',		'typename': 'hint',		'list': [{'word': ' ','menu': 'ƒqƒ“ƒg‚Æ‚µ‚Ä•\¦‚³‚¹‚é•¶š—ñ'}]},
-				\{'tagname': 'link',		'typename': 'onenter',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'link',		'typename': 'onleave',		'list': [{'word': ' ','menu': 'TJS ®'}]},
+				\{'tagname': 'layopt',		'typename': 'index',		'list': [{'word': ' ','menu': 'æ­£ã®æ•´æ•°'}]},
+				\{'tagname': 'link',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'link',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'link',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'link',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'link',		'typename': 'hint',		'list': [{'word': ' ','menu': 'ãƒ’ãƒ³ãƒˆã¨ã—ã¦è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—åˆ—'}]},
+				\{'tagname': 'link',		'typename': 'onenter',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'link',		'typename': 'onleave',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
 				\{'tagname': 'link',		'typename': 'countpage',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'link',		'typename': 'clickse',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'link',		'typename': 'clicksebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'link',		'typename': 'enterse',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'link',		'typename': 'entersebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'link',		'typename': 'leavese',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'link',		'typename': 'leavesebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'load',		'typename': 'place',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”(0‚ªƒfƒtƒHƒ‹ƒg)'}]},
+				\{'tagname': 'link',		'typename': 'clickse',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'link',		'typename': 'clicksebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'link',		'typename': 'enterse',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'link',		'typename': 'entersebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'link',		'typename': 'leavese',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'link',		'typename': 'leavesebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'load',		'typename': 'place',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°(0ãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)'}]},
 				\{'tagname': 'load',		'typename': 'ask',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'loadplugin',	'typename': 'module',		'list': [{'word': ' ','menu': 'ƒvƒ‰ƒOƒCƒ“ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'locate',		'typename': 'x',		'list': [{'word': ' ','menu': '‰¡•ûŒüˆÊ’u (pixel’PˆÊ)'}]},
-				\{'tagname': 'locate',		'typename': 'y',		'list': [{'word': ' ','menu': 'c•ûŒüˆÊ’u (pixel’PˆÊ)'}]},
-				\{'tagname': 'macro',		'typename': 'name',		'list': [{'word': ' ','menu': 'ƒ^ƒO–¼'}]},
+				\{'tagname': 'loadplugin',	'typename': 'module',		'list': [{'word': ' ','menu': 'ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'locate',		'typename': 'x',		'list': [{'word': ' ','menu': 'æ¨ªæ–¹å‘ä½ç½® (pixelå˜ä½)'}]},
+				\{'tagname': 'locate',		'typename': 'y',		'list': [{'word': ' ','menu': 'ç¸¦æ–¹å‘ä½ç½® (pixelå˜ä½)'}]},
+				\{'tagname': 'macro',		'typename': 'name',		'list': [{'word': ' ','menu': 'ã‚¿ã‚°å'}]},
 				\{'tagname': 'mapaction',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'mapaction',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'mapaction',		'typename': 'storage',		'list': [{'word': ' ','menu': '—ÌˆæƒAƒNƒVƒ‡ƒ“’è‹`ƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'mapaction',		'typename': 'storage',		'list': [{'word': ' ','menu': 'é ˜åŸŸã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'mapdisable',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'mapdisable',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
 				\{'tagname': 'mapimage',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'mapimage',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'mapimage',		'typename': 'storage',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'mappfont',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'mapimage',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'mappfont',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'move',		'typename': 'layer',		'list': [{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'move',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
 				\{'tagname': 'move',		'typename': 'spline',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'move',		'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'move',		'typename': 'delay',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
+				\{'tagname': 'move',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'move',		'typename': 'delay',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
 				\{'tagname': 'move',		'typename': 'path',		'list': [{'word': '"(,,,)"','menu': '"(x1,y1,opacity1) (x2,y2,opacity2) ..."'}]},
-				\{'tagname': 'move',		'typename': 'accel',		'list': [{'word': ' ','menu': '-1 –¢–‚Ì”‚Ü‚½‚Í 0(ƒfƒtƒHƒ‹ƒg) ‚Ü‚½‚Í 1 ‚æ‚è‘å‚«‚¢”'}]},
+				\{'tagname': 'move',		'typename': 'accel',		'list': [{'word': ' ','menu': '-1 æœªæº€ã®æ•°ã¾ãŸã¯ 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ã¾ãŸã¯ 1 ã‚ˆã‚Šå¤§ãã„æ•°'}]},
 				\{'tagname': 'nextskip',		'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'openvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'openvideo',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'pausevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'pimage',		'typename': 'storage',		'list': [{'word': ' ','menu': '‰æ‘œƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'openvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'openvideo',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'pausevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'pimage',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'pimage',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'pimage',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'pimage',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
-				\{'tagname': 'pimage',		'typename': 'dx',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
-				\{'tagname': 'pimage',		'typename': 'dy',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
-				\{'tagname': 'pimage',		'typename': 'sx',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
-				\{'tagname': 'pimage',		'typename': 'sy',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
-				\{'tagname': 'pimage',		'typename': 'sw',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
-				\{'tagname': 'pimage',		'typename': 'sh',		'list': [{'word': ' ','menu': 'ƒsƒNƒZƒ‹’PˆÊ'}]},
+				\{'tagname': 'pimage',		'typename': 'key',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
+				\{'tagname': 'pimage',		'typename': 'dx',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
+				\{'tagname': 'pimage',		'typename': 'dy',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
+				\{'tagname': 'pimage',		'typename': 'sx',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
+				\{'tagname': 'pimage',		'typename': 'sy',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
+				\{'tagname': 'pimage',		'typename': 'sw',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
+				\{'tagname': 'pimage',		'typename': 'sh',		'list': [{'word': ' ','menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½'}]},
 				\{'tagname': 'pimage',		'typename': 'mode',		'list': [{'word': 'opaque'},{'word': 'copy'},{'word': 'pile','menu': 'default'}, {'word': 'alpha'},{'word': 'add'},{'word': 'sub'},{'word': 'mul'},{'word': 'dodge'},{'word': 'darken'},{'word': 'lighten'},{'word': 'screen'},{'word': 'psadd'},{'word': 'pssub'},{'word': 'psmul'},{'word': 'psscreen'},{'word': 'psoverlay'},{'word': 'pshlight'},{'word': 'psslight'},{'word': 'psdodge'},{'word': 'psdodge5'},{'word': 'psburn'},{'word': 'pslighten'},{'word': 'psdarken'},{'word': 'psdiff'},{'word': 'psdiff5'},{'word': 'psexcl'},]},
-				\{'tagname': 'pimage',		'typename': 'opacity',		'list': [{'word': ' ','menu': '•s“§–¾“x ( 0 (‘S‚­‚Ì“§–¾) ` 255 (‘S‚­‚Ì•s“§–¾ ) )'}]},
-				\{'tagname': 'playbgm',		'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'playbgm',		'typename': 'start',		'list': [{'word': ' ','menu': 'BGM ŠJnˆÊ’uw’è'}]},
+				\{'tagname': 'pimage',		'typename': 'opacity',		'list': [{'word': ' ','menu': 'ä¸é€æ˜åº¦ ( 0 (å…¨ãã®é€æ˜) ï½ 255 (å…¨ãã®ä¸é€æ˜ ) )'}]},
+				\{'tagname': 'playbgm',		'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'playbgm',		'typename': 'start',		'list': [{'word': ' ','menu': 'BGM é–‹å§‹ä½ç½®æŒ‡å®š'}]},
 				\{'tagname': 'playbgm',		'typename': 'loop',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'playse',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'playse',		'typename': 'storage',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'playse',		'typename': 'start',		'list': [{'word': ' ','menu': 'SE ŠJnˆÊ’uw’è'}]},
+				\{'tagname': 'playse',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'playse',		'typename': 'storage',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'playse',		'typename': 'start',		'list': [{'word': ' ','menu': 'SE é–‹å§‹ä½ç½®æŒ‡å®š'}]},
 				\{'tagname': 'playse',		'typename': 'loop',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'playvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'playvideo',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'playvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'playvideo',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'position',		'typename': 'layer',		'list': [{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'position',		'typename': 'page',		'list': [{'word': 'fore'},{'word': 'back'}]},
-				\{'tagname': 'position',		'typename': 'left',		'list': [{'word': ' ','menu': '¶’[ˆÊ’u ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'top',		'list': [{'word': ' ','menu': 'ã’[ˆÊ’u ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'width',		'list': [{'word': ' ','menu': '• ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'height',		'list': [{'word': ' ','menu': '‚‚³ ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ƒtƒŒ[ƒ€‰æ‘œ‚Ìƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'position',		'typename': 'framekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"'}]},
-				\{'tagname': 'position',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'position',		'typename': 'opacity',		'list': [{'word': ' ','menu': '•s“§–¾“x ( 0 ` 255 )'}]},
-				\{'tagname': 'position',		'typename': 'marginl',		'list': [{'word': ' ','menu': '¶—]”’ ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'margint',		'list': [{'word': ' ','menu': 'ã—]”’ ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'marginr',		'list': [{'word': ' ','menu': '‰E—]”’ ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'position',		'typename': 'marginb',		'list': [{'word': ' ','menu': '‰º—]”’ ( pixel ’PˆÊ )'}]},
+				\{'tagname': 'position',		'typename': 'left',		'list': [{'word': ' ','menu': 'å·¦ç«¯ä½ç½® ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'top',		'list': [{'word': ' ','menu': 'ä¸Šç«¯ä½ç½® ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'width',		'list': [{'word': ' ','menu': 'å¹… ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'height',		'list': [{'word': ' ','menu': 'é«˜ã• ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ãƒ•ãƒ¬ãƒ¼ãƒ ç”»åƒã®ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'position',		'typename': 'framekey',		'list': [{'word': 'adapt','menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"'}]},
+				\{'tagname': 'position',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'position',		'typename': 'opacity',		'list': [{'word': ' ','menu': 'ä¸é€æ˜åº¦ ( 0 ï½ 255 )'}]},
+				\{'tagname': 'position',		'typename': 'marginl',		'list': [{'word': ' ','menu': 'å·¦ä½™ç™½ ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'margint',		'list': [{'word': ' ','menu': 'ä¸Šä½™ç™½ ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'marginr',		'list': [{'word': ' ','menu': 'å³ä½™ç™½ ( pixel å˜ä½ )'}]},
+				\{'tagname': 'position',		'typename': 'marginb',		'list': [{'word': ' ','menu': 'ä¸‹ä½™ç™½ ( pixel å˜ä½ )'}]},
 				\{'tagname': 'position',		'typename': 'vertical',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'position',		'typename': 'draggable',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'position',		'typename': 'visible',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'preparevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
+				\{'tagname': 'preparevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
 				\{'tagname': 'ptext',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'ptext',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'ptext',		'typename': 'x',		'list': [{'word': ' ','menu': 'pixel’PˆÊ'}]},
-				\{'tagname': 'ptext',		'typename': 'y',		'list': [{'word': ' ','menu': 'pixel’PˆÊ'}]},
-				\{'tagname': 'ptext',		'typename': 'text',		'list': [{'word': ' ','menu': '•¶š—ñ'}]},
-				\{'tagname': 'ptext',		'typename': 'vertical',		'list': [{'word': ' ','menu': 'false(ƒfƒtƒHƒ‹ƒg) ‚Ü‚½‚Í true'}]},
-				\{'tagname': 'ptext',		'typename': 'angle',		'list': [{'word': ' ','menu': 'Šp“x‚Ì10”{'}]},
-				\{'tagname': 'ptext',		'typename': 'size',		'list': [{'word': ' ','menu': '•¶šƒTƒCƒY(pixel’PˆÊ)'}]},
-				\{'tagname': 'ptext',		'typename': 'face',		'list': [{'word': ' ','menu': 'ƒtƒHƒ“ƒg–¼'}]},
-				\{'tagname': 'ptext',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
+				\{'tagname': 'ptext',		'typename': 'x',		'list': [{'word': ' ','menu': 'pixelå˜ä½'}]},
+				\{'tagname': 'ptext',		'typename': 'y',		'list': [{'word': ' ','menu': 'pixelå˜ä½'}]},
+				\{'tagname': 'ptext',		'typename': 'text',		'list': [{'word': ' ','menu': 'æ–‡å­—åˆ—'}]},
+				\{'tagname': 'ptext',		'typename': 'vertical',		'list': [{'word': ' ','menu': 'false(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ã¾ãŸã¯ true'}]},
+				\{'tagname': 'ptext',		'typename': 'angle',		'list': [{'word': ' ','menu': 'è§’åº¦ã®10å€'}]},
+				\{'tagname': 'ptext',		'typename': 'size',		'list': [{'word': ' ','menu': 'æ–‡å­—ã‚µã‚¤ã‚º(pixelå˜ä½)'}]},
+				\{'tagname': 'ptext',		'typename': 'face',		'list': [{'word': ' ','menu': 'ãƒ•ã‚©ãƒ³ãƒˆå'}]},
+				\{'tagname': 'ptext',		'typename': 'color',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
 				\{'tagname': 'ptext',		'typename': 'italic',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'ptext',		'typename': 'shadow',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
 				\{'tagname': 'ptext',		'typename': 'edge',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'ptext',		'typename': 'edgecolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
-				\{'tagname': 'ptext',		'typename': 'shadowcolor',		'list': [{'word': ' ','menu': '0xRRGGBB Œ`®'}]},
+				\{'tagname': 'ptext',		'typename': 'edgecolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
+				\{'tagname': 'ptext',		'typename': 'shadowcolor',		'list': [{'word': ' ','menu': '0xRRGGBB å½¢å¼'}]},
 				\{'tagname': 'ptext',		'typename': 'bold',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'quake',		'typename': 'time',		'list': [{'word': ' ','menu': '•¶š”‚Ü‚½‚Í ms(ƒ~ƒŠ•b)'}]},
+				\{'tagname': 'quake',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ–‡å­—æ•°ã¾ãŸã¯ ms(ãƒŸãƒªç§’)'}]},
 				\{'tagname': 'quake',		'typename': 'timemode',		'list': [{'word': 'ms'},{'word': 'delay'}]},
-				\{'tagname': 'quake',		'typename': 'hmax',		'list': [{'word': ' ','menu': 'pixel ’PˆÊ'}]},
-				\{'tagname': 'quake',		'typename': 'vmax',		'list': [{'word': ' ','menu': 'pixel ’PˆÊ'}]},
+				\{'tagname': 'quake',		'typename': 'hmax',		'list': [{'word': ' ','menu': 'pixel å˜ä½'}]},
+				\{'tagname': 'quake',		'typename': 'vmax',		'list': [{'word': ' ','menu': 'pixel å˜ä½'}]},
 				\{'tagname': 'r',		'typename': 'eol',		'list': [{'word': ' ','menu': 'true'}]},
 				\{'tagname': 'rclick',		'typename': 'call',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'rclick',		'typename': 'jump',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'rclick',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹'}]},
-				\{'tagname': 'rclick',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒtƒ@ƒCƒ‹'}]},
+				\{'tagname': 'rclick',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«'}]},
+				\{'tagname': 'rclick',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ãƒ•ã‚¡ã‚¤ãƒ«'}]},
 				\{'tagname': 'rclick',		'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'rclick',		'typename': 'name',		'list': [{'word': ' ','menu': 'ƒƒjƒ…[€–Ú–¼‚Ü‚½‚Í "default"'}]},
-				\{'tagname': 'resumevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'return',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'return',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
+				\{'tagname': 'rclick',		'typename': 'name',		'list': [{'word': ' ','menu': 'ãƒ¡ãƒ‹ãƒ¥ãƒ¼é …ç›®åã¾ãŸã¯ "default"'}]},
+				\{'tagname': 'resumevideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'return',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'return',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
 				\{'tagname': 'return',		'typename': 'countpage',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'rewindvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'ruby',		'typename': 'text',		'list': [{'word': ' ','menu': 'ƒ‹ƒr‚Æ‚µ‚Ä•\¦‚³‚ê‚é•¶š'}]},
-				\{'tagname': 'save',		'typename': 'place',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”(0‚ªƒfƒtƒHƒ‹ƒg)'}]},
+				\{'tagname': 'rewindvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'ruby',		'typename': 'text',		'list': [{'word': ' ','menu': 'ãƒ«ãƒ“ã¨ã—ã¦è¡¨ç¤ºã•ã‚Œã‚‹æ–‡å­—'}]},
+				\{'tagname': 'save',		'typename': 'place',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°(0ãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)'}]},
 				\{'tagname': 'save',		'typename': 'ask',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'seopt',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'seopt',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'seopt',		'typename': 'gvolume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'seopt',		'typename': 'pan',		'list': [{'word': ' ','menu': 'ƒpƒ“ (-100`0`100)'}]},
-				\{'tagname': 'setbgmlabel',		'typename': 'name',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'setbgmlabel',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'setbgmlabel',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'setbgmlabel',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'setbgmstop',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'setbgmstop',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'setbgmstop',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'startanchor',		'typename': 'enabled',		'list': [{'word': ' ','menu': '"true"(ƒfƒtƒHƒ‹ƒg) ‚Ü‚½‚Í "false"'}]},
-				\{'tagname': 'stopse',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
-				\{'tagname': 'stopvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
+				\{'tagname': 'seopt',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'seopt',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'seopt',		'typename': 'gvolume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'seopt',		'typename': 'pan',		'list': [{'word': ' ','menu': 'ãƒ‘ãƒ³ (-100ï½0ï½100)'}]},
+				\{'tagname': 'setbgmlabel',		'typename': 'name',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'setbgmlabel',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'setbgmlabel',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'setbgmlabel',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'setbgmstop',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'setbgmstop',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'setbgmstop',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'startanchor',		'typename': 'enabled',		'list': [{'word': ' ','menu': '"true"(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ã¾ãŸã¯ "false"'}]},
+				\{'tagname': 'stopse',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
+				\{'tagname': 'stopvideo',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
 				\{'tagname': 'store',		'typename': 'enabled',		'list': [{'word': 'true'},{'word': 'false'}]},
 				\{'tagname': 'style',		'typename': 'align',		'list': [{'word': 'left'},{'word': 'top'},{'word': 'center'},{'word': 'right'},{'word': 'bottom'},{'word': 'default'}]},
-				\{'tagname': 'style',		'typename': 'linespacing',		'list': [{'word': ' ','menu': 'sŠÔ (pixel’PˆÊ)'}]},
-				\{'tagname': 'style',		'typename': 'pitch',		'list': [{'word': ' ','menu': 'šŠÔƒIƒtƒZƒbƒg(pixel’PˆÊ)'}]},
-				\{'tagname': 'style',		'typename': 'linesize',		'list': [{'word': ' ','menu': '—\–ñƒTƒCƒY(pixel’PˆÊ) ‚Ü‚½‚Í "default"'}]},
+				\{'tagname': 'style',		'typename': 'linespacing',		'list': [{'word': ' ','menu': 'è¡Œé–“ (pixelå˜ä½)'}]},
+				\{'tagname': 'style',		'typename': 'pitch',		'list': [{'word': ' ','menu': 'å­—é–“ã‚ªãƒ•ã‚»ãƒƒãƒˆ(pixelå˜ä½)'}]},
+				\{'tagname': 'style',		'typename': 'linesize',		'list': [{'word': ' ','menu': 'äºˆç´„ã‚µã‚¤ã‚º(pixelå˜ä½) ã¾ãŸã¯ "default"'}]},
 				\{'tagname': 'style',		'typename': 'autoreturn',		'list': [{'word': 'true'},{'word': 'false'},{'word': 'default'}]},
-				\{'tagname': 'tempload',		'typename': 'place',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”(0‚ªƒfƒtƒHƒ‹ƒg)'}]},
+				\{'tagname': 'tempload',		'typename': 'place',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°(0ãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)'}]},
 				\{'tagname': 'tempload',		'typename': 'se',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
 				\{'tagname': 'tempload',		'typename': 'bgm',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
 				\{'tagname': 'tempload',		'typename': 'backlay',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'tempsave',		'typename': 'place',		'list': [{'word': ' ','menu': '0‚Ü‚½‚Í³‚Ì®”(0‚ªƒfƒtƒHƒ‹ƒg)'}]},
-				\{'tagname': 'timeout',		'typename': 'time',		'list': [{'word': ' ','menu': 'ƒ^ƒCƒ€ƒAƒEƒgŠÔ'}]},
-				\{'tagname': 'timeout',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'timeout',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'timeout',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'timeout',		'typename': 'se',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'timeout',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
-				\{'tagname': 'title',		'typename': 'name',		'list': [{'word': ' ','menu': 'ƒ^ƒCƒgƒ‹'}]},
-				\{'tagname': 'trace',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
+				\{'tagname': 'tempsave',		'typename': 'place',		'list': [{'word': ' ','menu': '0ã¾ãŸã¯æ­£ã®æ•´æ•°(0ãŒãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)'}]},
+				\{'tagname': 'timeout',		'typename': 'time',		'list': [{'word': ' ','menu': 'ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆæ™‚é–“'}]},
+				\{'tagname': 'timeout',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'timeout',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'timeout',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'timeout',		'typename': 'se',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'timeout',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
+				\{'tagname': 'title',		'typename': 'name',		'list': [{'word': ' ','menu': 'ã‚¿ã‚¤ãƒˆãƒ«'}]},
+				\{'tagname': 'trace',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
 				\{'tagname': 'trans',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'},{'word': 'message0'},{'word': 'message1'},{'word': 'message'}]},
 				\{'tagname': 'trans',		'typename': 'children',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'trans',		'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ms’PˆÊ)'}]},
+				\{'tagname': 'trans',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(mså˜ä½)'}]},
 				\{'tagname': 'trans',		'typename': 'method',		'list': [{'word': 'scroll'},{'word': 'universal','menu': 'default'},{'word': 'crossfade'}]},
-				\{'tagname': 'trans',		'typename': 'rule',		'list': [{'word': ' ','menu': 'ƒ‹[ƒ‹‰æ‘œ–¼'}]},
-				\{'tagname': 'trans',		'typename': 'vague',		'list': [{'word': ' ','menu': '‚ ‚¢‚Ü‚¢—Ìˆæ’l (0`)'}]},
+				\{'tagname': 'trans',		'typename': 'rule',		'list': [{'word': ' ','menu': 'ãƒ«ãƒ¼ãƒ«ç”»åƒå'}]},
+				\{'tagname': 'trans',		'typename': 'vague',		'list': [{'word': ' ','menu': 'ã‚ã„ã¾ã„é ˜åŸŸå€¤ (0ï½)'}]},
 				\{'tagname': 'trans',		'typename': 'from',		'list': [{'word': 'top'},{'word': 'bottom'},{'word': 'left'},{'word': 'right'}]},
 				\{'tagname': 'trans',		'typename': 'stay',		'list': [{'word': 'stay'},{'word': 'stayback'},{'word': 'nostay','menu': 'default'}]},
-				\{'tagname': 'video',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
+				\{'tagname': 'video',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
 				\{'tagname': 'video',		'typename': 'visible',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'video',		'typename': 'left',		'list': [{'word': ' ','menu': '¶’[ˆÊ’u ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'video',		'typename': 'top',		'list': [{'word': ' ','menu': 'ã’[ˆÊ’u ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'video',		'typename': 'width',		'list': [{'word': ' ','menu': '• ( pixel ’PˆÊ )'}]},
-				\{'tagname': 'video',		'typename': 'height',		'list': [{'word': ' ','menu': '‚‚³ ( pixel ’PˆÊ )'}]},
+				\{'tagname': 'video',		'typename': 'left',		'list': [{'word': ' ','menu': 'å·¦ç«¯ä½ç½® ( pixel å˜ä½ )'}]},
+				\{'tagname': 'video',		'typename': 'top',		'list': [{'word': ' ','menu': 'ä¸Šç«¯ä½ç½® ( pixel å˜ä½ )'}]},
+				\{'tagname': 'video',		'typename': 'width',		'list': [{'word': ' ','menu': 'å¹… ( pixel å˜ä½ )'}]},
+				\{'tagname': 'video',		'typename': 'height',		'list': [{'word': ' ','menu': 'é«˜ã• ( pixel å˜ä½ )'}]},
 				\{'tagname': 'video',		'typename': 'loop',		'list': [{'word': 'true'},{'word': 'false'}]},
-				\{'tagname': 'video',		'typename': 'position',		'list': [{'word': ' ','menu': 'ŠÔ ( ms ’PˆÊ )'}]},
-				\{'tagname': 'video',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ƒtƒŒ[ƒ€”Ô†'}]},
+				\{'tagname': 'video',		'typename': 'position',		'list': [{'word': ' ','menu': 'æ™‚é–“ ( ms å˜ä½ )'}]},
+				\{'tagname': 'video',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ãƒ•ãƒ¬ãƒ¼ãƒ ç•ªå·'}]},
 				\{'tagname': 'video',		'typename': 'mode',		'list': [{'word': 'overlay'},{'word': 'layer'}]},
-				\{'tagname': 'video',		'typename': 'playrate',		'list': [{'word': ' ','menu': 'Ä¶‘¬“x(0.0‚æ‚è‘å‚«‚¢’l)'}]},
-				\{'tagname': 'video',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
-				\{'tagname': 'video',		'typename': 'pan',		'list': [{'word': ' ','menu': 'ƒpƒ“ (-100`0`100)'}]},
-				\{'tagname': 'video',		'typename': 'audiostreamnum',		'list': [{'word': ' ','menu': '‰¹ºƒXƒgƒŠ[ƒ€”Ô†(0`)'}]},
-				\{'tagname': 'videoevent',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'videoevent',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ƒtƒŒ[ƒ€”Ô†'}]},
-				\{'tagname': 'videolayer',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'videolayer',		'typename': 'channel',		'list': [{'word': ' ','menu': '1 ‚Ü‚½‚Í 2'}]},
+				\{'tagname': 'video',		'typename': 'playrate',		'list': [{'word': ' ','menu': 'å†ç”Ÿé€Ÿåº¦(0.0ã‚ˆã‚Šå¤§ãã„å€¤)'}]},
+				\{'tagname': 'video',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
+				\{'tagname': 'video',		'typename': 'pan',		'list': [{'word': ' ','menu': 'ãƒ‘ãƒ³ (-100ï½0ï½100)'}]},
+				\{'tagname': 'video',		'typename': 'audiostreamnum',		'list': [{'word': ' ','menu': 'éŸ³å£°ã‚¹ãƒˆãƒªãƒ¼ãƒ ç•ªå·(0ï½)'}]},
+				\{'tagname': 'videoevent',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'videoevent',		'typename': 'frame',		'list': [{'word': ' ','menu': 'ãƒ•ãƒ¬ãƒ¼ãƒ ç•ªå·'}]},
+				\{'tagname': 'videolayer',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'videolayer',		'typename': 'channel',		'list': [{'word': ' ','menu': '1 ã¾ãŸã¯ 2'}]},
 				\{'tagname': 'videolayer',		'typename': 'page',		'list': [{'word': 'fore'},{'word': 'back'}]},
-				\{'tagname': 'videolayer',		'typename': 'layer',		'list': [{'word': ' ','menu': 'ƒŒƒCƒ„”Ô†(0`)'}]},
-				\{'tagname': 'videosegloop',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'videosegloop',		'typename': 'start',		'list': [{'word': ' ','menu': 'ƒtƒŒ[ƒ€”Ô†'}]},
-				\{'tagname': 'videosegloop',		'typename': 'end',		'list': [{'word': ' ','menu': 'ƒtƒŒ[ƒ€”Ô†'}]},
+				\{'tagname': 'videolayer',		'typename': 'layer',		'list': [{'word': ' ','menu': 'ãƒ¬ã‚¤ãƒ¤ç•ªå·(0ï½)'}]},
+				\{'tagname': 'videosegloop',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'videosegloop',		'typename': 'start',		'list': [{'word': ' ','menu': 'ãƒ•ãƒ¬ãƒ¼ãƒ ç•ªå·'}]},
+				\{'tagname': 'videosegloop',		'typename': 'end',		'list': [{'word': ' ','menu': 'ãƒ•ãƒ¬ãƒ¼ãƒ ç•ªå·'}]},
 				\{'tagname': 'wa',		'typename': 'layer',		'list': [{'word': 'base'},{'word': '0'},{'word': '1'},{'word': '2'}]},
 				\{'tagname': 'wa',		'typename': 'page',		'list': [{'word': 'back'},{'word': 'fore'}]},
-				\{'tagname': 'wa',		'typename': 'seg',		'list': [{'word': ' ','menu': '0 ‚Ü‚½‚Í³‚Ì®”'}]},
-				\{'tagname': 'wait',		'typename': 'time',		'list': [{'word': ' ','menu': 'ŠÔ(ƒ~ƒŠ•b)'}]},
+				\{'tagname': 'wa',		'typename': 'seg',		'list': [{'word': ' ','menu': '0 ã¾ãŸã¯æ­£ã®æ•´æ•°'}]},
+				\{'tagname': 'wait',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ™‚é–“(ãƒŸãƒªç§’)'}]},
 				\{'tagname': 'wait',		'typename': 'mode',		'list': [{'word': 'normal','menu': 'default'},{'word': 'until'}]},
 				\{'tagname': 'wait',		'typename': 'canskip',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'waittrig',		'typename': 'name',		'list': [{'word': ' ','menu': 'ƒgƒŠƒK–¼'}]},
+				\{'tagname': 'waittrig',		'typename': 'name',		'list': [{'word': ' ','menu': 'ãƒˆãƒªã‚¬å'}]},
 				\{'tagname': 'waittrig',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'waittrig',		'typename': 'onskip',		'list': [{'word': ' ','menu': 'TJS®'}]},
+				\{'tagname': 'waittrig',		'typename': 'onskip',		'list': [{'word': ' ','menu': 'TJSå¼'}]},
 				\{'tagname': 'wb',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'wc',		'typename': 'time',		'list': [{'word': ' ','menu': '•¶š”'}]},
-				\{'tagname': 'wf',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
+				\{'tagname': 'wc',		'typename': 'time',		'list': [{'word': ' ','menu': 'æ–‡å­—æ•°'}]},
+				\{'tagname': 'wf',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
 				\{'tagname': 'wf',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'wheel',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'wheel',		'typename': 'target',		'list': [{'word': ' ','menu': 'ƒ‰ƒxƒ‹–¼'}]},
-				\{'tagname': 'wheel',		'typename': 'func',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'wheel',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS ®'}]},
-				\{'tagname': 'wheel',		'typename': 'se',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼'}]},
-				\{'tagname': 'wheel',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†'}]},
+				\{'tagname': 'wheel',		'typename': 'storage',		'list': [{'word': ' ','menu': 'ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'wheel',		'typename': 'target',		'list': [{'word': ' ','menu': 'ãƒ©ãƒ™ãƒ«å'}]},
+				\{'tagname': 'wheel',		'typename': 'func',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'wheel',		'typename': 'exp',		'list': [{'word': ' ','menu': 'TJS å¼'}]},
+				\{'tagname': 'wheel',		'typename': 'se',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
+				\{'tagname': 'wheel',		'typename': 'sebuf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·'}]},
 				\{'tagname': 'wl',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'wm',		'typename': 'canskip',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'wp',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
-				\{'tagname': 'wp',		'typename': 'for',		'list': [{'word': ' ','menu': '"loop","period","prepare","segLoop"‚Ì‚¢‚¸‚ê‚©'}]},
+				\{'tagname': 'wp',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
+				\{'tagname': 'wp',		'typename': 'for',		'list': [{'word': ' ','menu': '"loop","period","prepare","segLoop"ã®ã„ãšã‚Œã‹'}]},
 				\{'tagname': 'wq',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'ws',		'typename': 'buf',		'list': [{'word': ' ','menu': 'Œø‰Ê‰¹ƒoƒbƒtƒ@”Ô†( 0(ƒfƒtƒHƒ‹ƒg) ` )'}]},
+				\{'tagname': 'ws',		'typename': 'buf',		'list': [{'word': ' ','menu': 'åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ç•ªå·( 0(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ) ï½ )'}]},
 				\{'tagname': 'ws',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
 				\{'tagname': 'wt',		'typename': 'canskip',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'wv',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)'}]},
+				\{'tagname': 'wv',		'typename': 'slot',		'list': [{'word': ' ','menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)'}]},
 				\{'tagname': 'wv',		'typename': 'canskip',		'list': [{'word': 'true'},{'word': 'false','menu': 'default'}]},
-				\{'tagname': 'xchgbgm',		'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ƒtƒ@ƒCƒ‹–¼'}]},
+				\{'tagname': 'xchgbgm',		'typename': 'storage',		'list': [{'word': ' ','menu': 'BGM ãƒ•ã‚¡ã‚¤ãƒ«å'}]},
 				\{'tagname': 'xchgbgm',		'typename': 'loop',		'list': [{'word': 'true','menu': 'default'},{'word': 'false'}]},
-				\{'tagname': 'xchgbgm',		'typename': 'time',		'list': [{'word': ' ','menu': 'ƒtƒF[ƒh‚ğs‚Á‚Ä‚¢‚éŠÔ (ms’PˆÊ)'}]},
-				\{'tagname': 'xchgbgm',		'typename': 'overlap',		'list': [{'word': ' ','menu': 'ƒI[ƒo[ƒ‰ƒbƒv‚ğs‚¤ŠÔ(ms’PˆÊ)'}]},
-				\{'tagname': 'xchgbgm',		'typename': 'volume',		'list': [{'word': ' ','menu': '‰¹—Ê% (0`100)'}]},
+				\{'tagname': 'xchgbgm',		'typename': 'time',		'list': [{'word': ' ','menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ (mså˜ä½)'}]},
+				\{'tagname': 'xchgbgm',		'typename': 'overlap',		'list': [{'word': ' ','menu': 'ã‚ªãƒ¼ãƒãƒ¼ãƒ©ãƒƒãƒ—ã‚’è¡Œã†æ™‚é–“(mså˜ä½)'}]},
+				\{'tagname': 'xchgbgm',		'typename': 'volume',		'list': [{'word': ' ','menu': 'éŸ³é‡% (0ï½100)'}]},
 				\] "}}}
 		let s:type_list = g:kirikiri_neocomplcache_list + s:type_list
 endfunction
@@ -429,16 +429,16 @@ function! s:source.get_keyword_pos(cur_text) "{{{
   if neocomplcache#within_comment()
     return -1
   endif
-	if a:cur_text =~ '=\([^&%*_a-z0-9"]\|$\)' " ‘®«’l‚Ì•âŠ®
+	if a:cur_text =~ '=\([^&%*_a-z0-9"]\|$\)' " å±æ€§å€¤ã®è£œå®Œ
 		for l:file in s:type_list
 			if a:cur_text =~ '\['.l:file.tagname.' [^]]*'.l:file.typename.'=\([^&%*_a-z0-9"]\|$\)\|^\s*@'.l:file.tagname.' .*'.l:file.typename.'=\([^&%*_a-z0-9"]\|$\)'
 					return matchend(a:cur_text, '^\s*@.*'.l:file.typename.'=\|\[.*'.l:file.typename.'=')
 			endif
 		endfor
 	endif
-	if a:cur_text =~ '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)' " ƒ^ƒO‚Ì•âŠ®
+	if a:cur_text =~ '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)' " ã‚¿ã‚°ã®è£œå®Œ
     return matchend(a:cur_text, '^\s*@\([^a-z]\|$\)\|\[\([^a-z]\|$\)')
-	elseif a:cur_text =~ '^\s*@.* \|\[.* ' " ‘®«–¼‚Ì•âŠ®
+	elseif a:cur_text =~ '^\s*@.* \|\[.* ' " å±æ€§åã®è£œå®Œ
     return matchend(a:cur_text, '^\s*@.* \|\[.* ')
   endif
 endfunction "}}}
@@ -453,174 +453,174 @@ function! s:source.get_complete_words(cur_keyword_pos, cur_keyword_str) "{{{
 				call add(l:list,{'word': l:macro.tag,'menu': l:macro.menu})
 			endfor
 		endif
-   call add(l:list,{'word': 'autowc',		'menu': '©“®ƒEƒFƒCƒg'})
-   call add(l:list,{'word': 'clearsysvar',		'menu': 'ƒVƒXƒeƒ€•Ï”‚Ì‘SÁ‹'})
-   call add(l:list,{'word': 'clickskip',		'menu': 'ƒNƒŠƒbƒNƒXƒLƒbƒv‚Ìİ’è'})
-   call add(l:list,{'word': 'close',		'menu': 'ƒEƒBƒ“ƒhƒE‚ğ•Â‚¶‚é'})
-   call add(l:list,{'word': 'cursor',		'menu': 'ƒ}ƒEƒXƒJ[ƒ\ƒ‹‚Ì•ÏX'})
-   call add(l:list,{'word': 'hidemessage',		'menu': 'ƒƒbƒZ[ƒW‚ğÁ‚·'})
-   call add(l:list,{'word': 'loadplugin',		'menu': 'ƒvƒ‰ƒOƒCƒ“‚Ì“Ç‚İ‚İ'})
-   call add(l:list,{'word': 'mappfont',		'menu': 'ƒŒƒ“ƒ_ƒŠƒ“ƒOÏ‚İƒtƒHƒ“ƒg‚ÌŠ„‚è“–‚Ä'})
-   call add(l:list,{'word': 'nextskip',		'menu': 'uŸ‚Ì‘I‘ğˆ‚Ü‚Å‚·‚·‚Şv‚Ìİ’è'})
-   call add(l:list,{'word': 'quake',		'menu': '‰æ–Ê‚ğ—h‚ç‚·'})
-   call add(l:list,{'word': 'rclick',		'menu': '‰EƒNƒŠƒbƒN‚Ìİ’è'})
-   call add(l:list,{'word': 'resetwait',		'menu': 'ƒEƒFƒCƒg‚Ì‰Šú‰»'})
-   call add(l:list,{'word': 's',			'menu': '’â~‚·‚é'})
-   call add(l:list,{'word': 'stopquake',		'menu': '‰æ–Ê—h‚ç‚µ‚Ì’â~'})
-   call add(l:list,{'word': 'title',		'menu': 'ƒ^ƒCƒgƒ‹w’è'})
-   call add(l:list,{'word': 'wait',		'menu': 'ƒEƒFƒCƒg‚ğ“ü‚ê‚é'})
-   call add(l:list,{'word': 'waitclick',		'menu': 'ƒNƒŠƒbƒN‚ğ‘Ò‚Â'})
-   call add(l:list,{'word': 'wc',			'menu': '•¶š”•ª‚ÌƒEƒFƒCƒg‚ğ“ü‚ê‚é'})
-   call add(l:list,{'word': 'wq',			'menu': '‰æ–Ê—h‚ç‚µ‚ÌI—¹‘Ò‚¿'})
-  " ƒtƒH[ƒ€‘€ì
-   call add(l:list,{'word': 'checkbox',		'menu': 'ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ìì¬'})
-   call add(l:list,{'word': 'commit',		'menu': 'ƒtƒH[ƒ€“à—e‚ÌŠm’è'})
-   call add(l:list,{'word': 'edit',		'menu': '’PˆêsƒGƒfƒBƒbƒg‚Ìì¬'})
-  " ƒ}ƒNƒ‘€ì
-   call add(l:list,{'word': 'endmacro',		'menu': 'ƒ}ƒNƒ‚Ì‹Lq(‚ÌI—¹)'})
-   call add(l:list,{'word': 'erasemacro',		'menu': 'ƒ}ƒNƒ‚ÌÁ‹'})
-   call add(l:list,{'word': 'macro',		'menu': 'ƒ}ƒNƒ‚Ì‹Lq'})
-  " ƒƒbƒZ[ƒW‘€ì
-   call add(l:list,{'word': 'cancelautomode',	'menu': 'u©“®“I‚É“Ç‚İi‚Şv‚Ì‰ğœ'})
-   call add(l:list,{'word': 'cancelskip',		'menu': 'ƒXƒLƒbƒv‚Ì‰ğœ'})
-   call add(l:list,{'word': 'ch',			'menu': '•¶š‚ğ•\¦‚·‚é'})
-   call add(l:list,{'word': 'cm',			'menu': '‚·‚×‚Ä‚ÌƒƒbƒZ[ƒWƒŒƒCƒ„‚ÌƒNƒŠƒA'})
-   call add(l:list,{'word': 'ct',			'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚ÌƒŠƒZƒbƒg'})
-   call add(l:list,{'word': 'current',		'menu': '‘€ì‘ÎÛ‚ÌƒƒbƒZ[ƒWƒŒƒCƒ„‚Ìw’è'})
-   call add(l:list,{'word': 'deffont',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ì•¶š‘®«İ’è'})
-   call add(l:list,{'word': 'defstyle',		'menu': 'ƒfƒtƒHƒ‹ƒg‚ÌƒXƒ^ƒCƒ‹‚Ìİ’è'})
-   call add(l:list,{'word': 'delay',		'menu': '•¶š‚Ì•\¦‘¬“x‚Ìİ’è'})
-   call add(l:list,{'word': 'endindent',		'menu': 'ƒCƒ“ƒfƒ“ƒg‚Ì‰ğœ'})
-   call add(l:list,{'word': 'endnowait',		'menu': '•¶š•\¦ƒm[ƒEƒFƒCƒg(‚ÌI—¹)'})
-   call add(l:list,{'word': 'er',			'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì•¶š‚ÌÁ‹'})
-   call add(l:list,{'word': 'font',		'menu': '•¶š‘®«İ’è'})
-   call add(l:list,{'word': 'glyph',		'menu': 'ƒNƒŠƒbƒN‘Ò‚¿‹L†‚Ìw’è'})
-   call add(l:list,{'word': 'graph',		'menu': 'ƒCƒ“ƒ‰ƒCƒ“‰æ‘œ•\¦'})
-   call add(l:list,{'word': 'hch',			'menu': 'c’†‰¡‚ğ•\¦‚·‚é'})
-   call add(l:list,{'word': 'indent',		'menu': 'ƒCƒ“ƒfƒ“ƒg‚Ìİ’è'})
-   call add(l:list,{'word': 'l',			'menu': 's––ƒNƒŠƒbƒN‘Ò‚¿'})
-   call add(l:list,{'word': 'locate',		'menu': '•¶š•\¦ˆÊ’u‚Ìw’è'})
-   call add(l:list,{'word': 'locklink',		'menu': 'ƒŠƒ“ƒN‚ÌƒƒbƒN'})
-   call add(l:list,{'word': 'nowait',		'menu': '•¶š•\¦ƒm[ƒEƒFƒCƒg'})
-   call add(l:list,{'word': 'p',			'menu': '‰üƒy[ƒWƒNƒŠƒbƒN‘Ò‚¿'})
-   call add(l:list,{'word': 'position',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì‘®«'})
-   call add(l:list,{'word': 'r',			'menu': '‰üs‚·‚é'})
-   call add(l:list,{'word': 'resetfont',		'menu': '•¶š‘®«‚ğƒfƒtƒHƒ‹ƒg‚É–ß‚·'})
-   call add(l:list,{'word': 'resetstyle',		'menu': 'ƒXƒ^ƒCƒ‹‚ğƒfƒtƒHƒ‹ƒg‚É–ß‚·'})
-   call add(l:list,{'word': 'ruby',		'menu': 'ƒ‹ƒrw’è'})
-   call add(l:list,{'word': 'style',		'menu': 'ƒXƒ^ƒCƒ‹‚Ìİ’è'})
-   call add(l:list,{'word': 'unlocklink',		'menu': 'ƒŠƒ“ƒN‚ÌƒƒbƒN‚Ì‰ğœ'})
-  " ƒƒbƒZ[ƒW—š—ğ‘€ì
-   call add(l:list,{'word': 'endhact',		'menu': 'ƒƒbƒZ[ƒW—š—ğƒAƒNƒVƒ‡ƒ“‚ÌI—¹'})
-   call add(l:list,{'word': 'hact',		'menu': 'ƒƒbƒZ[ƒW—š—ğƒAƒNƒVƒ‡ƒ“'})
-   call add(l:list,{'word': 'history',		'menu': 'ƒƒbƒZ[ƒW—š—ğ‚Ìİ’è'})
-   call add(l:list,{'word': 'hr',			'menu': 'ƒƒbƒZ[ƒW—š—ğ‚Ì‰üs/‰üƒy[ƒW'})
-   call add(l:list,{'word': 'showhistory',		'menu': 'ƒƒbƒZ[ƒW—š—ğ‚Ì•\¦'})
-  " ƒ‰ƒxƒ‹EƒWƒƒƒ“ƒv‘€ì
-   call add(l:list,{'word': 'button',		'menu': 'ƒOƒ‰ƒtƒBƒJƒ‹ƒ{ƒ^ƒ“'})
-   call add(l:list,{'word': 'call',		'menu': 'ƒTƒuƒ‹[ƒ`ƒ“‚ÌŒÄ‚Ño‚µ'})
-   call add(l:list,{'word': 'cclick',		'menu': 'ƒNƒŠƒbƒN‘Ò‚¿‰ğœ'})
-   call add(l:list,{'word': 'click',		'menu': 'ƒNƒŠƒbƒN‘Ò‚¿ƒWƒƒƒ“ƒv'})
-   call add(l:list,{'word': 'ctimeout',		'menu': 'ƒ^ƒCƒ€ƒAƒEƒg‘Ò‚¿‰ğœ'})
-   call add(l:list,{'word': 'cwheel',		'menu': 'ƒzƒC[ƒ‹‘Ò‚¿‰ğœ'})
-   call add(l:list,{'word': 'endlink',		'menu': 'ƒnƒCƒp[ƒŠƒ“ƒN(‚ÌI—¹)'})
-   call add(l:list,{'word': 'jump',		'menu': 'ƒVƒiƒŠƒI‚ÌƒWƒƒƒ“ƒv'})
-   call add(l:list,{'word': 'link',		'menu': 'ƒnƒCƒp[ƒŠƒ“ƒN'})
-   call add(l:list,{'word': 'return',		'menu': 'ƒTƒuƒ‹[ƒ`ƒ“‚©‚ç–ß‚é'})
-   call add(l:list,{'word': 'timeout',		'menu': 'ƒ^ƒCƒ€ƒAƒEƒg‘Ò‚¿ƒWƒƒƒ“ƒv'})
-   call add(l:list,{'word': 'wheel',		'menu': 'ƒzƒC[ƒ‹‘Ò‚¿ƒWƒƒƒ“ƒv'})
-  " ƒŒƒCƒ„‘€ì
-   call add(l:list,{'word': 'animstart',		'menu': 'ƒAƒjƒ[ƒVƒ‡ƒ“‚ÌŠJn'})
-   call add(l:list,{'word': 'animstop',		'menu': 'ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì’â~'})
-   call add(l:list,{'word': 'backlay',		'menu': 'ƒŒƒCƒ„î•ñ‚Ì•\ƒy[ƒW‚©‚ç— ƒy[ƒW‚Ö‚ÌƒRƒs['})
-   call add(l:list,{'word': 'copylay',		'menu': 'ƒŒƒCƒ„î•ñ‚ÌƒRƒs['})
-   call add(l:list,{'word': 'freeimage',		'menu': 'ƒŒƒCƒ„‰æ‘œ‚Ì‰ğ•ú'})
-   call add(l:list,{'word': 'image',		'menu': '‰æ‘œ‚Ì“Ç‚İ‚İ'})
-   call add(l:list,{'word': 'laycount',		'menu': 'ƒŒƒCƒ„‚Ì”‚Ì•ÏX'})
-   call add(l:list,{'word': 'layopt',		'menu': 'ƒŒƒCƒ„‚Ì‘®«'})
-   call add(l:list,{'word': 'mapaction',		'menu': 'ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv—p—ÌˆæƒAƒNƒVƒ‡ƒ“’è‹`ƒtƒ@ƒCƒ‹‚Ìw’è'})
-   call add(l:list,{'word': 'mapdisable',		'menu': 'ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv‚Ì–³Œø‰»'})
-   call add(l:list,{'word': 'mapimage',		'menu': 'ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv—p—Ìˆæ‰æ‘œ‚Ìw’è'})
-   call add(l:list,{'word': 'move',		'menu': 'ƒŒƒCƒ„‚Ì©“®ˆÚ“®'})
-   call add(l:list,{'word': 'pimage',		'menu': '‰æ‘œ‚Ì•”•ª’Ç‰Á“Ç‚İ‚İ'})
-   call add(l:list,{'word': 'ptext',		'menu': 'ƒŒƒCƒ„‚Ö‚Ì•¶š•`‰æ'})
-   call add(l:list,{'word': 'stopmove',		'menu': 'ƒŒƒCƒ„‚Ì©“®ˆÚ“®‚Ì’â~'})
-   call add(l:list,{'word': 'stoptrans',		'menu': 'ƒŒƒCƒ„‚Ìƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚Ì’â~'})
-   call add(l:list,{'word': 'trans',		'menu': 'ƒŒƒCƒ„‚Ìƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“'})
-   call add(l:list,{'word': 'wa',			'menu': 'ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì’â~‘Ò‚¿'})
-   call add(l:list,{'word': 'wm',			'menu': '©“®ˆÚ“®‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'wt',			'menu': 'ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚ÌI—¹‘Ò‚¿'})
-  " Œø‰Ê‰¹EBGMEƒrƒfƒI‘€ì
-   call add(l:list,{'word': 'bgmopt',		'menu': 'BGM ‚Ìİ’è'})
-   call add(l:list,{'word': 'cancelvideoevent',	'menu': 'ƒsƒŠƒIƒhƒCƒxƒ“ƒg‚Ì‰ğœ'})
-   call add(l:list,{'word': 'cancelvideosegloop',	'menu': 'ƒrƒfƒI‚ÌƒZƒOƒƒ“ƒgƒ‹[ƒvÄ¶‚Ì‰ğœ'})
-   call add(l:list,{'word': 'clearbgmlabel',	'menu': 'BGM ‚Ìƒ‰ƒxƒ‹’Ê‰ßˆ—‚Ì‰ğœ'})
-   call add(l:list,{'word': 'clearbgmstop',	'menu': 'BGM ‚Ì’â~ˆ—‚Ì‰ğœ'})
-   call add(l:list,{'word': 'clearvideolayer',	'menu': 'ƒrƒfƒIƒŒƒCƒ„‰ğœ'})
-   call add(l:list,{'word': 'fadebgm',		'menu': 'BGM‚ÌƒtƒF[ƒh'})
-   call add(l:list,{'word': 'fadeinbgm',		'menu': 'ƒtƒF[ƒhƒCƒ“‚µ‚È‚ª‚ç‚ÌBGMÄ¶ŠJn'})
-   call add(l:list,{'word': 'fadeinse',		'menu': 'Œø‰Ê‰¹‚ÌƒtƒF[ƒhƒCƒ“Ä¶'})
-   call add(l:list,{'word': 'fadeoutbgm',		'menu': 'BGM‚ÌƒtƒF[ƒhƒAƒEƒg'})
-   call add(l:list,{'word': 'fadeoutse',		'menu': 'Œø‰Ê‰¹‚ÌƒtƒF[ƒhƒAƒEƒg'})
-   call add(l:list,{'word': 'fadepausebgm',	'menu': 'BGM ‰‰‘t‚ÌƒtƒF[ƒhƒAƒEƒg‚µ‚È‚ª‚ç‚Ìˆê’â~'})
-   call add(l:list,{'word': 'fadese',		'menu': 'Œø‰Ê‰¹‚ÌƒtƒF[ƒh'})
-   call add(l:list,{'word': 'openvideo',		'menu': 'ƒrƒfƒI/SWF‚ÌÄ¶€”õ'})
-   call add(l:list,{'word': 'pausebgm',		'menu': 'BGM ‰‰‘t‚Ìˆê’â~'})
-   call add(l:list,{'word': 'pausevideo',		'menu': 'ƒrƒfƒI‚Ìˆê’â~'})
-   call add(l:list,{'word': 'playbgm',		'menu': 'BGM ‚Ì‰‰‘t'})
-   call add(l:list,{'word': 'playse',		'menu': 'Œø‰Ê‰¹‚ÌÄ¶'})
-   call add(l:list,{'word': 'playvideo',		'menu': 'ƒrƒfƒI/SWF‚ÌÄ¶'})
-   call add(l:list,{'word': 'preparevideo',	'menu': 'ƒrƒfƒI‚ÌÄ¶€”õ'})
-   call add(l:list,{'word': 'resumebgm',		'menu': 'BGM ‰‰‘t‚ÌÄŠJ'})
-   call add(l:list,{'word': 'resumevideo',		'menu': 'ƒrƒfƒIÄ¶‚ÌÄŠJ'})
-   call add(l:list,{'word': 'rewindvideo',		'menu': 'ƒrƒfƒI‚ÌŠª‚«–ß‚µ'})
-   call add(l:list,{'word': 'seopt',		'menu': 'Œø‰Ê‰¹‚Ìİ’è'})
-   call add(l:list,{'word': 'setbgmlabel',		'menu': 'BGM ‚Ìƒ‰ƒxƒ‹’Ê‰ßˆ—‚Ì“o˜^'})
-   call add(l:list,{'word': 'setbgmstop',		'menu': 'BGM ‚Ì’â~ˆ—‚Ì“o˜^'})
-   call add(l:list,{'word': 'stopbgm',		'menu': 'BGM ‰‰‘t‚Ì’â~'})
-   call add(l:list,{'word': 'stopse',		'menu': 'Œø‰Ê‰¹Ä¶‚Ì’â~'})
-   call add(l:list,{'word': 'stopvideo',		'menu': 'ƒrƒfƒI/SWFÄ¶‚Ì’â~'})
-   call add(l:list,{'word': 'video',		'menu': 'ƒrƒfƒI/SWF•\¦—Ìˆæ‚Ì‘®«‚ğw’è'})
-   call add(l:list,{'word': 'videoevent',		'menu': 'ƒsƒŠƒIƒhƒCƒxƒ“ƒg‚Ì”­¶'})
-   call add(l:list,{'word': 'videolayer',		'menu': 'ƒrƒfƒIƒŒƒCƒ„İ’è'})
-   call add(l:list,{'word': 'videosegloop',	'menu': 'ƒrƒfƒI‚ÌƒZƒOƒƒ“ƒgƒ‹[ƒvÄ¶'})
-   call add(l:list,{'word': 'wb',			'menu': 'BGM ƒtƒF[ƒh‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'wf',			'menu': 'Œø‰Ê‰¹ƒtƒF[ƒh‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'wl',			'menu': 'BGM Ä¶‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'wp',			'menu': 'ƒrƒfƒIƒsƒŠƒIƒhƒCƒxƒ“ƒg‘Ò‚¿'})
-   call add(l:list,{'word': 'ws',			'menu': 'Œø‰Ê‰¹Ä¶‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'wv',			'menu': 'ƒrƒfƒIÄ¶‚ÌI—¹‘Ò‚¿'})
-   call add(l:list,{'word': 'xchgbgm',		'menu': 'BGM ‚ğ“ü‚ê‘Ö‚¦‚é'})
-  " •Ï”ETJS ‘€ì
-   call add(l:list,{'word': 'clearvar',		'menu': 'ƒQ[ƒ€•Ï”‚Ì‘SÁ‹'})
-   call add(l:list,{'word': 'else',		'menu': 'if ‚Ì’†g‚ªÀs‚³‚ê‚È‚©‚Á‚½‚Æ‚«‚ÉÀs'})
-   call add(l:list,{'word': 'elsif',		'menu': '‚»‚ê‚Ü‚Å‚Ì if ‚Ì’†g‚ªÀs‚³‚ê‚Ä‚¢‚È‚©‚Á‚½‚Æ‚«‚ÉAğŒ•t‚«‚ÅÀs'})
-   call add(l:list,{'word': 'emb',			'menu': '®•]‰¿Œ‹‰Ê‚Ì–„‚ß‚İ'})
-   call add(l:list,{'word': 'endif',		'menu': 'ğŒ‚É‚æ‚èƒVƒiƒŠƒI‚ğÀs(‚ÌI—¹)'})
-   call add(l:list,{'word': 'endignore',		'menu': 'ğŒ‚É‚æ‚èƒVƒiƒŠƒI‚ğ–³‹(‚ÌI—¹)'})
-   call add(l:list,{'word': 'endscript',		'menu': 'TJS ƒXƒNƒŠƒvƒg‚Ì‹Lq(‚ÌI—¹)'})
-   call add(l:list,{'word': 'eval',		'menu': '®‚Ì•]‰¿'})
-   call add(l:list,{'word': 'if',			'menu': 'ğŒ‚É‚æ‚èƒVƒiƒŠƒI‚ğÀs'})
-   call add(l:list,{'word': 'ignore',		'menu': 'ğŒ‚É‚æ‚èƒVƒiƒŠƒI‚ğ–³‹'})
-   call add(l:list,{'word': 'input',		'menu': '•¶š—ñ‚Ì“ü—Í'})
-   call add(l:list,{'word': 'iscript',		'menu': 'TJS ƒXƒNƒŠƒvƒg‚Ì‹Lq'})
-   call add(l:list,{'word': 'trace',		'menu': 'ƒRƒ“ƒ\[ƒ‹‚Ö’l‚Ìo—Í'})
-   call add(l:list,{'word': 'waittrig',		'menu': 'ƒgƒŠƒK‚ğ‘Ò‚Â'})
-  " xE’Ê‰ß‹L˜^‘€ì
-   call add(l:list,{'word': 'copybookmark',	'menu': 'x‚ÌƒRƒs['})
-   call add(l:list,{'word': 'disablestore',	'menu': 'x‚Ì‹@”\‚Ìˆê“I‚Èg—p•s‰Â'})
-   call add(l:list,{'word': 'erasebookmark',	'menu': 'x‚ÌÁ‹'})
-   call add(l:list,{'word': 'goback',		'menu': '‘O‚É–ß‚é'})
-   call add(l:list,{'word': 'gotostart',		'menu': 'Å‰‚É–ß‚é'})
-   call add(l:list,{'word': 'load',		'menu': 'x‚Ì“Ç‚İ‚İ'})
-   call add(l:list,{'word': 'locksnapshot',	'menu': 'ƒXƒiƒbƒvƒVƒ‡ƒbƒg‚ÌƒƒbƒN'})
-   call add(l:list,{'word': 'record',		'menu': '’Ê‰ß‹L˜^‚ğs‚¤'})
-   call add(l:list,{'word': 'save',		'menu': 'x‚Ì•Û‘¶'})
-   call add(l:list,{'word': 'startanchor',		'menu': 'uÅ‰‚É–ß‚év‚Ì—LŒøE–³Œø'})
-   call add(l:list,{'word': 'store',		'menu': 'x‹@”\‚Ìİ’è'})
-   call add(l:list,{'word': 'tempload',		'menu': 'x‚Ìƒƒ‚ƒŠã‚©‚ç‚Ì“Ç‚İ‚İ'})
-   call add(l:list,{'word': 'tempsave',		'menu': 'x‚Ìƒƒ‚ƒŠã‚Ö‚Ì•Û‘¶'})
-   call add(l:list,{'word': 'unlocksnapshot',	'menu': 'ƒXƒiƒbƒvƒVƒ‡ƒbƒg‚ÌƒƒbƒN‚Ì‰ğœ'})
+   call add(l:list,{'word': 'autowc',		'menu': 'è‡ªå‹•ã‚¦ã‚§ã‚¤ãƒˆ'})
+   call add(l:list,{'word': 'clearsysvar',		'menu': 'ã‚·ã‚¹ãƒ†ãƒ å¤‰æ•°ã®å…¨æ¶ˆå»'})
+   call add(l:list,{'word': 'clickskip',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã‚¹ã‚­ãƒƒãƒ—ã®è¨­å®š'})
+   call add(l:list,{'word': 'close',		'menu': 'ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‰ã˜ã‚‹'})
+   call add(l:list,{'word': 'cursor',		'menu': 'ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã®å¤‰æ›´'})
+   call add(l:list,{'word': 'hidemessage',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ¶ˆã™'})
+   call add(l:list,{'word': 'loadplugin',		'menu': 'ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã®èª­ã¿è¾¼ã¿'})
+   call add(l:list,{'word': 'mappfont',		'menu': 'ãƒ¬ãƒ³ãƒ€ãƒªãƒ³ã‚°æ¸ˆã¿ãƒ•ã‚©ãƒ³ãƒˆã®å‰²ã‚Šå½“ã¦'})
+   call add(l:list,{'word': 'nextskip',		'menu': 'ã€Œæ¬¡ã®é¸æŠè‚¢ã¾ã§ã™ã™ã‚€ã€ã®è¨­å®š'})
+   call add(l:list,{'word': 'quake',		'menu': 'ç”»é¢ã‚’æºã‚‰ã™'})
+   call add(l:list,{'word': 'rclick',		'menu': 'å³ã‚¯ãƒªãƒƒã‚¯ã®è¨­å®š'})
+   call add(l:list,{'word': 'resetwait',		'menu': 'ã‚¦ã‚§ã‚¤ãƒˆã®åˆæœŸåŒ–'})
+   call add(l:list,{'word': 's',			'menu': 'åœæ­¢ã™ã‚‹'})
+   call add(l:list,{'word': 'stopquake',		'menu': 'ç”»é¢æºã‚‰ã—ã®åœæ­¢'})
+   call add(l:list,{'word': 'title',		'menu': 'ã‚¿ã‚¤ãƒˆãƒ«æŒ‡å®š'})
+   call add(l:list,{'word': 'wait',		'menu': 'ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹'})
+   call add(l:list,{'word': 'waitclick',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã‚’å¾…ã¤'})
+   call add(l:list,{'word': 'wc',			'menu': 'æ–‡å­—æ•°åˆ†ã®ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹'})
+   call add(l:list,{'word': 'wq',			'menu': 'ç”»é¢æºã‚‰ã—ã®çµ‚äº†å¾…ã¡'})
+  " ãƒ•ã‚©ãƒ¼ãƒ æ“ä½œ
+   call add(l:list,{'word': 'checkbox',		'menu': 'ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã®ä½œæˆ'})
+   call add(l:list,{'word': 'commit',		'menu': 'ãƒ•ã‚©ãƒ¼ãƒ å†…å®¹ã®ç¢ºå®š'})
+   call add(l:list,{'word': 'edit',		'menu': 'å˜ä¸€è¡Œã‚¨ãƒ‡ã‚£ãƒƒãƒˆã®ä½œæˆ'})
+  " ãƒã‚¯ãƒ­æ“ä½œ
+   call add(l:list,{'word': 'endmacro',		'menu': 'ãƒã‚¯ãƒ­ã®è¨˜è¿°(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'erasemacro',		'menu': 'ãƒã‚¯ãƒ­ã®æ¶ˆå»'})
+   call add(l:list,{'word': 'macro',		'menu': 'ãƒã‚¯ãƒ­ã®è¨˜è¿°'})
+  " ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸æ“ä½œ
+   call add(l:list,{'word': 'cancelautomode',	'menu': 'ã€Œè‡ªå‹•çš„ã«èª­ã¿é€²ã‚€ã€ã®è§£é™¤'})
+   call add(l:list,{'word': 'cancelskip',		'menu': 'ã‚¹ã‚­ãƒƒãƒ—ã®è§£é™¤'})
+   call add(l:list,{'word': 'ch',			'menu': 'æ–‡å­—ã‚’è¡¨ç¤ºã™ã‚‹'})
+   call add(l:list,{'word': 'cm',			'menu': 'ã™ã¹ã¦ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ã‚¯ãƒªã‚¢'})
+   call add(l:list,{'word': 'ct',			'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ãƒªã‚»ãƒƒãƒˆ'})
+   call add(l:list,{'word': 'current',		'menu': 'æ“ä½œå¯¾è±¡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®æŒ‡å®š'})
+   call add(l:list,{'word': 'deffont',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ–‡å­—å±æ€§è¨­å®š'})
+   call add(l:list,{'word': 'defstyle',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚¹ã‚¿ã‚¤ãƒ«ã®è¨­å®š'})
+   call add(l:list,{'word': 'delay',		'menu': 'æ–‡å­—ã®è¡¨ç¤ºé€Ÿåº¦ã®è¨­å®š'})
+   call add(l:list,{'word': 'endindent',		'menu': 'ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®è§£é™¤'})
+   call add(l:list,{'word': 'endnowait',		'menu': 'æ–‡å­—è¡¨ç¤ºãƒãƒ¼ã‚¦ã‚§ã‚¤ãƒˆ(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'er',			'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®æ–‡å­—ã®æ¶ˆå»'})
+   call add(l:list,{'word': 'font',		'menu': 'æ–‡å­—å±æ€§è¨­å®š'})
+   call add(l:list,{'word': 'glyph',		'menu': 'ã‚¯ãƒªãƒƒã‚¯å¾…ã¡è¨˜å·ã®æŒ‡å®š'})
+   call add(l:list,{'word': 'graph',		'menu': 'ã‚¤ãƒ³ãƒ©ã‚¤ãƒ³ç”»åƒè¡¨ç¤º'})
+   call add(l:list,{'word': 'hch',			'menu': 'ç¸¦ä¸­æ¨ªã‚’è¡¨ç¤ºã™ã‚‹'})
+   call add(l:list,{'word': 'indent',		'menu': 'ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®è¨­å®š'})
+   call add(l:list,{'word': 'l',			'menu': 'è¡Œæœ«ã‚¯ãƒªãƒƒã‚¯å¾…ã¡'})
+   call add(l:list,{'word': 'locate',		'menu': 'æ–‡å­—è¡¨ç¤ºä½ç½®ã®æŒ‡å®š'})
+   call add(l:list,{'word': 'locklink',		'menu': 'ãƒªãƒ³ã‚¯ã®ãƒ­ãƒƒã‚¯'})
+   call add(l:list,{'word': 'nowait',		'menu': 'æ–‡å­—è¡¨ç¤ºãƒãƒ¼ã‚¦ã‚§ã‚¤ãƒˆ'})
+   call add(l:list,{'word': 'p',			'menu': 'æ”¹ãƒšãƒ¼ã‚¸ã‚¯ãƒªãƒƒã‚¯å¾…ã¡'})
+   call add(l:list,{'word': 'position',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®å±æ€§'})
+   call add(l:list,{'word': 'r',			'menu': 'æ”¹è¡Œã™ã‚‹'})
+   call add(l:list,{'word': 'resetfont',		'menu': 'æ–‡å­—å±æ€§ã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã«æˆ»ã™'})
+   call add(l:list,{'word': 'resetstyle',		'menu': 'ã‚¹ã‚¿ã‚¤ãƒ«ã‚’ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã«æˆ»ã™'})
+   call add(l:list,{'word': 'ruby',		'menu': 'ãƒ«ãƒ“æŒ‡å®š'})
+   call add(l:list,{'word': 'style',		'menu': 'ã‚¹ã‚¿ã‚¤ãƒ«ã®è¨­å®š'})
+   call add(l:list,{'word': 'unlocklink',		'menu': 'ãƒªãƒ³ã‚¯ã®ãƒ­ãƒƒã‚¯ã®è§£é™¤'})
+  " ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´æ“ä½œ
+   call add(l:list,{'word': 'endhact',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã‚¢ã‚¯ã‚·ãƒ§ãƒ³ã®çµ‚äº†'})
+   call add(l:list,{'word': 'hact',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã‚¢ã‚¯ã‚·ãƒ§ãƒ³'})
+   call add(l:list,{'word': 'history',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®è¨­å®š'})
+   call add(l:list,{'word': 'hr',			'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®æ”¹è¡Œ/æ”¹ãƒšãƒ¼ã‚¸'})
+   call add(l:list,{'word': 'showhistory',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®è¡¨ç¤º'})
+  " ãƒ©ãƒ™ãƒ«ãƒ»ã‚¸ãƒ£ãƒ³ãƒ—æ“ä½œ
+   call add(l:list,{'word': 'button',		'menu': 'ã‚°ãƒ©ãƒ•ã‚£ã‚«ãƒ«ãƒœã‚¿ãƒ³'})
+   call add(l:list,{'word': 'call',		'menu': 'ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ã®å‘¼ã³å‡ºã—'})
+   call add(l:list,{'word': 'cclick',		'menu': 'ã‚¯ãƒªãƒƒã‚¯å¾…ã¡è§£é™¤'})
+   call add(l:list,{'word': 'click',		'menu': 'ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ã‚¸ãƒ£ãƒ³ãƒ—'})
+   call add(l:list,{'word': 'ctimeout',		'menu': 'ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆå¾…ã¡è§£é™¤'})
+   call add(l:list,{'word': 'cwheel',		'menu': 'ãƒ›ã‚¤ãƒ¼ãƒ«å¾…ã¡è§£é™¤'})
+   call add(l:list,{'word': 'endlink',		'menu': 'ãƒã‚¤ãƒ‘ãƒ¼ãƒªãƒ³ã‚¯(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'jump',		'menu': 'ã‚·ãƒŠãƒªã‚ªã®ã‚¸ãƒ£ãƒ³ãƒ—'})
+   call add(l:list,{'word': 'link',		'menu': 'ãƒã‚¤ãƒ‘ãƒ¼ãƒªãƒ³ã‚¯'})
+   call add(l:list,{'word': 'return',		'menu': 'ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ã‹ã‚‰æˆ»ã‚‹'})
+   call add(l:list,{'word': 'timeout',		'menu': 'ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆå¾…ã¡ã‚¸ãƒ£ãƒ³ãƒ—'})
+   call add(l:list,{'word': 'wheel',		'menu': 'ãƒ›ã‚¤ãƒ¼ãƒ«å¾…ã¡ã‚¸ãƒ£ãƒ³ãƒ—'})
+  " ãƒ¬ã‚¤ãƒ¤æ“ä½œ
+   call add(l:list,{'word': 'animstart',		'menu': 'ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®é–‹å§‹'})
+   call add(l:list,{'word': 'animstop',		'menu': 'ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®åœæ­¢'})
+   call add(l:list,{'word': 'backlay',		'menu': 'ãƒ¬ã‚¤ãƒ¤æƒ…å ±ã®è¡¨ãƒšãƒ¼ã‚¸ã‹ã‚‰è£ãƒšãƒ¼ã‚¸ã¸ã®ã‚³ãƒ”ãƒ¼'})
+   call add(l:list,{'word': 'copylay',		'menu': 'ãƒ¬ã‚¤ãƒ¤æƒ…å ±ã®ã‚³ãƒ”ãƒ¼'})
+   call add(l:list,{'word': 'freeimage',		'menu': 'ãƒ¬ã‚¤ãƒ¤ç”»åƒã®è§£æ”¾'})
+   call add(l:list,{'word': 'image',		'menu': 'ç”»åƒã®èª­ã¿è¾¼ã¿'})
+   call add(l:list,{'word': 'laycount',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®æ•°ã®å¤‰æ›´'})
+   call add(l:list,{'word': 'layopt',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®å±æ€§'})
+   call add(l:list,{'word': 'mapaction',		'menu': 'ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ç”¨é ˜åŸŸã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã®æŒ‡å®š'})
+   call add(l:list,{'word': 'mapdisable',		'menu': 'ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ã®ç„¡åŠ¹åŒ–'})
+   call add(l:list,{'word': 'mapimage',		'menu': 'ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ç”¨é ˜åŸŸç”»åƒã®æŒ‡å®š'})
+   call add(l:list,{'word': 'move',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®è‡ªå‹•ç§»å‹•'})
+   call add(l:list,{'word': 'pimage',		'menu': 'ç”»åƒã®éƒ¨åˆ†è¿½åŠ èª­ã¿è¾¼ã¿'})
+   call add(l:list,{'word': 'ptext',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã¸ã®æ–‡å­—æç”»'})
+   call add(l:list,{'word': 'stopmove',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®è‡ªå‹•ç§»å‹•ã®åœæ­¢'})
+   call add(l:list,{'word': 'stoptrans',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®åœæ­¢'})
+   call add(l:list,{'word': 'trans',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³'})
+   call add(l:list,{'word': 'wa',			'menu': 'ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®åœæ­¢å¾…ã¡'})
+   call add(l:list,{'word': 'wm',			'menu': 'è‡ªå‹•ç§»å‹•ã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'wt',			'menu': 'ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®çµ‚äº†å¾…ã¡'})
+  " åŠ¹æœéŸ³ãƒ»BGMãƒ»ãƒ“ãƒ‡ã‚ªæ“ä½œ
+   call add(l:list,{'word': 'bgmopt',		'menu': 'BGM ã®è¨­å®š'})
+   call add(l:list,{'word': 'cancelvideoevent',	'menu': 'ãƒ”ãƒªã‚ªãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆã®è§£é™¤'})
+   call add(l:list,{'word': 'cancelvideosegloop',	'menu': 'ãƒ“ãƒ‡ã‚ªã®ã‚»ã‚°ãƒ¡ãƒ³ãƒˆãƒ«ãƒ¼ãƒ—å†ç”Ÿã®è§£é™¤'})
+   call add(l:list,{'word': 'clearbgmlabel',	'menu': 'BGM ã®ãƒ©ãƒ™ãƒ«é€šéå‡¦ç†ã®è§£é™¤'})
+   call add(l:list,{'word': 'clearbgmstop',	'menu': 'BGM ã®åœæ­¢å‡¦ç†ã®è§£é™¤'})
+   call add(l:list,{'word': 'clearvideolayer',	'menu': 'ãƒ“ãƒ‡ã‚ªãƒ¬ã‚¤ãƒ¤è§£é™¤'})
+   call add(l:list,{'word': 'fadebgm',		'menu': 'BGMã®ãƒ•ã‚§ãƒ¼ãƒ‰'})
+   call add(l:list,{'word': 'fadeinbgm',		'menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³ã—ãªãŒã‚‰ã®BGMå†ç”Ÿé–‹å§‹'})
+   call add(l:list,{'word': 'fadeinse',		'menu': 'åŠ¹æœéŸ³ã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³å†ç”Ÿ'})
+   call add(l:list,{'word': 'fadeoutbgm',		'menu': 'BGMã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆ'})
+   call add(l:list,{'word': 'fadeoutse',		'menu': 'åŠ¹æœéŸ³ã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆ'})
+   call add(l:list,{'word': 'fadepausebgm',	'menu': 'BGM æ¼”å¥ã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã—ãªãŒã‚‰ã®ä¸€æ™‚åœæ­¢'})
+   call add(l:list,{'word': 'fadese',		'menu': 'åŠ¹æœéŸ³ã®ãƒ•ã‚§ãƒ¼ãƒ‰'})
+   call add(l:list,{'word': 'openvideo',		'menu': 'ãƒ“ãƒ‡ã‚ª/SWFã®å†ç”Ÿæº–å‚™'})
+   call add(l:list,{'word': 'pausebgm',		'menu': 'BGM æ¼”å¥ã®ä¸€æ™‚åœæ­¢'})
+   call add(l:list,{'word': 'pausevideo',		'menu': 'ãƒ“ãƒ‡ã‚ªã®ä¸€æ™‚åœæ­¢'})
+   call add(l:list,{'word': 'playbgm',		'menu': 'BGM ã®æ¼”å¥'})
+   call add(l:list,{'word': 'playse',		'menu': 'åŠ¹æœéŸ³ã®å†ç”Ÿ'})
+   call add(l:list,{'word': 'playvideo',		'menu': 'ãƒ“ãƒ‡ã‚ª/SWFã®å†ç”Ÿ'})
+   call add(l:list,{'word': 'preparevideo',	'menu': 'ãƒ“ãƒ‡ã‚ªã®å†ç”Ÿæº–å‚™'})
+   call add(l:list,{'word': 'resumebgm',		'menu': 'BGM æ¼”å¥ã®å†é–‹'})
+   call add(l:list,{'word': 'resumevideo',		'menu': 'ãƒ“ãƒ‡ã‚ªå†ç”Ÿã®å†é–‹'})
+   call add(l:list,{'word': 'rewindvideo',		'menu': 'ãƒ“ãƒ‡ã‚ªã®å·»ãæˆ»ã—'})
+   call add(l:list,{'word': 'seopt',		'menu': 'åŠ¹æœéŸ³ã®è¨­å®š'})
+   call add(l:list,{'word': 'setbgmlabel',		'menu': 'BGM ã®ãƒ©ãƒ™ãƒ«é€šéå‡¦ç†ã®ç™»éŒ²'})
+   call add(l:list,{'word': 'setbgmstop',		'menu': 'BGM ã®åœæ­¢å‡¦ç†ã®ç™»éŒ²'})
+   call add(l:list,{'word': 'stopbgm',		'menu': 'BGM æ¼”å¥ã®åœæ­¢'})
+   call add(l:list,{'word': 'stopse',		'menu': 'åŠ¹æœéŸ³å†ç”Ÿã®åœæ­¢'})
+   call add(l:list,{'word': 'stopvideo',		'menu': 'ãƒ“ãƒ‡ã‚ª/SWFå†ç”Ÿã®åœæ­¢'})
+   call add(l:list,{'word': 'video',		'menu': 'ãƒ“ãƒ‡ã‚ª/SWFè¡¨ç¤ºé ˜åŸŸã®å±æ€§ã‚’æŒ‡å®š'})
+   call add(l:list,{'word': 'videoevent',		'menu': 'ãƒ”ãƒªã‚ªãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆã®ç™ºç”Ÿ'})
+   call add(l:list,{'word': 'videolayer',		'menu': 'ãƒ“ãƒ‡ã‚ªãƒ¬ã‚¤ãƒ¤è¨­å®š'})
+   call add(l:list,{'word': 'videosegloop',	'menu': 'ãƒ“ãƒ‡ã‚ªã®ã‚»ã‚°ãƒ¡ãƒ³ãƒˆãƒ«ãƒ¼ãƒ—å†ç”Ÿ'})
+   call add(l:list,{'word': 'wb',			'menu': 'BGM ãƒ•ã‚§ãƒ¼ãƒ‰ã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'wf',			'menu': 'åŠ¹æœéŸ³ãƒ•ã‚§ãƒ¼ãƒ‰ã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'wl',			'menu': 'BGM å†ç”Ÿã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'wp',			'menu': 'ãƒ“ãƒ‡ã‚ªãƒ”ãƒªã‚ªãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆå¾…ã¡'})
+   call add(l:list,{'word': 'ws',			'menu': 'åŠ¹æœéŸ³å†ç”Ÿã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'wv',			'menu': 'ãƒ“ãƒ‡ã‚ªå†ç”Ÿã®çµ‚äº†å¾…ã¡'})
+   call add(l:list,{'word': 'xchgbgm',		'menu': 'BGM ã‚’å…¥ã‚Œæ›¿ãˆã‚‹'})
+  " å¤‰æ•°ãƒ»TJS æ“ä½œ
+   call add(l:list,{'word': 'clearvar',		'menu': 'ã‚²ãƒ¼ãƒ å¤‰æ•°ã®å…¨æ¶ˆå»'})
+   call add(l:list,{'word': 'else',		'menu': 'if ã®ä¸­èº«ãŒå®Ÿè¡Œã•ã‚Œãªã‹ã£ãŸã¨ãã«å®Ÿè¡Œ'})
+   call add(l:list,{'word': 'elsif',		'menu': 'ãã‚Œã¾ã§ã® if ã®ä¸­èº«ãŒå®Ÿè¡Œã•ã‚Œã¦ã„ãªã‹ã£ãŸã¨ãã«ã€æ¡ä»¶ä»˜ãã§å®Ÿè¡Œ'})
+   call add(l:list,{'word': 'emb',			'menu': 'å¼è©•ä¾¡çµæœã®åŸ‹ã‚è¾¼ã¿'})
+   call add(l:list,{'word': 'endif',		'menu': 'æ¡ä»¶ã«ã‚ˆã‚Šã‚·ãƒŠãƒªã‚ªã‚’å®Ÿè¡Œ(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'endignore',		'menu': 'æ¡ä»¶ã«ã‚ˆã‚Šã‚·ãƒŠãƒªã‚ªã‚’ç„¡è¦–(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'endscript',		'menu': 'TJS ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®è¨˜è¿°(ã®çµ‚äº†)'})
+   call add(l:list,{'word': 'eval',		'menu': 'å¼ã®è©•ä¾¡'})
+   call add(l:list,{'word': 'if',			'menu': 'æ¡ä»¶ã«ã‚ˆã‚Šã‚·ãƒŠãƒªã‚ªã‚’å®Ÿè¡Œ'})
+   call add(l:list,{'word': 'ignore',		'menu': 'æ¡ä»¶ã«ã‚ˆã‚Šã‚·ãƒŠãƒªã‚ªã‚’ç„¡è¦–'})
+   call add(l:list,{'word': 'input',		'menu': 'æ–‡å­—åˆ—ã®å…¥åŠ›'})
+   call add(l:list,{'word': 'iscript',		'menu': 'TJS ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®è¨˜è¿°'})
+   call add(l:list,{'word': 'trace',		'menu': 'ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã¸å€¤ã®å‡ºåŠ›'})
+   call add(l:list,{'word': 'waittrig',		'menu': 'ãƒˆãƒªã‚¬ã‚’å¾…ã¤'})
+  " æ ãƒ»é€šéè¨˜éŒ²æ“ä½œ
+   call add(l:list,{'word': 'copybookmark',	'menu': 'æ ã®ã‚³ãƒ”ãƒ¼'})
+   call add(l:list,{'word': 'disablestore',	'menu': 'æ ã®æ©Ÿèƒ½ã®ä¸€æ™‚çš„ãªä½¿ç”¨ä¸å¯'})
+   call add(l:list,{'word': 'erasebookmark',	'menu': 'æ ã®æ¶ˆå»'})
+   call add(l:list,{'word': 'goback',		'menu': 'å‰ã«æˆ»ã‚‹'})
+   call add(l:list,{'word': 'gotostart',		'menu': 'æœ€åˆã«æˆ»ã‚‹'})
+   call add(l:list,{'word': 'load',		'menu': 'æ ã®èª­ã¿è¾¼ã¿'})
+   call add(l:list,{'word': 'locksnapshot',	'menu': 'ã‚¹ãƒŠãƒƒãƒ—ã‚·ãƒ§ãƒƒãƒˆã®ãƒ­ãƒƒã‚¯'})
+   call add(l:list,{'word': 'record',		'menu': 'é€šéè¨˜éŒ²ã‚’è¡Œã†'})
+   call add(l:list,{'word': 'save',		'menu': 'æ ã®ä¿å­˜'})
+   call add(l:list,{'word': 'startanchor',		'menu': 'ã€Œæœ€åˆã«æˆ»ã‚‹ã€ã®æœ‰åŠ¹ãƒ»ç„¡åŠ¹'})
+   call add(l:list,{'word': 'store',		'menu': 'æ æ©Ÿèƒ½ã®è¨­å®š'})
+   call add(l:list,{'word': 'tempload',		'menu': 'æ ã®ãƒ¡ãƒ¢ãƒªä¸Šã‹ã‚‰ã®èª­ã¿è¾¼ã¿'})
+   call add(l:list,{'word': 'tempsave',		'menu': 'æ ã®ãƒ¡ãƒ¢ãƒªä¸Šã¸ã®ä¿å­˜'})
+   call add(l:list,{'word': 'unlocksnapshot',	'menu': 'ã‚¹ãƒŠãƒƒãƒ—ã‚·ãƒ§ãƒƒãƒˆã®ãƒ­ãƒƒã‚¯ã®è§£é™¤'})
  "}}}
   return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
   endif
@@ -647,527 +647,527 @@ function! s:source.get_complete_words(cur_keyword_pos, cur_keyword_str) "{{{
 	endif
 
 if search('\[animstart [^]]*\%#\|^\s*@animstart ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)ƒAƒjƒ[ƒVƒ‡ƒ“‚ğŠJn‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'seg=',		'menu': '(•K)‚±‚Ì‘®«‚Åw’è‚µ‚½ƒZƒOƒƒ“ƒg”Ô†‚ÅƒAƒjƒ[ƒVƒ‡ƒ“‚ğŠJn‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': '(•K)ƒAƒjƒ[ƒVƒ‡ƒ“‚ğŠJn‚·‚é‚½‚ß‚Ì asd ƒtƒ@ƒCƒ‹’†‚Ìƒ‰ƒxƒ‹‚ğ w’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’é–‹å§‹ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'seg=',		'menu': '(å¿…)ã“ã®å±æ€§ã§æŒ‡å®šã—ãŸã‚»ã‚°ãƒ¡ãƒ³ãƒˆç•ªå·ã§ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’é–‹å§‹ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': '(å¿…)ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’é–‹å§‹ã™ã‚‹ãŸã‚ã® asd ãƒ•ã‚¡ã‚¤ãƒ«ä¸­ã®ãƒ©ãƒ™ãƒ«ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[animstop [^]]*\%#\|^\s*@animstop ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)ƒAƒjƒ[ƒVƒ‡ƒ“‚ğ’â~‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'seg=',		'menu': '(•K)‚±‚Ì‘®«‚Åw’è‚µ‚½ƒZƒOƒƒ“ƒg”Ô†‚ÌƒAƒjƒ[ƒVƒ‡ƒ“‚ğ’â~‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’åœæ­¢ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'seg=',		'menu': '(å¿…)ã“ã®å±æ€§ã§æŒ‡å®šã—ãŸã‚»ã‚°ãƒ¡ãƒ³ãƒˆç•ªå·ã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚’åœæ­¢ã—ã¾ã™ã€‚'})
   elseif search('\[autowc [^]]*\%#\|^\s*@autowc ','bcn',line('.'))
-   call add(l:list, {'word': 'enabled=',		'menu': '©“®ƒEƒFƒCƒg‚ğ—LŒø‚É‚·‚éê‡‚Í true ‚ğA–³Œø‚É‚·‚é‚É‚Í false ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'ch=',		'menu': '©“®ƒEƒFƒCƒg‚ğ“ü‚ê‚é•¶š‚ğw’è‚µ‚Ü‚·Bw’è‚³‚ê‚½•¶š‚Ì‚ ‚Æ‚ÉAtime ‘®«‚Å w’è‚µ‚½•¶š”•ª‚ÌƒEƒFƒCƒg‚ª“ü‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '©“®ƒEƒFƒCƒg‚ğ“ü‚ê‚éŠÔ‚ğ•¶š”’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'enabled=',		'menu': 'è‡ªå‹•ã‚¦ã‚§ã‚¤ãƒˆã‚’æœ‰åŠ¹ã«ã™ã‚‹å ´åˆã¯ true ã‚’ã€ç„¡åŠ¹ã«ã™ã‚‹ã«ã¯ false ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'ch=',		'menu': 'è‡ªå‹•ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹æ–‡å­—ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã•ã‚ŒãŸæ–‡å­—ã®ã‚ã¨ã«ã€time å±æ€§ã§ æŒ‡å®šã—ãŸæ–‡å­—æ•°åˆ†ã®ã‚¦ã‚§ã‚¤ãƒˆãŒå…¥ã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': 'è‡ªå‹•ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹æ™‚é–“ã‚’æ–‡å­—æ•°å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[backlay [^]]*\%#\|^\s*@backlay ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '‘ÎÛ‚Æ‚È‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': 'å¯¾è±¡ã¨ãªã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[bgmopt [^]]*\%#\|^\s*@bgmopt ','bcn',line('.'))
-   call add(l:list, {'word': 'volume=',		'menu': 'BGM ‚Ì‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B‰Šúó‘Ô‚Ì KAG ‚Å‚Í 100 % ‚Å‚·BÈ—ª‚·‚ê‚Î‰¹—Ê‚Í•ÏX‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'gvolume=',		'menu': 'BGM ‚Ì‘åˆæ‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B‰Šúó‘Ô‚Ì KAG ‚Å‚Í 100 % ‚Å‚·BÈ—ª‚·‚ê‚Î‰¹—Ê‚Í•ÏX‚³‚ê‚Ü‚¹‚ñB'})
+   call add(l:list, {'word': 'volume=',		'menu': 'BGM ã®éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚åˆæœŸçŠ¶æ…‹ã® KAG ã§ã¯ 100 % ã§ã™ã€‚çœç•¥ã™ã‚Œã°éŸ³é‡ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'gvolume=',		'menu': 'BGM ã®å¤§åŸŸéŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚åˆæœŸçŠ¶æ…‹ã® KAG ã§ã¯ 100 % ã§ã™ã€‚çœç•¥ã™ã‚Œã°éŸ³é‡ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚'})
   elseif search('\[button [^]]*\%#\|^\s*@button ','bcn',line('.'))
-   call add(l:list, {'word': 'graphic=',		'menu': '(•K)ƒ{ƒ^ƒ“‚É‚·‚é‰æ‘œ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'graphickey=',		'menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"	ƒ{ƒ^ƒ“‚É‚·‚é‰æ‘œ‚ÌƒJƒ‰[ƒL[‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'recthit=',		'menu': '‹éŒ`‚Å“–‚½‚è”»’è‚ğs‚¤‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ªw’è‚³‚ê‚Ä‚¢‚é‚ÆA ƒ{ƒ^ƒ“‚Ì•\¦‚³‚ê‚Ä‚¢‚é‹éŒ`‘Sˆæ‚Åƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚È‚Ç‚É”½‰‚µ‚Ü‚·B false ‚ªw’è‚³‚ê‚Ä‚¢‚é‚ÆAƒ{ƒ^ƒ“‚Ì•s“§–¾“x‚ª 64 –¢–‚Ì—Ìˆæ‚Å‚Í ƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚È‚Ç‚É”½‰‚µ‚È‚­‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'hint=',		'menu': 'ƒŠƒ“ƒN‚ğ‘I‘ğ‚µAƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğÃ~‚³‚¹‚½‚Æ‚«‚É•\¦‚³‚ê‚é ƒc[ƒ‹ƒ`ƒbƒvƒqƒ“ƒg‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'onenter=',		'menu': 'ƒ{ƒ^ƒ““à‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ª“ü‚Á‚Ä‚«‚½‚Æ‚«‚ÉÀs‚³‚ê‚é TJS ®‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'onleave=',		'menu': 'ƒ{ƒ^ƒ““à‚©‚çƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ªo‚Ä‚¢‚Á‚½‚ÉÀs‚³‚ê‚é TJS ®‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'countpage=',		'menu': 'ƒ{ƒ^ƒ“‚ğ‘I‘ğ‚µ‚Ä‘¼‚Ìƒ‰ƒxƒ‹‚ÉˆÚs‚·‚é‚Æ‚«‚ÉA‚±‚ÌƒŠƒ“ƒN‚Ì‚ ‚é êŠ‚Ìƒ‰ƒxƒ‹‚ğu“Ç‚ñ‚¾v‚Æ‚İ‚È‚·‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'clickse=',		'menu': 'ƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'clicksebuf=',		'menu': 'clickse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'enterse=',		'menu': 'ƒ}ƒEƒX‚ªi“ü‚µ‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'entersebuf=',		'menu': 'enterse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'leavese=',		'menu': 'ƒ}ƒEƒX‚ª‘Şo‚µ‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'leavesebuf=',		'menu': 'leavese ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'graphic=',		'menu': '(å¿…)ãƒœã‚¿ãƒ³ã«ã™ã‚‹ç”»åƒã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'graphickey=',		'menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"	ãƒœã‚¿ãƒ³ã«ã™ã‚‹ç”»åƒã®ã‚«ãƒ©ãƒ¼ã‚­ãƒ¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'recthit=',		'menu': 'çŸ©å½¢ã§å½“ãŸã‚Šåˆ¤å®šã‚’è¡Œã†ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã¨ã€ ãƒœã‚¿ãƒ³ã®è¡¨ç¤ºã•ã‚Œã¦ã„ã‚‹çŸ©å½¢å…¨åŸŸã§ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ãªã©ã«åå¿œã—ã¾ã™ã€‚ false ãŒæŒ‡å®šã•ã‚Œã¦ã„ã‚‹ã¨ã€ãƒœã‚¿ãƒ³ã®ä¸é€æ˜åº¦ãŒ 64 æœªæº€ã®é ˜åŸŸã§ã¯ ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ãªã©ã«åå¿œã—ãªããªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã¨ãã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'hint=',		'menu': 'ãƒªãƒ³ã‚¯ã‚’é¸æŠã—ã€ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’é™æ­¢ã•ã›ãŸã¨ãã«è¡¨ç¤ºã•ã‚Œã‚‹ ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ãƒ’ãƒ³ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'onenter=',		'menu': 'ãƒœã‚¿ãƒ³å†…ã«ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ãŒå…¥ã£ã¦ããŸã¨ãã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'onleave=',		'menu': 'ãƒœã‚¿ãƒ³å†…ã‹ã‚‰ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ãŒå‡ºã¦ã„ã£ãŸæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'countpage=',		'menu': 'ãƒœã‚¿ãƒ³ã‚’é¸æŠã—ã¦ä»–ã®ãƒ©ãƒ™ãƒ«ã«ç§»è¡Œã™ã‚‹ã¨ãã«ã€ã“ã®ãƒªãƒ³ã‚¯ã®ã‚ã‚‹ å ´æ‰€ã®ãƒ©ãƒ™ãƒ«ã‚’ã€Œèª­ã‚“ã ã€ã¨ã¿ãªã™ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'clickse=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'clicksebuf=',		'menu': 'clickse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'enterse=',		'menu': 'ãƒã‚¦ã‚¹ãŒé€²å…¥ã—ãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'entersebuf=',		'menu': 'enterse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'leavese=',		'menu': 'ãƒã‚¦ã‚¹ãŒé€€å‡ºã—ãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'leavesebuf=',		'menu': 'leavese ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[call [^]]*\%#\|^\s*@call ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ŒÄ‚Ño‚µ‚½‚¢ƒTƒuƒ‹[ƒ`ƒ“‚Ì‚ ‚é‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğ w’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ŒÄ‚Ño‚·ƒTƒuƒ‹[ƒ`ƒ“‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'countpage=',		'menu': '‘¼‚Ìƒ‰ƒxƒ‹‚ÉˆÚs‚·‚é‚Æ‚«‚ÉA‚±‚Ìƒ^ƒO‚Ì‚ ‚é êŠ‚Ìƒ‰ƒxƒ‹‚ğu“Ç‚ñ‚¾v‚Æ‚İ‚È‚·‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'å‘¼ã³å‡ºã—ãŸã„ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ã®ã‚ã‚‹ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’ æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'å‘¼ã³å‡ºã™ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'countpage=',		'menu': 'ä»–ã®ãƒ©ãƒ™ãƒ«ã«ç§»è¡Œã™ã‚‹ã¨ãã«ã€ã“ã®ã‚¿ã‚°ã®ã‚ã‚‹ å ´æ‰€ã®ãƒ©ãƒ™ãƒ«ã‚’ã€Œèª­ã‚“ã ã€ã¨ã¿ãªã™ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[cancelvideoevent [^]]*\%#\|^\s*@cancelvideoevent ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-"videoeventƒ^ƒO‚Åİ’è‚µ‚½ƒsƒŠƒIƒhƒCƒxƒ“ƒg‚ğ‰ğœ‚µ‚Ü‚·B
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+"videoeventã‚¿ã‚°ã§è¨­å®šã—ãŸãƒ”ãƒªã‚ªãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆã‚’è§£é™¤ã—ã¾ã™ã€‚
   elseif search('\[cancelvideosegloop [^]]*\%#\|^\s*@cancelvideosegloop ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-"videosegloopƒ^ƒO‚Åİ’è‚µ‚½ƒZƒOƒƒ“ƒgƒ‹[ƒv‚ğ‰ğœ‚µ‚Ü‚·B
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+"videosegloopã‚¿ã‚°ã§è¨­å®šã—ãŸã‚»ã‚°ãƒ¡ãƒ³ãƒˆãƒ«ãƒ¼ãƒ—ã‚’è§£é™¤ã—ã¾ã™ã€‚
   elseif search('\[ch [^]]*\%#\|^\s*@ch ','bcn',line('.'))
-   call add(l:list, {'word': 'text=',		'menu': '(•K)‚±‚±‚Åw’è‚µ‚½•¶š‚ª•\¦‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'text=',		'menu': '(å¿…)ã“ã“ã§æŒ‡å®šã—ãŸæ–‡å­—ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[checkbox [^]]*\%#\|^\s*@checkbox ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Ìó‘Ô‚ğŠi”[‚·‚é•Ï”‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bgcolor=',		'menu': '”wŒiF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'bgcolor ‘®«‚Åw’è‚µ‚½”wŒiF‚Ì•s“§–¾“x‚ğ 0 ` 255 ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': 'ƒ`ƒFƒbƒNƒ}[ƒN‚ÌF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)ãƒã‚§ãƒƒã‚¯ãƒœãƒƒã‚¯ã‚¹ã®çŠ¶æ…‹ã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bgcolor=',		'menu': 'èƒŒæ™¯è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'bgcolor å±æ€§ã§æŒ‡å®šã—ãŸèƒŒæ™¯è‰²ã®ä¸é€æ˜åº¦ã‚’ 0 ï½ 255 ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'ãƒã‚§ãƒƒã‚¯ãƒãƒ¼ã‚¯ã®è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[clearvideolayer [^]]*\%#\|^\s*@clearvideolayer ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'channel=',		'menu': '(•K)ƒŒƒCƒ„•`‰æƒ‚[ƒh‚É‚æ‚é•`‰æ‚ğ‰ğœ‚µ‚½‚¢ƒ`ƒƒƒ“ƒlƒ‹‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'channel=',		'menu': '(å¿…)ãƒ¬ã‚¤ãƒ¤æç”»ãƒ¢ãƒ¼ãƒ‰ã«ã‚ˆã‚‹æç”»ã‚’è§£é™¤ã—ãŸã„ãƒãƒ£ãƒ³ãƒãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[click [^]]*\%#\|^\s*@click ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒNƒŠƒbƒN‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'se=',		'menu': 'ƒNƒŠƒbƒN‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯æ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'se=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯æ™‚ã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[clickskip [^]]*\%#\|^\s*@clickskip ','bcn',line('.'))
-   call add(l:list, {'word': 'enabled=',		'menu': '(•K)ƒNƒŠƒbƒNƒXƒLƒbƒv‹@”\‚ğ—LŒø‚É‚·‚éê‡‚Í trueA–³Œø‚É‚·‚éê‡‚Í false ‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'enabled=',		'menu': '(å¿…)ã‚¯ãƒªãƒƒã‚¯ã‚¹ã‚­ãƒƒãƒ—æ©Ÿèƒ½ã‚’æœ‰åŠ¹ã«ã™ã‚‹å ´åˆã¯ trueã€ç„¡åŠ¹ã«ã™ã‚‹å ´åˆã¯ false ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[close [^]]*\%#\|^\s*@close ','bcn',line('.'))
-   call add(l:list, {'word': 'ask=',		'menu': 'true ‚ğw’è‚·‚é‚ÆAI—¹‚·‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ğ‚µ‚Ü‚·Bfalse ‚ğ w’è‚·‚é‚Æ‚±‚ÌŠm”F‚Í‚ ‚è‚Ü‚¹‚ñB‚±‚Ì‘®«‚ğÈ—ª ‚·‚é‚ÆA true ‚ğw’è‚µ‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'ask=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€çµ‚äº†ã™ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã‚’ã—ã¾ã™ã€‚false ã‚’ æŒ‡å®šã™ã‚‹ã¨ã“ã®ç¢ºèªã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã“ã®å±æ€§ã‚’çœç•¥ ã™ã‚‹ã¨ã€ true ã‚’æŒ‡å®šã—ãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[copybookmark [^]]*\%#\|^\s*@copybookmark ','bcn',line('.'))
-   call add(l:list, {'word': 'from=',		'menu': '(•K)ƒRƒs[Œ³‚Ìx‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'to=',		'menu': '(•K)ƒRƒs[æ‚Ìx‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'from=',		'menu': '(å¿…)ã‚³ãƒ”ãƒ¼å…ƒã®æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'to=',		'menu': '(å¿…)ã‚³ãƒ”ãƒ¼å…ˆã®æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[copylay [^]]*\%#\|^\s*@copylay ','bcn',line('.'))
-   call add(l:list, {'word': 'srclayer=',		'menu': '(•K)ƒRƒs[Œ³‚Æ‚È‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'destlayer=',		'menu': '(•K)ƒRƒs[æ‚Æ‚È‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'srcpage=',		'menu': 'ƒRƒs[Œ³‚Æ‚È‚éƒy[ƒW‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'destpage=',		'menu': 'ƒRƒs[æ‚Æ‚È‚éƒy[ƒW‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'srclayer=',		'menu': '(å¿…)ã‚³ãƒ”ãƒ¼å…ƒã¨ãªã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'destlayer=',		'menu': '(å¿…)ã‚³ãƒ”ãƒ¼å…ˆã¨ãªã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'srcpage=',		'menu': 'ã‚³ãƒ”ãƒ¼å…ƒã¨ãªã‚‹ãƒšãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'destpage=',		'menu': 'ã‚³ãƒ”ãƒ¼å…ˆã¨ãªã‚‹ãƒšãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[current [^]]*\%#\|^\s*@current ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '‘€ì‘ÎÛ‚Æ‚·‚éƒƒbƒZ[ƒWƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': ' •\(fore)‰æ–Ê‚ÌƒŒƒCƒ„‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ÌƒŒƒCƒ„‚ğ‘ÎÛ‚Æ ‚·‚é‚©‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'withback=',		'menu': '•\ƒy[ƒW‚ª‘ÎÛ‚Ìê‡A— ƒy[ƒW‚É‚à“¯—l‚É•¶š‚ğ•`‰æ‚·‚é‚©‚ğ w’è‚µ‚Ü‚·B‚±‚Ì‘®«‚ğÈ—ª‚·‚é‚Æ false ‚ªw’è‚³‚ê‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B @— ƒy[ƒW‚É“¯‚É•¶š‚ğ•`‰æ‚·‚é•K—v‚ª‚ ‚é‚Ì‚ÍA“¯‚Éƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚ğ is‚³‚¹‚éê‡‚È‚Ç‚Å‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': 'æ“ä½œå¯¾è±¡ã¨ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': ' è¡¨(fore)ç”»é¢ã®ãƒ¬ã‚¤ãƒ¤ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã®ãƒ¬ã‚¤ãƒ¤ã‚’å¯¾è±¡ã¨ ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'withback=',		'menu': 'è¡¨ãƒšãƒ¼ã‚¸ãŒå¯¾è±¡ã®å ´åˆã€è£ãƒšãƒ¼ã‚¸ã«ã‚‚åŒæ§˜ã«æ–‡å­—ã‚’æç”»ã™ã‚‹ã‹ã‚’ æŒ‡å®šã—ã¾ã™ã€‚ã“ã®å±æ€§ã‚’çœç•¥ã™ã‚‹ã¨ false ãŒæŒ‡å®šã•ã‚ŒãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚ ã€€è£ãƒšãƒ¼ã‚¸ã«åŒæ™‚ã«æ–‡å­—ã‚’æç”»ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ã®ã¯ã€åŒæ™‚ã«ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã‚’ é€²è¡Œã•ã›ã‚‹å ´åˆãªã©ã§ã™ã€‚'})
   elseif search('\[cursor [^]]*\%#\|^\s*@cursor ','bcn',line('.'))
-   call add(l:list, {'word': 'default=',		'menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼	’Êí‚Ìƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'pointed=',		'menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼	ƒŠƒ“ƒN‚âƒ{ƒ^ƒ“‚ğƒ|ƒCƒ“ƒg‚µ‚½‚Æ‚«‚Ìƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'click=',		'menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼	ƒNƒŠƒbƒN‘Ò‚¿‚Ìƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'draggable=',		'menu': 'cr ‚Ån‚Ü‚éƒJ[ƒ\ƒ‹’è” ‚Ü‚½‚Í ƒJ[ƒ\ƒ‹ƒtƒ@ƒCƒ‹–¼	position ƒ^ƒO‚Å draggable=true ‚Æ‚µ‚½‚Æ‚«‚ÉA ƒ}ƒEƒX‚ªƒƒbƒZ[ƒWƒŒƒCƒ„‚ğƒhƒ‰ƒbƒO‰Â”\‚ÈˆÊ’u‚É—ˆ‚½‚Æ‚«‚É•\¦‚³‚ê‚é ƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'default=',		'menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å	é€šå¸¸ã®ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'pointed=',		'menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å	ãƒªãƒ³ã‚¯ã‚„ãƒœã‚¿ãƒ³ã‚’ãƒã‚¤ãƒ³ãƒˆã—ãŸã¨ãã®ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'click=',		'menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å	ã‚¯ãƒªãƒƒã‚¯å¾…ã¡ã®ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'draggable=',		'menu': 'cr ã§å§‹ã¾ã‚‹ã‚«ãƒ¼ã‚½ãƒ«å®šæ•° ã¾ãŸã¯ ã‚«ãƒ¼ã‚½ãƒ«ãƒ•ã‚¡ã‚¤ãƒ«å	position ã‚¿ã‚°ã§ draggable=true ã¨ã—ãŸã¨ãã«ã€ ãƒã‚¦ã‚¹ãŒãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’ãƒ‰ãƒ©ãƒƒã‚°å¯èƒ½ãªä½ç½®ã«æ¥ãŸã¨ãã«è¡¨ç¤ºã•ã‚Œã‚‹ ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[deffont [^]]*\%#\|^\s*@deffont ','bcn',line('.'))
-   call add(l:list, {'word': 'size=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ì•¶šƒTƒCƒY‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'face=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚ÌƒtƒHƒ“ƒg–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ì•¶šF‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rubysize=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ìƒ‹ƒr‚Ì•¶š‚ÌƒTƒCƒY‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rubyoffset=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ìƒ‹ƒr‚Ì•\¦ƒIƒtƒZƒbƒg‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'shadow=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Å•¶š‚É‰e‚ğ‚Â‚¯‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'edge=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Å•¶š‚ğ‘Ü•¶š ( ‰æ‚è•¶š ) ‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'edgecolor=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ì•¶š‚Ì‘Ü‚ÌF‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'shadowcolor=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ì‰e‚ÌF‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bold=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Å•¶š‚ğ‘¾•¶š‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'size=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ–‡å­—ã‚µã‚¤ã‚ºã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'face=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ•ã‚©ãƒ³ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ–‡å­—è‰²ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rubysize=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ«ãƒ“ã®æ–‡å­—ã®ã‚µã‚¤ã‚ºã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rubyoffset=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ãƒ«ãƒ“ã®è¡¨ç¤ºã‚ªãƒ•ã‚»ãƒƒãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadow=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§æ–‡å­—ã«å½±ã‚’ã¤ã‘ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edge=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§æ–‡å­—ã‚’è¢‹æ–‡å­— ( ç¸å–ã‚Šæ–‡å­— ) ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edgecolor=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®æ–‡å­—ã®è¢‹ã®è‰²ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadowcolor=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å½±ã®è‰²ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bold=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§æ–‡å­—ã‚’å¤ªæ–‡å­—ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[defstyle [^]]*\%#\|^\s*@defstyle ','bcn',line('.'))
-   call add(l:list, {'word': 'linespacing=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚ÌsŠÔ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'pitch=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚ÌšŠÔ‚ÌƒIƒtƒZƒbƒg‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'linesize=',		'menu': 'ƒfƒtƒHƒ‹ƒg‚Ìs‚Ì•‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'linespacing=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®è¡Œé–“ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'pitch=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å­—é–“ã®ã‚ªãƒ•ã‚»ãƒƒãƒˆã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'linesize=',		'menu': 'ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®è¡Œã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[delay [^]]*\%#\|^\s*@delay ','bcn',line('.'))
-   call add(l:list, {'word': 'speed=',		'menu': '(•K)"nowait" ‚ğw’è‚·‚é‚ÆA•¶š‚Ì•\¦‚ÉƒEƒFƒCƒg‚ğ‚©‚¯‚¸‚ÉA ˆê‹C‚É•¶š‚ª•\¦‚³‚ê‚Ü‚·B"user" ‚ğw’è‚·‚é‚ÆA [ƒVƒXƒeƒ€|•¶š‘¬“x] ‚Åƒ†[ƒU[‚ªw’è‚µ‚½‘¬“x‚É‚È‚è‚Ü ‚·(ƒfƒtƒHƒ‹ƒg)BƒEƒFƒCƒg‚Ì’l‚ğw’è‚·‚é‚ÆA’l‚Å¦‚µ‚½ ŠÔ‚É‚Â‚« 1 •¶š‚Ì‘¬“x‚Å•¶š‚ğ•\¦‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'speed=',		'menu': '(å¿…)"nowait" ã‚’æŒ‡å®šã™ã‚‹ã¨ã€æ–‡å­—ã®è¡¨ç¤ºã«ã‚¦ã‚§ã‚¤ãƒˆã‚’ã‹ã‘ãšã«ã€ ä¸€æ°—ã«æ–‡å­—ãŒè¡¨ç¤ºã•ã‚Œã¾ã™ã€‚"user" ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ [ã‚·ã‚¹ãƒ†ãƒ |æ–‡å­—é€Ÿåº¦] ã§ãƒ¦ãƒ¼ã‚¶ãƒ¼ãŒæŒ‡å®šã—ãŸé€Ÿåº¦ã«ãªã‚Šã¾ ã™(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ)ã€‚ã‚¦ã‚§ã‚¤ãƒˆã®å€¤ã‚’æŒ‡å®šã™ã‚‹ã¨ã€å€¤ã§ç¤ºã—ãŸ æ™‚é–“ã«ã¤ã 1 æ–‡å­—ã®é€Ÿåº¦ã§æ–‡å­—ã‚’è¡¨ç¤ºã—ã¾ã™ã€‚'})
   elseif search('\[disablestore [^]]*\%#\|^\s*@disablestore ','bcn',line('.'))
-   call add(l:list, {'word': 'store=',		'menu': 'ux‚ğ‚Í‚³‚Şv‚Ì‹@”\‚ğg—p•s‰Â‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'restore=',		'menu': 'ux‚ğ‚½‚Ç‚év‚Ì‹@”\‚ğg—p•s‰Â‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'store=',		'menu': 'ã€Œæ ã‚’ã¯ã•ã‚€ã€ã®æ©Ÿèƒ½ã‚’ä½¿ç”¨ä¸å¯ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'restore=',		'menu': 'ã€Œæ ã‚’ãŸã©ã‚‹ã€ã®æ©Ÿèƒ½ã‚’ä½¿ç”¨ä¸å¯ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[edit [^]]*\%#\|^\s*@edit ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)“ü—Í‚µ‚½•¶š—ñ‚ğŠi”[‚·‚é•Ï”‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'length=',		'menu': '’PˆêsƒGƒfƒBƒbƒg‚Ì• ( c‘‚«‚Ìê‡‚Í‚‚³ ) ‚ğƒsƒNƒZƒ‹’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bgcolor=',		'menu': '”wŒiF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'bgcolor ‘®«‚Åw’è‚µ‚½”wŒiF‚Ì•s“§–¾“x‚ğ 0 ` 255 ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': '•¶šF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'maxchars=',		'menu': '“ü—Í‚Å‚«‚éÅ‘å•¶š”‚ğw’è‚µ‚Ü‚·B0 ‚ğw’è‚·‚é‚Æ–³§ŒÀ‚É‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)å…¥åŠ›ã—ãŸæ–‡å­—åˆ—ã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'length=',		'menu': 'å˜ä¸€è¡Œã‚¨ãƒ‡ã‚£ãƒƒãƒˆã®å¹… ( ç¸¦æ›¸ãã®å ´åˆã¯é«˜ã• ) ã‚’ãƒ”ã‚¯ã‚»ãƒ«å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bgcolor=',		'menu': 'èƒŒæ™¯è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'bgcolor å±æ€§ã§æŒ‡å®šã—ãŸèƒŒæ™¯è‰²ã®ä¸é€æ˜åº¦ã‚’ 0 ï½ 255 ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'æ–‡å­—è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'maxchars=',		'menu': 'å…¥åŠ›ã§ãã‚‹æœ€å¤§æ–‡å­—æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚0 ã‚’æŒ‡å®šã™ã‚‹ã¨ç„¡åˆ¶é™ã«ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[elsif [^]]*\%#\|^\s*@elsif ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[emb [^]]*\%#\|^\s*@emb ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B‚±‚±‚Å•]‰¿‚³‚ê‚½®‚ÌŒ‹‰Ê‚ªA ‚±‚Ì emb ƒ^ƒO‚Æ’u‚«Š·‚í‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚ã“ã“ã§è©•ä¾¡ã•ã‚ŒãŸå¼ã®çµæœãŒã€ ã“ã® emb ã‚¿ã‚°ã¨ç½®ãæ›ã‚ã‚Šã¾ã™ã€‚'})
   elseif search('\[erasebookmark [^]]*\%#\|^\s*@erasebookmark ','bcn',line('.'))
-   call add(l:list, {'word': 'place=',		'menu': 'x‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'place=',		'menu': 'æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[erasemacro [^]]*\%#\|^\s*@erasemacro ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)Á‹‚·‚éƒ^ƒO‚ğw’è‚µ‚Ü‚·Bƒ}ƒNƒ‚Æ‚µ‚Ä’è‹`‚³‚ê‚½ƒ^ƒO‚Ì‚İ‚ğ Á‹‚·‚é‚±‚Æ‚ªo—ˆ‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)æ¶ˆå»ã™ã‚‹ã‚¿ã‚°ã‚’æŒ‡å®šã—ã¾ã™ã€‚ãƒã‚¯ãƒ­ã¨ã—ã¦å®šç¾©ã•ã‚ŒãŸã‚¿ã‚°ã®ã¿ã‚’ æ¶ˆå»ã™ã‚‹ã“ã¨ãŒå‡ºæ¥ã¾ã™ã€‚'})
   elseif search('\[eval [^]]*\%#\|^\s*@eval ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[fadebgm [^]]*\%#\|^\s*@fadebgm ','bcn',line('.'))
-   call add(l:list, {'word': 'volume=',		'menu': '(•K)ƒtƒF[ƒhŒã‚É“’B‚³‚¹‚é BGM ‚Ì‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒh‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğ ms ’PˆÊ‚Åw’è‚µ‚Ü‚·B 3000 ‚Æw’è‚·‚ê‚Î 3 •bŠÔ‚ÌŠÔAƒtƒF[ƒh‚ğs‚Á‚Ä‚¢‚Ü‚·B'})
+   call add(l:list, {'word': 'volume=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰å¾Œã«åˆ°é”ã•ã›ã‚‹ BGM ã®éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ ms å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ 3000 ã¨æŒ‡å®šã™ã‚Œã° 3 ç§’é–“ã®é–“ã€ãƒ•ã‚§ãƒ¼ãƒ‰ã‚’è¡Œã£ã¦ã„ã¾ã™ã€‚'})
   elseif search('\[fadeinbgm [^]]*\%#\|^\s*@fadeinbgm ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)‰‰‘t‚·‚é BGM ƒtƒ@ƒCƒ‹–¼‚Ü‚½‚Í CD ƒgƒ‰ƒbƒN”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'start=',		'menu': 'ƒ‹[ƒvƒ`ƒ…[ƒi‚Åw’è‚µ‚½ƒ‰ƒxƒ‹‚Å BGM ‚ÌÄ¶ŠJnˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'BGM ‚ğƒ‹[ƒv‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒhƒCƒ“‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğ ms ’PˆÊ‚Åw’è‚µ‚Ü‚·B 3000 ‚Æw’è‚·‚ê‚Î 3 •bŠÔ‚ÌŠÔAƒtƒF[ƒhƒCƒ“‚ğs‚Á‚Ä‚¢‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)æ¼”å¥ã™ã‚‹ BGM ãƒ•ã‚¡ã‚¤ãƒ«åã¾ãŸã¯ CD ãƒˆãƒ©ãƒƒã‚¯ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'start=',		'menu': 'ãƒ«ãƒ¼ãƒ—ãƒãƒ¥ãƒ¼ãƒŠã§æŒ‡å®šã—ãŸãƒ©ãƒ™ãƒ«ã§ BGM ã®å†ç”Ÿé–‹å§‹ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'BGM ã‚’ãƒ«ãƒ¼ãƒ—ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ ms å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ 3000 ã¨æŒ‡å®šã™ã‚Œã° 3 ç§’é–“ã®é–“ã€ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³ã‚’è¡Œã£ã¦ã„ã¾ã™ã€‚'})
   elseif search('\[fadeinse [^]]*\%#\|^\s*@fadeinse ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Œø‰Ê‰¹‚ğÄ¶‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·Bˆê‚Â‚Ìƒoƒbƒtƒ@‚Å‚Í “¯‚É‚Íˆê‚Â‚ÌŒø‰Ê‰¹‚ğ–Â‚ç‚·‚±‚Æ‚ª‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)‰‰‘t‚·‚éŒø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'start=',		'menu': 'ƒ‹[ƒvƒ`ƒ…[ƒi‚Åw’è‚µ‚½ƒ‰ƒxƒ‹‚Å SE ‚ÌÄ¶ŠJnˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒhƒCƒ“‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğƒ~ƒŠ•b’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'Œø‰Ê‰¹‚ğŒJ‚è•Ô‚µÄ¶‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'åŠ¹æœéŸ³ã‚’å†ç”Ÿã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ä¸€ã¤ã®ãƒãƒƒãƒ•ã‚¡ã§ã¯ åŒæ™‚ã«ã¯ä¸€ã¤ã®åŠ¹æœéŸ³ã‚’é³´ã‚‰ã™ã“ã¨ãŒã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)æ¼”å¥ã™ã‚‹åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'start=',		'menu': 'ãƒ«ãƒ¼ãƒ—ãƒãƒ¥ãƒ¼ãƒŠã§æŒ‡å®šã—ãŸãƒ©ãƒ™ãƒ«ã§ SE ã®å†ç”Ÿé–‹å§‹ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ãƒŸãƒªç§’å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'åŠ¹æœéŸ³ã‚’ç¹°ã‚Šè¿”ã—å†ç”Ÿã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[fadeoutbgm [^]]*\%#\|^\s*@fadeoutbgm ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒhƒAƒEƒg‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğ ms ’PˆÊ‚Åw’è‚µ‚Ü‚·B 3000 ‚Æw’è‚·‚ê‚Î 3 •bŠÔ‚ÌŠÔAƒtƒF[ƒhƒAƒEƒg‚ğs‚Á‚Ä‚¢‚Ü‚·B'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ ms å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ 3000 ã¨æŒ‡å®šã™ã‚Œã° 3 ç§’é–“ã®é–“ã€ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã‚’è¡Œã£ã¦ã„ã¾ã™ã€‚'})
   elseif search('\[fadeoutse [^]]*\%#\|^\s*@fadeoutse ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Œø‰Ê‰¹‚ğƒtƒF[ƒhƒAƒEƒg‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒhƒAƒEƒg‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğƒ~ƒŠ•b’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'åŠ¹æœéŸ³ã‚’ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ãƒŸãƒªç§’å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[fadepausebgm [^]]*\%#\|^\s*@fadepausebgm ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒhƒAƒEƒg‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğ ms ’PˆÊ‚Åw’è‚µ‚Ü‚·B 3000 ‚Æw’è‚·‚ê‚Î 3 •bŠÔ‚ÌŠÔAƒtƒF[ƒhƒAƒEƒg‚ğs‚Á‚Ä‚¢‚Ü‚·B'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ ms å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ 3000 ã¨æŒ‡å®šã™ã‚Œã° 3 ç§’é–“ã®é–“ã€ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã‚’è¡Œã£ã¦ã„ã¾ã™ã€‚'})
   elseif search('\[fadese [^]]*\%#\|^\s*@fadese ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Œø‰Ê‰¹‚ğƒtƒF[ƒh‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒtƒF[ƒh‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğƒ~ƒŠ•b’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'volume=',		'menu': '(•K)ƒtƒF[ƒh‚Ì“’B‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B @100 ‚ªãŒÀ‚Å‚·B‰¹—Ê‚Ì—}§‚Ì‚İ‚ğƒTƒ|[ƒg‚µ‚Ü‚·(‘•‚Í ‰¹Œ¹‚Ì“Á«ãA‚Å‚«‚Ü‚¹‚ñ)B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'åŠ¹æœéŸ³ã‚’ãƒ•ã‚§ãƒ¼ãƒ‰ã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’ãƒŸãƒªç§’å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'volume=',		'menu': '(å¿…)ãƒ•ã‚§ãƒ¼ãƒ‰ã®åˆ°é”éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚ ã€€100 ãŒä¸Šé™ã§ã™ã€‚éŸ³é‡ã®æŠ‘åˆ¶ã®ã¿ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¾ã™(å¢—å¹…ã¯ éŸ³æºã®ç‰¹æ€§ä¸Šã€ã§ãã¾ã›ã‚“)ã€‚'})
   elseif search('\[font [^]]*\%#\|^\s*@font ','bcn',line('.'))
-   call add(l:list, {'word': 'size=',		'menu': '•¶šƒTƒCƒY‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'face=',		'menu': 'ƒtƒHƒ“ƒg–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': '•¶šF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'italic=',		'menu': '•¶š‚ğÎ‘Ì‚É‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚ÆÎ‘Ì‚É‚È‚è‚Ü ‚·B'})
-   call add(l:list, {'word': 'rubysize=',		'menu': 'ƒ‹ƒr(“Ç‚İ‰¼–¼)‚Ì•¶š‚ÌƒTƒCƒY‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rubyoffset=',		'menu': 'ƒ‹ƒr‚Ì•\¦ƒIƒtƒZƒbƒg‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B•‰‚Ì”‚ğw’è‚·‚é‚Æ–{•¶‚É ‚æ‚è‹ß‚¢ˆÊ’u‚É•\¦‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'shadow=',		'menu': '•¶š‚É‰e‚ğ‚Â‚¯‚é‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æ‰e‚ª‚Â‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'edge=',		'menu': '•¶š‚ğ‘Ü•¶š ( ‰æ‚è•¶š ) ‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æ‘Ü•¶š‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'edgecolor=',		'menu': '•¶š‚Ì‘Ü‚ÌF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'shadowcolor=',		'menu': '‰e‚ÌF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bold=',		'menu': '•¶š‚ğ‘¾•¶š‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B true ‚ğw’è‚·‚é‚Æ‘¾•¶š‚É‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'size=',		'menu': 'æ–‡å­—ã‚µã‚¤ã‚ºã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'face=',		'menu': 'ãƒ•ã‚©ãƒ³ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'æ–‡å­—è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'italic=',		'menu': 'æ–‡å­—ã‚’æ–œä½“ã«ã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨æ–œä½“ã«ãªã‚Šã¾ ã™ã€‚'})
+   call add(l:list, {'word': 'rubysize=',		'menu': 'ãƒ«ãƒ“(èª­ã¿ä»®å)ã®æ–‡å­—ã®ã‚µã‚¤ã‚ºã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rubyoffset=',		'menu': 'ãƒ«ãƒ“ã®è¡¨ç¤ºã‚ªãƒ•ã‚»ãƒƒãƒˆã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚è² ã®æ•°ã‚’æŒ‡å®šã™ã‚‹ã¨æœ¬æ–‡ã« ã‚ˆã‚Šè¿‘ã„ä½ç½®ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadow=',		'menu': 'æ–‡å­—ã«å½±ã‚’ã¤ã‘ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨å½±ãŒã¤ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edge=',		'menu': 'æ–‡å­—ã‚’è¢‹æ–‡å­— ( ç¸å–ã‚Šæ–‡å­— ) ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨è¢‹æ–‡å­—ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edgecolor=',		'menu': 'æ–‡å­—ã®è¢‹ã®è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadowcolor=',		'menu': 'å½±ã®è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bold=',		'menu': 'æ–‡å­—ã‚’å¤ªæ–‡å­—ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ true ã‚’æŒ‡å®šã™ã‚‹ã¨å¤ªæ–‡å­—ã«ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[freeimage [^]]*\%#\|^\s*@freeimage ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‰æ‘œ‚ğ‰ğ•ú‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ç”»åƒã‚’è§£æ”¾ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[glyph [^]]*\%#\|^\s*@glyph ','bcn',line('.'))
-   call add(l:list, {'word': 'line=',		'menu': 's––ƒNƒŠƒbƒN‘Ò‚¿‹L†‰æ‘œ‚Ìƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B Šg’£q‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'linekey=',		'menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"	ƒJƒ‰[ƒL[‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '‰üƒy[ƒW‘Ò‚¿‹L†‰æ‘œ‚Ìƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'pagekey=',		'menu': '0xRRGGBB Œ`® ‚Ü‚½‚Í ƒpƒŒƒbƒgƒCƒ“ƒfƒbƒNƒX”Ô† ‚Ü‚½‚Í "adapt"	ƒJƒ‰[ƒL[‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'fix=',		'menu': '‹L†•\¦ˆÊ’u‚ğw’èˆÊ’u‚ÉŒÅ’è‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æ ‹L†‚Í left ‚¨‚æ‚Ñ top ‚ğw’è‚µ‚½ˆÊ’u‚É•\¦‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'left=',		'menu': 'fix ‘®«‚ğ true ‚É‚µ‚½‚Æ‚«‚É‹L†‚ğ•\¦‚·‚éˆÊ’u‚Ì‚¤‚¿A¶’[ˆÊ’u‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'top=',		'menu': 'fix ‘®«‚ğ true ‚É‚µ‚½‚Æ‚«‚É‹L†‚ğ•\¦‚·‚éˆÊ’u‚Ì‚¤‚¿Aã’[ˆÊ’u‚ğ w’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'line=',		'menu': 'è¡Œæœ«ã‚¯ãƒªãƒƒã‚¯å¾…ã¡è¨˜å·ç”»åƒã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚ æ‹¡å¼µå­ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'linekey=',		'menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"	ã‚«ãƒ©ãƒ¼ã‚­ãƒ¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'æ”¹ãƒšãƒ¼ã‚¸å¾…ã¡è¨˜å·ç”»åƒã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'pagekey=',		'menu': '0xRRGGBB å½¢å¼ ã¾ãŸã¯ ãƒ‘ãƒ¬ãƒƒãƒˆã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ç•ªå· ã¾ãŸã¯ "adapt"	ã‚«ãƒ©ãƒ¼ã‚­ãƒ¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'fix=',		'menu': 'è¨˜å·è¡¨ç¤ºä½ç½®ã‚’æŒ‡å®šä½ç½®ã«å›ºå®šã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨ è¨˜å·ã¯ left ãŠã‚ˆã³ top ã‚’æŒ‡å®šã—ãŸä½ç½®ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'left=',		'menu': 'fix å±æ€§ã‚’ true ã«ã—ãŸã¨ãã«è¨˜å·ã‚’è¡¨ç¤ºã™ã‚‹ä½ç½®ã®ã†ã¡ã€å·¦ç«¯ä½ç½®ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'top=',		'menu': 'fix å±æ€§ã‚’ true ã«ã—ãŸã¨ãã«è¨˜å·ã‚’è¡¨ç¤ºã™ã‚‹ä½ç½®ã®ã†ã¡ã€ä¸Šç«¯ä½ç½®ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[goback [^]]*\%#\|^\s*@goback ','bcn',line('.'))
-   call add(l:list, {'word': 'ask=',		'menu': 'true ‚ğw’è‚·‚é‚ÆA‘O‚É–ß‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ğ‚µ‚Ü‚·Bfalse ‚ğ w’è‚·‚é‚Æ‘O‚É–ß‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚Í‚ ‚è‚Ü‚¹‚ñB‚±‚Ì‘®«‚ğÈ—ª ‚·‚é‚Æ false ‚ğw’è‚µ‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'ask=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€å‰ã«æˆ»ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã‚’ã—ã¾ã™ã€‚false ã‚’ æŒ‡å®šã™ã‚‹ã¨å‰ã«æˆ»ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã“ã®å±æ€§ã‚’çœç•¥ ã™ã‚‹ã¨ false ã‚’æŒ‡å®šã—ãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[gotostart [^]]*\%#\|^\s*@gotostart ','bcn',line('.'))
-   call add(l:list, {'word': 'ask=',		'menu': 'true ‚ğw’è‚·‚é‚ÆAÅ‰‚É–ß‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ğ‚µ‚Ü‚·Bfalse ‚ğ w’è‚·‚é‚ÆÅ‰‚É–ß‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚Í‚ ‚è‚Ü‚¹‚ñB‚±‚Ì‘®«‚ğÈ—ª ‚·‚é‚Æ false ‚ğw’è‚µ‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'ask=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€æœ€åˆã«æˆ»ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã‚’ã—ã¾ã™ã€‚false ã‚’ æŒ‡å®šã™ã‚‹ã¨æœ€åˆã«æˆ»ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã“ã®å±æ€§ã‚’çœç•¥ ã™ã‚‹ã¨ false ã‚’æŒ‡å®šã—ãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[graph [^]]*\%#\|^\s*@graph ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)•\¦‚³‚¹‚½‚¢‰æ‘œƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B “Ç‚İ‚ß‚éŒ`®‚Í imageƒ^ƒO‚Å“Ç‚İ‚ß‚é Œ`®‚Æ“¯‚¶‚Å‚·B @‚±‚±‚Åw’è‚µ‚½ƒtƒ@ƒCƒ‹–¼ (Šg’£q‚ğœ‚­) •”•ª‚É _m ‚ğ’Ç‰Á ‚µ‚½ƒtƒ@ƒCƒ‹‚ªA‚à‚µ‚ ‚ê‚ÎAƒ}ƒXƒN‰æ‘œ‚Æ‚µ‚Ä“Ç‚İ‚Ü‚ê‚Ü‚·B ƒ}ƒXƒN‰æ‘œ‚Í•K‚¸ 256 FƒOƒŒ[ƒXƒP[ƒ‹‚Å•Û‘¶‚µ‚Ä‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'key=',		'menu': '‚Ç‚ÌF‚ğ”²‚«F‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ”²‚«F‚Í–³Œø‚É‚È‚è‚Ü‚·B @key=0xRRGGBB ‚Æ‚¢‚¤Œ`®‚Å 16 i”‚Å”²‚«F‚ğw’è‚·‚é ‚ÆARR(Ô) GG(—Î) BB(Â)‚Å“h‚ç‚ê‚½•”•ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎAkey=0xff00ff ‚Å‚Í (r,g,b)=(255,0,255) ‚Â‚Ü‚è^ƒ}ƒ[ƒ“ƒ_‚Ì•” •ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚·‚é‚Æ‚¢‚¤w’è‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'char=',		'menu': 'true ‚ğw’è‚·‚é‚ÆA‰æ‘œ‚Ífont ƒ^ƒO‚Å w’è‚µ‚½FA‰eA‘Ü•¶š‚Ìó‘Ô‚ªA•¶š“¯—l‚É•\¦‚³‚ê‚Ü‚·B ‚»‚Ì‚½‚ßAtrue ‚ğİ’è‚·‚é‚Æ‰æ‘œ‚ÌFî•ñ‚Í–³‹‚³‚ê‚Ü‚·B ‚Ü‚½A‰æ‘œ‚ª‰e‚â‘Ü•¶š‚Å‚ ‚é•K—v‚Í‚ ‚è‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'alt=',		'menu': 'ƒƒbƒZ[ƒW—š—ğ‚É•\¦‚·‚éA‚±‚Ì‰æ‘œ‚Ì‘ã‘Ö•¶š‚ğw’è‚µ‚Ü‚·B ƒƒbƒZ[ƒW—š—ğ‚Í•¶šî•ñ‚µ‚©•\¦‚Å‚«‚Ü‚¹‚ñ‚Ì‚ÅAalt ‘®«‚É w’è‚³‚ê‚½•¶š‚ª‘ã‚í‚è‚É•\¦‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)è¡¨ç¤ºã•ã›ãŸã„ç”»åƒãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚ èª­ã¿è¾¼ã‚ã‚‹å½¢å¼ã¯ imageã‚¿ã‚°ã§èª­ã¿è¾¼ã‚ã‚‹ å½¢å¼ã¨åŒã˜ã§ã™ã€‚ ã€€ã“ã“ã§æŒ‡å®šã—ãŸãƒ•ã‚¡ã‚¤ãƒ«å (æ‹¡å¼µå­ã‚’é™¤ã) éƒ¨åˆ†ã« _m ã‚’è¿½åŠ  ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ãŒã€ã‚‚ã—ã‚ã‚Œã°ã€ãƒã‚¹ã‚¯ç”»åƒã¨ã—ã¦èª­ã¿è¾¼ã¾ã‚Œã¾ã™ã€‚ ãƒã‚¹ã‚¯ç”»åƒã¯å¿…ãš 256 è‰²ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã§ä¿å­˜ã—ã¦ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'key=',		'menu': 'ã©ã®è‰²ã‚’æŠœãè‰²ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨æŠœãè‰²ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚ ã€€key=0xRRGGBB ã¨ã„ã†å½¢å¼ã§ 16 é€²æ•°ã§æŠœãè‰²ã‚’æŒ‡å®šã™ã‚‹ ã¨ã€RR(èµ¤) GG(ç·‘) BB(é’)ã§å¡—ã‚‰ã‚ŒãŸéƒ¨åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€key=0xff00ff ã§ã¯ (r,g,b)=(255,0,255) ã¤ã¾ã‚ŠçœŸãƒã‚¼ãƒ³ãƒ€ã®éƒ¨ åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã™ã‚‹ã¨ã„ã†æŒ‡å®šã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'char=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ç”»åƒã¯font ã‚¿ã‚°ã§ æŒ‡å®šã—ãŸè‰²ã€å½±ã€è¢‹æ–‡å­—ã®çŠ¶æ…‹ãŒã€æ–‡å­—åŒæ§˜ã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ ãã®ãŸã‚ã€true ã‚’è¨­å®šã™ã‚‹ã¨ç”»åƒã®è‰²æƒ…å ±ã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚ ã¾ãŸã€ç”»åƒãŒå½±ã‚„è¢‹æ–‡å­—ã§ã‚ã‚‹å¿…è¦ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'alt=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã«è¡¨ç¤ºã™ã‚‹ã€ã“ã®ç”»åƒã®ä»£æ›¿æ–‡å­—ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã¯æ–‡å­—æƒ…å ±ã—ã‹è¡¨ç¤ºã§ãã¾ã›ã‚“ã®ã§ã€alt å±æ€§ã« æŒ‡å®šã•ã‚ŒãŸæ–‡å­—ãŒä»£ã‚ã‚Šã«è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[hact [^]]*\%#\|^\s*@hact ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)ƒƒbƒZ[ƒW‚ğƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚ÉÀs‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã«å®Ÿè¡Œã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[hch [^]]*\%#\|^\s*@hch ','bcn',line('.'))
-   call add(l:list, {'word': 'text=',		'menu': '(•K)‚±‚±‚Åw’è‚µ‚½•¶š‚ª‚»‚±‚¾‚¯‰¡‘‚«‚Å•\¦‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'expand=',		'menu': 'true ‚ğw’è‚·‚é‚ÆA’·‚¢c’†‰¡‚ğ•`‰æ‚µ‚æ‚¤‚Æ‚µ‚½‚Æ‚«‚É sŠÔ‚ğ©“®“I‚ÉŠg’£‚µ‚Ü‚·Bfalse ‚ğw’è‚·‚é‚ÆAc’†‰¡‚ª s‚©‚ç‚Í‚İo‚Ä³í‚É•`‰æ‚³‚ê‚È‚¢‰Â”\«‚ª‚ ‚è‚Ü‚·‚ªA sŠÔ‚Í‚»‚Ì‚Ü‚Ü‚É‚È‚è‚Ü‚· ( ’Êí”¼Šp‚QŒ…‚È‚ç‚Î false ‚Å OK )B'})
+   call add(l:list, {'word': 'text=',		'menu': '(å¿…)ã“ã“ã§æŒ‡å®šã—ãŸæ–‡å­—ãŒãã“ã ã‘æ¨ªæ›¸ãã§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'expand=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€é•·ã„ç¸¦ä¸­æ¨ªã‚’æç”»ã—ã‚ˆã†ã¨ã—ãŸã¨ãã« è¡Œé–“ã‚’è‡ªå‹•çš„ã«æ‹¡å¼µã—ã¾ã™ã€‚false ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ç¸¦ä¸­æ¨ªãŒ è¡Œã‹ã‚‰ã¯ã¿å‡ºã¦æ­£å¸¸ã«æç”»ã•ã‚Œãªã„å¯èƒ½æ€§ãŒã‚ã‚Šã¾ã™ãŒã€ è¡Œé–“ã¯ãã®ã¾ã¾ã«ãªã‚Šã¾ã™ ( é€šå¸¸åŠè§’ï¼’æ¡ãªã‚‰ã° false ã§ OK )ã€‚'})
   elseif search('\[history [^]]*\%#\|^\s*@history ','bcn',line('.'))
-   call add(l:list, {'word': 'output=',		'menu': 'ƒƒbƒZ[ƒW—š—ğ‚Ö‚Ì•¶šî•ñ‚Ìo—Í‚ğ‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'enabled=',		'menu': 'ƒƒbƒZ[ƒW—š—ğ‚ğ•\¦‰Â”\‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'output=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã¸ã®æ–‡å­—æƒ…å ±ã®å‡ºåŠ›ã‚’ã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'enabled=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã‚’è¡¨ç¤ºå¯èƒ½ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[hr [^]]*\%#\|^\s*@hr ','bcn',line('.'))
-   call add(l:list, {'word': 'repage=',		'menu': '‰üƒy[ƒW‚ğs‚¤‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'repage=',		'menu': 'æ”¹ãƒšãƒ¼ã‚¸ã‚’è¡Œã†ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[if [^]]*\%#\|^\s*@if ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B‚±‚Ì®‚ÌŒ‹‰Ê‚ª false ( ‚Ü‚½‚Í 0 ‚È ‚ç‚ÎAelsifEelseEendif ƒ^ƒO‚Ü‚Å‚Ì•¶Í‚âƒ^ƒO‚ª–³‹‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚ã“ã®å¼ã®çµæœãŒ false ( ã¾ãŸã¯ 0 ãª ã‚‰ã°ã€elsifãƒ»elseãƒ»endif ã‚¿ã‚°ã¾ã§ã®æ–‡ç« ã‚„ã‚¿ã‚°ãŒç„¡è¦–ã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[ignore [^]]*\%#\|^\s*@ignore ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B‚±‚Ì®‚ÌŒ‹‰Ê‚ª true ( ‚Ü‚½‚Í 0 ˆÈŠO )‚È ‚ç‚ÎAendignore ƒ^ƒO‚Ü‚Å‚Ì•¶Í‚âƒ^ƒO‚ª–³‹‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚ã“ã®å¼ã®çµæœãŒ true ( ã¾ãŸã¯ 0 ä»¥å¤– )ãª ã‚‰ã°ã€endignore ã‚¿ã‚°ã¾ã§ã®æ–‡ç« ã‚„ã‚¿ã‚°ãŒç„¡è¦–ã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[image [^]]*\%#\|^\s*@image ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)“Ç‚İ‚İ‚½‚¢‰æ‘œ‚ğw’è‚µ‚Ü‚·BŠg’£q‚ÍÈ—ª‰Â”\‚Å‚·B'})
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‰æ‘œ‚ğ“Ç‚İ‚ŞƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'key=',		'menu': '‚Ç‚ÌF‚ğ”²‚«F‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ”²‚«F‚Í–³Œø‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'mode=',		'menu': '‘OŒiƒŒƒCƒ„‚Ì“§‰ßƒ‚[ƒh‚ğw’è‚µ‚Ü‚·B‘OŒiƒŒƒCƒ„ˆÈŠO‚É‚Í w’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'grayscale=',		'menu': '‰æ‘œ‚ğƒOƒŒ[ƒXƒP[ƒ‹‚É‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B grayscale=true ‚Æw’è‚·‚é‚ÆA‰æ‘œ‚ğƒOƒŒ[ƒXƒP[ƒ‹‚É‚µ‚Ü‚·B È—ª‚·‚é‚Æ false ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'rgamma=',		'menu': 'r (Ô) Ag (—Î) A b (Â) ‚ÌŠe¬•ª‚ÌƒKƒ“ƒ}’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚Î‰æ‘œ‚ğƒZƒsƒA’²‚É‚·‚é‚É‚ÍA grayscale=true rgamma=1.3 ggamma=1.1 ‚Æw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'ggamma=',		'menu': 'r (Ô) Ag (—Î) A b (Â) ‚ÌŠe¬•ª‚ÌƒKƒ“ƒ}’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚Î‰æ‘œ‚ğƒZƒsƒA’²‚É‚·‚é‚É‚ÍA grayscale=true rgamma=1.3 ggamma=1.1 ‚Æw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bgamma=',		'menu': 'r (Ô) Ag (—Î) A b (Â) ‚ÌŠe¬•ª‚ÌƒKƒ“ƒ}’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚Î‰æ‘œ‚ğƒZƒsƒA’²‚É‚·‚é‚É‚ÍA grayscale=true rgamma=1.3 ggamma=1.1 ‚Æw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rfloor=',		'menu': 'Še¬•ª‚Ì‹P“xÅ’á’l‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'gfloor=',		'menu': 'Še¬•ª‚Ì‹P“xÅ’á’l‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bfloor=',		'menu': 'Še¬•ª‚Ì‹P“xÅ’á’l‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rceil=',		'menu': 'Še¬•ª‚Ì‹P“xÅ‚’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎA rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ‚Æ w’è‚·‚é‚ÆAF‚ª”½“]‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'gceil=',		'menu': 'Še¬•ª‚Ì‹P“xÅ‚’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎA rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ‚Æ w’è‚·‚é‚ÆAF‚ª”½“]‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bceil=',		'menu': 'Še¬•ª‚Ì‹P“xÅ‚’l‚ğw’è‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎA rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ‚Æ w’è‚·‚é‚ÆAF‚ª”½“]‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mcolor=',		'menu': 'FƒuƒŒƒ“ƒh‚É‚æ‚éF’²Œø‰Ê‚É‚¨‚¢‚ÄAƒuƒŒƒ“ƒh‚·‚éF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü ‚·B”Z“x‚Í mopacity ‘®«‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mopacity=',		'menu': 'FƒuƒŒƒ“ƒh‚É‚æ‚éF’²Œø‰Ê‚ÅAmcolor ‚Åw’è‚µ‚½F‚ğ‚Ç‚ê‚®‚ç‚¢‚Ì•s“§ –¾“x‚ÅƒuƒŒƒ“ƒh‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'lightcolor=',		'menu': 'ŒõƒuƒŒƒ“ƒh‚É‚æ‚éF’²Œø‰Ê‚ÌAƒuƒŒƒ“ƒh‚·‚éF‚ğ 0xAARRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B ƒ¿’l‚ğŠÜ‚Ş‚Ì‚É’ˆÓ‚µ‚Ä‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'lighttype=',		'menu': 'ŒõƒuƒŒƒ“ƒh‚É‚æ‚éF’²Œø‰Ê‚ÌA‡¬ƒ‚[ƒh‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'shadow=',		'menu': 'ƒŒƒCƒ„‚Ì‰æ‘œ‚É‰e‚ğ‚Â‚¯‚Ü‚·B‰eF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B”’lÈ—ª‚Í 0x000000 ˆµ‚¢‚Å‚·B shadowopacity,shadowx,shadowy,shadowblur ‚Å‚Â‚¯‚é‰e‚Ìƒpƒ‰ƒ[ƒ^‚ğw’è‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'shadowopacity=',		'menu': 'shadow‚Å‰e‚ğ‚Â‚¯‚é‚Æ‚«‚Ì‰e‚Ì”Z“x‚ğw’è‚µ‚Ü‚·B–¢w’è‚Ì’l‚Í200‚Å‚·B'})
-   call add(l:list, {'word': 'shadowx=',		'menu': 'shadow‚Å‰e‚ğ‚Â‚¯‚é‚Æ‚«‚Ì‰e‚ÌX•ûŒü‚Ì‚¸‚ê‚Ì—Ê‚ğw’è‚µ‚Ü‚·B–¢w’è‚Ì’l‚Í10‚Å‚·B'})
-   call add(l:list, {'word': 'shadowy=',		'menu': 'shadow‚Å‰e‚ğ‚Â‚¯‚é‚Æ‚«‚Ì‰e‚ÌY•ûŒü‚Ì‚¸‚ê‚Ì—Ê‚ğw’è‚µ‚Ü‚·B–¢w’è‚Ì’l‚Í10‚Å‚·B'})
-   call add(l:list, {'word': 'shadowblur=',		'menu': 'shadow‚Å‰e‚ğ‚Â‚¯‚é‚Æ‚«‚Ì‰e‚Ì‚Ú‚©‚µ‹ï‡‚ğw’è‚µ‚Ü‚·B–¢w’è‚Ì’l‚Í 3 ‚Å‚·B'})
-   call add(l:list, {'word': 'clipleft=',		'menu': '‰æ‘œƒNƒŠƒbƒv‹éŒ`‚Ì¶’[ˆÊ’u‚ğw’è‚µ ‚Ü‚·Bclipleft, cliptop, clipwidth, clipheight ‚Å‹éŒ`‚ğw’è ‚·‚é‚ÆAstorage ‘®«‚Åw’è‚³‚ê‚½‰æ‘œ‚Ì‚»‚Ì‹éŒ`‚Ì‚İ‚ªØ‚èæ‚ç‚êA w’è‚³‚ê‚½ƒŒƒCƒ„‚Ì‰æ‘œ‚É‚È‚è‚Ü‚·B‰æ‘œ‚Ìˆê•”‚¾‚¯‚ğØ‚èæ‚Á‚Ä •\¦‚µ‚½‚¢‚Æ‚«‚È‚Ç‚Ég—p‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'cliptop=',		'menu': '‰æ‘œƒNƒŠƒbƒv‹éŒ`‚Ìã’[ˆÊ’u‚ğw’è‚µ ‚Ü‚·B'})
-   call add(l:list, {'word': 'clipwidth=',		'menu': '‰æ‘œƒNƒŠƒbƒv‹éŒ`‚Ì•‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'clipheight=',		'menu': '‰æ‘œƒNƒŠƒbƒv‹éŒ`‚Ì‚‚³‚ğw’è‚µ ‚Ü‚·'})
-   call add(l:list, {'word': 'flipud=',		'menu': '‰æ‘œ‚Ìã‰º”½“]‚ğs‚¢‚½‚¢ê‡‚É true ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'fliplr=',		'menu': '‰æ‘œ‚Ì¶‰E”½“]‚ğs‚¢‚½‚¢ê‡‚É true ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'visible=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚ğ•\¦‚·‚é‚©A‚µ‚È‚¢‚©‚ğw’è ‚µ‚Ü‚·Bvisible=true ‚Æ w’è‚·‚ê‚ÎAƒŒƒCƒ„‚Í•\¦ó‘Ô‚É‚È‚è‚Ü‚·Bvisible=false ‚Æw’è‚·‚ê‚ÎA ”ñ•\¦ó‘Ô‚É‚È‚è‚Ü‚·BÈ—ª‚·‚é‚Æ•\¦ó‘Ô‚Í•Ï‚í‚è‚Ü‚¹ ‚ñBlayer=base ‚ğw’è‚µ‚½ê‡‚Í‚±‚Ì‘®«‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'left=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚Ì¶’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚ÆA‰æ‘œ“Ç‚İ‚İ‘O‚ÌˆÊ’u‚ğ•Û‚µ‚Ü‚·Blayer=base ‚Æw’è‚µ‚½ê‡‚Í ‚±‚Ì‘®«‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'top=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚Ìã’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚ÆA‰æ‘œ“Ç‚İ‚İ‘O‚ÌˆÊ’u‚ğ•Û‚µ‚Ü‚·Blayer=base ‚Æw’è‚µ‚½ê‡‚Í ‚±‚Ì‘®«‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'pos=',		'menu': 'ƒŒƒCƒ„ˆÊ’u‚ğ©“®“I‚ÉŒˆ’è‚µ‚Ü‚·B‘OŒiƒŒƒCƒ„‚É‘Î‚µ‚Äg‚¢‚Ü‚·B'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚Ì•s“§–¾“x‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mapimage=',		'menu': 'ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv‚É—p‚¢‚é—Ìˆæ‰æ‘œ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mapaction=',		'menu': 'ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv‚É—p‚¢‚é—ÌˆæƒAƒNƒVƒ‡ƒ“’è‹`ƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'index=',		'menu': '”wŒiƒŒƒCƒ„‚É‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)èª­ã¿è¾¼ã¿ãŸã„ç”»åƒã‚’æŒ‡å®šã—ã¾ã™ã€‚æ‹¡å¼µå­ã¯çœç•¥å¯èƒ½ã§ã™ã€‚'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ç”»åƒã‚’èª­ã¿è¾¼ã‚€ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'key=',		'menu': 'ã©ã®è‰²ã‚’æŠœãè‰²ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨æŠœãè‰²ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mode=',		'menu': 'å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã®é€éãƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚å‰æ™¯ãƒ¬ã‚¤ãƒ¤ä»¥å¤–ã«ã¯ æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'grayscale=',		'menu': 'ç”»åƒã‚’ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã«ã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ grayscale=true ã¨æŒ‡å®šã™ã‚‹ã¨ã€ç”»åƒã‚’ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã«ã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ false ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rgamma=',		'menu': 'r (èµ¤) ã€g (ç·‘) ã€ b (é’) ã®å„æˆåˆ†ã®ã‚¬ãƒ³ãƒå€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ç”»åƒã‚’ã‚»ãƒ”ã‚¢èª¿ã«ã™ã‚‹ã«ã¯ã€ grayscale=true rgamma=1.3 ggamma=1.1 ã¨æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'ggamma=',		'menu': 'r (èµ¤) ã€g (ç·‘) ã€ b (é’) ã®å„æˆåˆ†ã®ã‚¬ãƒ³ãƒå€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ç”»åƒã‚’ã‚»ãƒ”ã‚¢èª¿ã«ã™ã‚‹ã«ã¯ã€ grayscale=true rgamma=1.3 ggamma=1.1 ã¨æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bgamma=',		'menu': 'r (èµ¤) ã€g (ç·‘) ã€ b (é’) ã®å„æˆåˆ†ã®ã‚¬ãƒ³ãƒå€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ç”»åƒã‚’ã‚»ãƒ”ã‚¢èª¿ã«ã™ã‚‹ã«ã¯ã€ grayscale=true rgamma=1.3 ggamma=1.1 ã¨æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rfloor=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€ä½å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'gfloor=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€ä½å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bfloor=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€ä½å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rceil=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€é«˜å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€ rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ã¨ æŒ‡å®šã™ã‚‹ã¨ã€è‰²ãŒåè»¢ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'gceil=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€é«˜å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€ rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ã¨ æŒ‡å®šã™ã‚‹ã¨ã€è‰²ãŒåè»¢ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bceil=',		'menu': 'å„æˆåˆ†ã®è¼åº¦æœ€é«˜å€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€ rfloor=255 gfloor=255 bfloor=255 rceil=0 gceil=0 bceil=0 ã¨ æŒ‡å®šã™ã‚‹ã¨ã€è‰²ãŒåè»¢ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mcolor=',		'menu': 'è‰²ãƒ–ãƒ¬ãƒ³ãƒ‰ã«ã‚ˆã‚‹è‰²èª¿åŠ¹æœã«ãŠã„ã¦ã€ãƒ–ãƒ¬ãƒ³ãƒ‰ã™ã‚‹è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ ã™ã€‚æ¿ƒåº¦ã¯ mopacity å±æ€§ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mopacity=',		'menu': 'è‰²ãƒ–ãƒ¬ãƒ³ãƒ‰ã«ã‚ˆã‚‹è‰²èª¿åŠ¹æœã§ã€mcolor ã§æŒ‡å®šã—ãŸè‰²ã‚’ã©ã‚Œãã‚‰ã„ã®ä¸é€ æ˜åº¦ã§ãƒ–ãƒ¬ãƒ³ãƒ‰ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'lightcolor=',		'menu': 'å…‰ãƒ–ãƒ¬ãƒ³ãƒ‰ã«ã‚ˆã‚‹è‰²èª¿åŠ¹æœã®ã€ãƒ–ãƒ¬ãƒ³ãƒ‰ã™ã‚‹è‰²ã‚’ 0xAARRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚ Î±å€¤ã‚’å«ã‚€ã®ã«æ³¨æ„ã—ã¦ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'lighttype=',		'menu': 'å…‰ãƒ–ãƒ¬ãƒ³ãƒ‰ã«ã‚ˆã‚‹è‰²èª¿åŠ¹æœã®ã€åˆæˆãƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadow=',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®ç”»åƒã«å½±ã‚’ã¤ã‘ã¾ã™ã€‚å½±è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚æ•°å€¤çœç•¥æ™‚ã¯ 0x000000 æ‰±ã„ã§ã™ã€‚ shadowopacity,shadowx,shadowy,shadowblur ã§ã¤ã‘ã‚‹å½±ã®ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’æŒ‡å®šã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadowopacity=',		'menu': 'shadowã§å½±ã‚’ã¤ã‘ã‚‹ã¨ãã®å½±ã®æ¿ƒåº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚æœªæŒ‡å®šæ™‚ã®å€¤ã¯200ã§ã™ã€‚'})
+   call add(l:list, {'word': 'shadowx=',		'menu': 'shadowã§å½±ã‚’ã¤ã‘ã‚‹ã¨ãã®å½±ã®Xæ–¹å‘ã®ãšã‚Œã®é‡ã‚’æŒ‡å®šã—ã¾ã™ã€‚æœªæŒ‡å®šæ™‚ã®å€¤ã¯10ã§ã™ã€‚'})
+   call add(l:list, {'word': 'shadowy=',		'menu': 'shadowã§å½±ã‚’ã¤ã‘ã‚‹ã¨ãã®å½±ã®Yæ–¹å‘ã®ãšã‚Œã®é‡ã‚’æŒ‡å®šã—ã¾ã™ã€‚æœªæŒ‡å®šæ™‚ã®å€¤ã¯10ã§ã™ã€‚'})
+   call add(l:list, {'word': 'shadowblur=',		'menu': 'shadowã§å½±ã‚’ã¤ã‘ã‚‹ã¨ãã®å½±ã®ã¼ã‹ã—å…·åˆã‚’æŒ‡å®šã—ã¾ã™ã€‚æœªæŒ‡å®šæ™‚ã®å€¤ã¯ 3 ã§ã™ã€‚'})
+   call add(l:list, {'word': 'clipleft=',		'menu': 'ç”»åƒã‚¯ãƒªãƒƒãƒ—çŸ©å½¢ã®å·¦ç«¯ä½ç½®ã‚’æŒ‡å®šã— ã¾ã™ã€‚clipleft, cliptop, clipwidth, clipheight ã§çŸ©å½¢ã‚’æŒ‡å®š ã™ã‚‹ã¨ã€storage å±æ€§ã§æŒ‡å®šã•ã‚ŒãŸç”»åƒã®ãã®çŸ©å½¢ã®ã¿ãŒåˆ‡ã‚Šå–ã‚‰ã‚Œã€ æŒ‡å®šã•ã‚ŒãŸãƒ¬ã‚¤ãƒ¤ã®ç”»åƒã«ãªã‚Šã¾ã™ã€‚ç”»åƒã®ä¸€éƒ¨ã ã‘ã‚’åˆ‡ã‚Šå–ã£ã¦ è¡¨ç¤ºã—ãŸã„ã¨ããªã©ã«ä½¿ç”¨ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'cliptop=',		'menu': 'ç”»åƒã‚¯ãƒªãƒƒãƒ—çŸ©å½¢ã®ä¸Šç«¯ä½ç½®ã‚’æŒ‡å®šã— ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'clipwidth=',		'menu': 'ç”»åƒã‚¯ãƒªãƒƒãƒ—çŸ©å½¢ã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'clipheight=',		'menu': 'ç”»åƒã‚¯ãƒªãƒƒãƒ—çŸ©å½¢ã®é«˜ã•ã‚’æŒ‡å®šã— ã¾ã™'})
+   call add(l:list, {'word': 'flipud=',		'menu': 'ç”»åƒã®ä¸Šä¸‹åè»¢ã‚’è¡Œã„ãŸã„å ´åˆã« true ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'fliplr=',		'menu': 'ç”»åƒã®å·¦å³åè»¢ã‚’è¡Œã„ãŸã„å ´åˆã« true ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'visible=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã‚’è¡¨ç¤ºã™ã‚‹ã‹ã€ã—ãªã„ã‹ã‚’æŒ‡å®š ã—ã¾ã™ã€‚visible=true ã¨ æŒ‡å®šã™ã‚Œã°ã€ãƒ¬ã‚¤ãƒ¤ã¯è¡¨ç¤ºçŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚visible=false ã¨æŒ‡å®šã™ã‚Œã°ã€ éè¡¨ç¤ºçŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨è¡¨ç¤ºçŠ¶æ…‹ã¯å¤‰ã‚ã‚Šã¾ã› ã‚“ã€‚layer=base ã‚’æŒ‡å®šã—ãŸå ´åˆã¯ã“ã®å±æ€§ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'left=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã®å·¦ç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ã€ç”»åƒèª­ã¿è¾¼ã¿å‰ã®ä½ç½®ã‚’ä¿æŒã—ã¾ã™ã€‚layer=base ã¨æŒ‡å®šã—ãŸå ´åˆã¯ ã“ã®å±æ€§ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'top=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã®ä¸Šç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ã€ç”»åƒèª­ã¿è¾¼ã¿å‰ã®ä½ç½®ã‚’ä¿æŒã—ã¾ã™ã€‚layer=base ã¨æŒ‡å®šã—ãŸå ´åˆã¯ ã“ã®å±æ€§ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'pos=',		'menu': 'ãƒ¬ã‚¤ãƒ¤ä½ç½®ã‚’è‡ªå‹•çš„ã«æ±ºå®šã—ã¾ã™ã€‚å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã«å¯¾ã—ã¦ä½¿ã„ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã®ä¸é€æ˜åº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mapimage=',		'menu': 'ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ã«ç”¨ã„ã‚‹é ˜åŸŸç”»åƒã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mapaction=',		'menu': 'ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ã«ç”¨ã„ã‚‹é ˜åŸŸã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'index=',		'menu': 'èƒŒæ™¯ãƒ¬ã‚¤ãƒ¤ã«ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
   elseif search('\[input [^]]*\%#\|^\s*@input ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)“ü—Í‚µ‚½‚¢•¶š—ñ‚ğŠi”[‚·‚é•Ï”‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'prompt=',		'menu': 'ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚Ìƒvƒƒ“ƒvƒg ( “ü—Í—“‚Ì‚·‚®ã‚É•\¦‚³‚ê‚é•¶š—ñ ) ‚ğ w’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ‹ó—“‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'title=',		'menu': 'ƒ_ƒCƒAƒƒOƒ{ƒbƒNƒX‚Ìƒ^ƒCƒgƒ‹‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)å…¥åŠ›ã—ãŸã„æ–‡å­—åˆ—ã‚’æ ¼ç´ã™ã‚‹å¤‰æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'prompt=',		'menu': 'ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã®ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆ ( å…¥åŠ›æ¬„ã®ã™ãä¸Šã«è¡¨ç¤ºã•ã‚Œã‚‹æ–‡å­—åˆ— ) ã‚’ æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ç©ºæ¬„ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'title=',		'menu': 'ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ãƒœãƒƒã‚¯ã‚¹ã®ã‚¿ã‚¤ãƒˆãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[jump [^]]*\%#\|^\s*@jump ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'countpage=',		'menu': '‘¼‚Ìƒ‰ƒxƒ‹‚ÉˆÚs‚·‚é‚Æ‚«‚ÉA‚±‚Ìƒ^ƒO‚Ì‚ ‚é êŠ‚Ìƒ‰ƒxƒ‹‚ğu“Ç‚ñ‚¾v‚Æ‚İ‚È‚·‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'countpage=',		'menu': 'ä»–ã®ãƒ©ãƒ™ãƒ«ã«ç§»è¡Œã™ã‚‹ã¨ãã«ã€ã“ã®ã‚¿ã‚°ã®ã‚ã‚‹ å ´æ‰€ã®ãƒ©ãƒ™ãƒ«ã‚’ã€Œèª­ã‚“ã ã€ã¨ã¿ãªã™ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[laycount [^]]*\%#\|^\s*@laycount ','bcn',line('.'))
-   call add(l:list, {'word': 'layers=',		'menu': '‘OŒiƒŒƒCƒ„‚Ì”‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'messages=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì”‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layers=',		'menu': 'å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã®æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'messages=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®æ•°ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[layopt [^]]*\%#\|^\s*@layopt ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‘ÎÛ‚Æ‚È‚é‘OŒiƒŒƒCƒ„‚Ü‚½‚ÍƒƒbƒZ[ƒWƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B @message ‚Æ‚Ì‚İw’è‚µ‚½ê‡‚ÍAcurrent ƒ^ƒO‚Åw’è‚µ‚½AŒ»İ‚Ì‘€ì‘ÎÛ‚ÌƒƒbƒZ[ƒWƒŒƒCƒ„‚ª‘ÎÛ‚Æ‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': ' •\(fore)‰æ–Ê‚ÌƒŒƒCƒ„‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ÌƒŒƒCƒ„‚ğ‘ÎÛ‚Æ ‚·‚é‚©‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'visible=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚ğ•\¦‚·‚é‚©A‚µ‚È‚¢‚©‚ğw’è ‚µ‚Ü‚·Bvisible=true ‚Æ w’è‚·‚ê‚ÎAƒŒƒCƒ„‚Í•\¦ó‘Ô‚É‚È‚è‚Ü‚·Bvisible=false ‚Æw’è‚·‚ê‚ÎA ”ñ•\¦ó‘Ô‚É‚È‚è‚Ü‚·BÈ—ª‚·‚é‚Æ•\¦ó‘Ô‚Í•Ï‚í‚è‚Ü‚¹ ‚ñB'})
-   call add(l:list, {'word': 'left=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚Ì¶’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚ÆˆÊ’u‚Í•ÏX‚µ‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'top=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚Ìã’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚ÆˆÊ’u‚Í•ÏX‚µ‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'ƒŒƒCƒ„‚Ì•s“§–¾“x‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'autohide=',		'menu': '‘OŒiƒŒƒCƒ„ˆÈŠO‚É‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'index=',		'menu': '”wŒiƒŒƒCƒ„‚É‚Íw’è‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)å¯¾è±¡ã¨ãªã‚‹å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã¾ãŸã¯ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ã€€message ã¨ã®ã¿æŒ‡å®šã—ãŸå ´åˆã¯ã€current ã‚¿ã‚°ã§æŒ‡å®šã—ãŸã€ç¾åœ¨ã®æ“ä½œå¯¾è±¡ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ãŒå¯¾è±¡ã¨ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': ' è¡¨(fore)ç”»é¢ã®ãƒ¬ã‚¤ãƒ¤ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã®ãƒ¬ã‚¤ãƒ¤ã‚’å¯¾è±¡ã¨ ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'visible=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã‚’è¡¨ç¤ºã™ã‚‹ã‹ã€ã—ãªã„ã‹ã‚’æŒ‡å®š ã—ã¾ã™ã€‚visible=true ã¨ æŒ‡å®šã™ã‚Œã°ã€ãƒ¬ã‚¤ãƒ¤ã¯è¡¨ç¤ºçŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚visible=false ã¨æŒ‡å®šã™ã‚Œã°ã€ éè¡¨ç¤ºçŠ¶æ…‹ã«ãªã‚Šã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨è¡¨ç¤ºçŠ¶æ…‹ã¯å¤‰ã‚ã‚Šã¾ã› ã‚“ã€‚'})
+   call add(l:list, {'word': 'left=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã®å·¦ç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ä½ç½®ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'top=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ã®ä¸Šç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ä½ç½®ã¯å¤‰æ›´ã—ã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®ä¸é€æ˜åº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'autohide=',		'menu': 'å‰æ™¯ãƒ¬ã‚¤ãƒ¤ä»¥å¤–ã«ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'index=',		'menu': 'èƒŒæ™¯ãƒ¬ã‚¤ãƒ¤ã«ã¯æŒ‡å®šã—ãªã„ã§ãã ã•ã„ã€‚'})
   elseif search('\[link [^]]*\%#\|^\s*@link ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': 'ƒŠƒ“ƒN‚ª‘I‘ğ‚³‚ê‚½‚Æ‚«‚Éo‚é”¼“§–¾‚Ì‹éŒ`‚ÌF‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'hint=',		'menu': 'ƒŠƒ“ƒN‚ğ‘I‘ğ‚µAƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ğÃ~‚³‚¹‚½‚Æ‚«‚É•\¦‚³‚ê‚é ƒc[ƒ‹ƒ`ƒbƒvƒqƒ“ƒg‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'onenter=',		'menu': 'ƒŠƒ“ƒN“à‚Éƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ª“ü‚Á‚Ä‚«‚½‚Æ‚«‚ÉÀs‚³‚ê‚é TJS ®‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'onleave=',		'menu': 'ƒŠƒ“ƒN“à‚©‚çƒ}ƒEƒXƒJ[ƒ\ƒ‹‚ªo‚Ä‚¢‚Á‚½‚ÉÀs‚³‚ê‚é TJS ®‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'countpage=',		'menu': 'ƒŠƒ“ƒN‚ğ‘I‘ğ‚µ‚Ä‘¼‚Ìƒ‰ƒxƒ‹‚ÉˆÚs‚·‚é‚Æ‚«‚ÉA‚±‚ÌƒŠƒ“ƒN‚Ì‚ ‚é êŠ‚Ìƒ‰ƒxƒ‹‚ğu“Ç‚ñ‚¾v‚Æ‚İ‚È‚·‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'clickse=',		'menu': 'ƒNƒŠƒbƒN‚³‚ê‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'clicksebuf=',		'menu': 'clickse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'enterse=',		'menu': 'ƒ}ƒEƒX‚ªi“ü‚µ‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'entersebuf=',		'menu': 'enterse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'leavese=',		'menu': 'ƒ}ƒEƒX‚ª‘Şo‚µ‚½‚Æ‚«‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'leavesebuf=',		'menu': 'leavese ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã¨ãã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'ãƒªãƒ³ã‚¯ãŒé¸æŠã•ã‚ŒãŸã¨ãã«å‡ºã‚‹åŠé€æ˜ã®çŸ©å½¢ã®è‰²ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'hint=',		'menu': 'ãƒªãƒ³ã‚¯ã‚’é¸æŠã—ã€ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ã‚’é™æ­¢ã•ã›ãŸã¨ãã«è¡¨ç¤ºã•ã‚Œã‚‹ ãƒ„ãƒ¼ãƒ«ãƒãƒƒãƒ—ãƒ’ãƒ³ãƒˆã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'onenter=',		'menu': 'ãƒªãƒ³ã‚¯å†…ã«ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ãŒå…¥ã£ã¦ããŸã¨ãã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'onleave=',		'menu': 'ãƒªãƒ³ã‚¯å†…ã‹ã‚‰ãƒã‚¦ã‚¹ã‚«ãƒ¼ã‚½ãƒ«ãŒå‡ºã¦ã„ã£ãŸæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'countpage=',		'menu': 'ãƒªãƒ³ã‚¯ã‚’é¸æŠã—ã¦ä»–ã®ãƒ©ãƒ™ãƒ«ã«ç§»è¡Œã™ã‚‹ã¨ãã«ã€ã“ã®ãƒªãƒ³ã‚¯ã®ã‚ã‚‹ å ´æ‰€ã®ãƒ©ãƒ™ãƒ«ã‚’ã€Œèª­ã‚“ã ã€ã¨ã¿ãªã™ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'clickse=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã•ã‚ŒãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'clicksebuf=',		'menu': 'clickse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'enterse=',		'menu': 'ãƒã‚¦ã‚¹ãŒé€²å…¥ã—ãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'entersebuf=',		'menu': 'enterse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'leavese=',		'menu': 'ãƒã‚¦ã‚¹ãŒé€€å‡ºã—ãŸã¨ãã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'leavesebuf=',		'menu': 'leavese ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[load [^]]*\%#\|^\s*@load ','bcn',line('.'))
-   call add(l:list, {'word': 'place=',		'menu': 'x‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'ask=',		'menu': 'true ‚ğw’è‚·‚é‚ÆAx‚ğ‚½‚Ç‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ğ‚µ‚Ü‚·Bfalse ‚ğ w’è‚·‚é‚Æx‚ğ‚½‚Ç‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚Í‚ ‚è‚Ü‚¹‚ñB‚±‚Ì‘®«‚ğÈ—ª ‚·‚é‚Æ false ‚ğw’è‚µ‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'place=',		'menu': 'æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'ask=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€æ ã‚’ãŸã©ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã‚’ã—ã¾ã™ã€‚false ã‚’ æŒ‡å®šã™ã‚‹ã¨æ ã‚’ãŸã©ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã“ã®å±æ€§ã‚’çœç•¥ ã™ã‚‹ã¨ false ã‚’æŒ‡å®šã—ãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[loadplugin [^]]*\%#\|^\s*@loadplugin ','bcn',line('.'))
-   call add(l:list, {'word': 'module=',		'menu': 'ƒvƒ‰ƒOƒCƒ“ƒtƒ@ƒCƒ‹–¼	“Ç‚İ‚İ‚½‚¢ƒvƒ‰ƒOƒCƒ“ƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'module=',		'menu': 'ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«å	èª­ã¿è¾¼ã¿ãŸã„ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[locate [^]]*\%#\|^\s*@locate ','bcn',line('.'))
-   call add(l:list, {'word': 'x=',		'menu': '•¶š‚ğ•\¦‚·‚é x À•WˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'y=',		'menu': '•¶š‚ğ•\¦‚·‚é y À•WˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'x=',		'menu': 'æ–‡å­—ã‚’è¡¨ç¤ºã™ã‚‹ x åº§æ¨™ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'y=',		'menu': 'æ–‡å­—ã‚’è¡¨ç¤ºã™ã‚‹ y åº§æ¨™ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[macro [^]]*\%#\|^\s*@macro ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)ƒ^ƒO–¼‚ğw’è‚µ‚Ü‚·BˆÈŒãA‚±‚Ì–¼‘O‚ÅV‚µ‚¢ƒ^ƒO‚ª’è‹`‚³‚êA ƒ}ƒNƒ‚ğg—p‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)ã‚¿ã‚°åã‚’æŒ‡å®šã—ã¾ã™ã€‚ä»¥å¾Œã€ã“ã®åå‰ã§æ–°ã—ã„ã‚¿ã‚°ãŒå®šç¾©ã•ã‚Œã€ ãƒã‚¯ãƒ­ã‚’ä½¿ç”¨ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[mapaction [^]]*\%#\|^\s*@mapaction ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‘ÎÛ‚Æ‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)—ÌˆæƒAƒNƒVƒ‡ƒ“’è‹`ƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)å¯¾è±¡ã¨ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)é ˜åŸŸã‚¢ã‚¯ã‚·ãƒ§ãƒ³å®šç¾©ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[mapdisable [^]]*\%#\|^\s*@mapdisable ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‘ÎÛ‚Æ‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)å¯¾è±¡ã¨ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[mapimage [^]]*\%#\|^\s*@mapimage ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‘ÎÛ‚Æ‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)ƒNƒŠƒbƒJƒuƒ‹ƒ}ƒbƒv‚Ì—Ìˆæ‰æ‘œ‚Æ‚µ‚Ä—p‚¢‚éƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·B @ƒtƒ@ƒCƒ‹‚Í 256 F‚Å•Û‘¶‚³‚ê‚Ä‚¢‚é•K—v‚ª‚ ‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)å¯¾è±¡ã¨ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)ã‚¯ãƒªãƒƒã‚«ãƒ–ãƒ«ãƒãƒƒãƒ—ã®é ˜åŸŸç”»åƒã¨ã—ã¦ç”¨ã„ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚ ã€€ãƒ•ã‚¡ã‚¤ãƒ«ã¯ 256 è‰²ã§ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚'})
   elseif search('\[mappfont [^]]*\%#\|^\s*@mappfont ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒtƒ@ƒCƒ‹–¼	Œ»İ‚ÌƒtƒHƒ“ƒg‚ÉŠ„‚è“–‚Ä‚½‚¢ƒŒƒ“ƒ_ƒŠƒ“ƒOÏ‚İƒtƒHƒ“ƒgƒtƒ@ƒCƒ‹ ‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ãƒ•ã‚¡ã‚¤ãƒ«å	ç¾åœ¨ã®ãƒ•ã‚©ãƒ³ãƒˆã«å‰²ã‚Šå½“ã¦ãŸã„ãƒ¬ãƒ³ãƒ€ãƒªãƒ³ã‚°æ¸ˆã¿ãƒ•ã‚©ãƒ³ãƒˆãƒ•ã‚¡ã‚¤ãƒ« ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[move [^]]*\%#\|^\s*@move ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‘ÎÛ‚Æ‚È‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': 'layer ‘®«‚Åw’è‚µ‚½ƒŒƒCƒ„‚ªA •\(fore)‰æ–Ê‚Å‚ ‚é‚©A— (back)‰æ–Ê‚Å‚ ‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'spline=',		'menu': 'true ‚ğw’è‚·‚é‚ÆApath ‘®«‚Åw’è‚µ‚½ˆÊ’u‚ğ‚aƒXƒvƒ‰ƒCƒ“‚Å ‹Èü•âŠÔ‚µ‚½üã‚ğƒŒƒCƒ„‚ªˆÚ“®‚·‚é‚æ‚¤‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒŒƒCƒ„‚ª path ‚ğw’è‚µ‚½“_‚©‚ç“_‚ğˆÚ“®‚·‚é‚Ì‚É•K—v‚ÈŠÔ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'delay=',		'menu': 'ƒŒƒCƒ„‚Ì©“®ˆÚ“®‚ªŠJn‚³‚ê‚é‚Ü‚Å‚ÌŠÔ‚ğ ms ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'path=',		'menu': '(•K)ˆÚ“®ˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'accel=',		'menu': '‰Á‘¬“x“I‚È“®‚«‚ğs‚í‚¹‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)å¯¾è±¡ã¨ãªã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'layer å±æ€§ã§æŒ‡å®šã—ãŸãƒ¬ã‚¤ãƒ¤ãŒã€ è¡¨(fore)ç”»é¢ã§ã‚ã‚‹ã‹ã€è£(back)ç”»é¢ã§ã‚ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'spline=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€path å±æ€§ã§æŒ‡å®šã—ãŸä½ç½®ã‚’ï¼¢ã‚¹ãƒ—ãƒ©ã‚¤ãƒ³ã§ æ›²ç·šè£œé–“ã—ãŸç·šä¸Šã‚’ãƒ¬ã‚¤ãƒ¤ãŒç§»å‹•ã™ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒ¬ã‚¤ãƒ¤ãŒ path ã‚’æŒ‡å®šã—ãŸç‚¹ã‹ã‚‰ç‚¹ã‚’ç§»å‹•ã™ã‚‹ã®ã«å¿…è¦ãªæ™‚é–“ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'delay=',		'menu': 'ãƒ¬ã‚¤ãƒ¤ã®è‡ªå‹•ç§»å‹•ãŒé–‹å§‹ã•ã‚Œã‚‹ã¾ã§ã®æ™‚é–“ã‚’ ms ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'path=',		'menu': '(å¿…)ç§»å‹•ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'accel=',		'menu': 'åŠ é€Ÿåº¦çš„ãªå‹•ãã‚’è¡Œã‚ã›ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[nextskip [^]]*\%#\|^\s*@nextskip ','bcn',line('.'))
-   call add(l:list, {'word': 'enabled=',		'menu': '(•K)uŸ‚Ì‘I‘ğˆ‚Ü‚Åi‚Şv‚Ì‹@”\‚ğ—LŒø‚É‚·‚éê‡‚Í trueA–³ Œø‚É‚·‚éê‡‚Í false ‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'enabled=',		'menu': '(å¿…)ã€Œæ¬¡ã®é¸æŠè‚¢ã¾ã§é€²ã‚€ã€ã®æ©Ÿèƒ½ã‚’æœ‰åŠ¹ã«ã™ã‚‹å ´åˆã¯ trueã€ç„¡ åŠ¹ã«ã™ã‚‹å ´åˆã¯ false ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[openvideo [^]]*\%#\|^\s*@openvideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)Ä¶€”õ‚·‚éƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)å†ç”Ÿæº–å‚™ã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[pausevideo [^]]*\%#\|^\s*@pausevideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[pimage [^]]*\%#\|^\s*@pimage ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)’Ç‰Á‚µ‚Ä“Ç‚İ‚Ş‰æ‘œ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)‰æ‘œ‚ğ’Ç‰Á‚µ‚Ä“Ç‚İ‚ŞƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'key=',		'menu': 'storage ‚Åw’è‚µ‚½‰æ‘œ‚ÌA‚Ç‚ÌF‚ğ”²‚«F‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ”²‚«F‚Í–³Œø‚É‚È‚è‚Ü‚·B @key=0xRRGGBB ‚Æ‚¢‚¤Œ`®‚Å 16 i”‚Å”²‚«F‚ğw’è‚·‚é ‚ÆARR(Ô) GG(—Î) BB(Â)‚Å“h‚ç‚ê‚½•”•ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎAkey=0xff00ff ‚Å‚Í (r,g,b)=(255,0,255) ‚Â‚Ü‚è^ƒ}ƒ[ƒ“ƒ_‚Ì•” •ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚·‚é‚Æ‚¢‚¤w’è‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'dx=',		'menu': 'ƒsƒNƒZƒ‹’PˆÊ	d‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚éæ‚Ì¶’[ x À•W‚ğ (‘ÎÛ‚ÌƒŒƒCƒ„“à‚ÌÀ•W‚Å)w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'dy=',		'menu': 'ƒsƒNƒZƒ‹’PˆÊ	d‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚éæ‚Ìã’[ y À•W‚ğ (‘ÎÛ‚ÌƒŒƒCƒ„“à‚ÌÀ•W‚Å)w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'sx=',		'menu': 'ƒsƒNƒZƒ‹’PˆÊ	d‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚éŒ³‚Ì¶’[ x À•W‚ğ (’Ç‰Á‚µ‚Ä“Ç‚İ‚Ş‰æ‘œ“à‚ÌÀ•W‚Å)w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'sy=',		'menu': 'ƒsƒNƒZƒ‹’PˆÊ	d‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚éŒ³‚Ìã’[ y À•W‚ğ (’Ç‰Á‚µ‚Ä“Ç‚İ‚Ş‰æ‘œ“à‚ÌÀ•W‚Å)w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'sw=',		'menu': 'd‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚é•‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'sh=',		'menu': 'd‚Ë‡‚í‚¹A‚ ‚é‚¢‚ÍƒRƒs[‚·‚é‚‚³‚ğ w’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mode=',		'menu': 'sx sy sw sh ‚ÌŠe‘®«‚Åw’è‚µ‚½‹éŒ`—Ìˆæ‚ğ d‚Ë‡‚í‚¹‚é‚©A‚ ‚é‚¢‚Í ’Pƒ‚ÉƒRƒs[‚·‚é‚©A‚ ‚é‚¢‚Í‰‰Z‚ğs‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'mode ‘®«‚Å "pile" ‚ğw’è‚µ‚½ê‡‚Ìd‚Ë‡‚í‚¹‚Ì•s“§–¾“xA‚ ‚é‚¢‚Í "add" "sub" "mul" "dodge" "darken" "lighten" "screen" ‚Ì ‚¢‚¸‚ê‚©‚ğw’è‚µ‚½ê‡‚Ì‰‰Z‚Ì‹­“x‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)è¿½åŠ ã—ã¦èª­ã¿è¾¼ã‚€ç”»åƒã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ç”»åƒã‚’è¿½åŠ ã—ã¦èª­ã¿è¾¼ã‚€ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'key=',		'menu': 'storage ã§æŒ‡å®šã—ãŸç”»åƒã®ã€ã©ã®è‰²ã‚’æŠœãè‰²ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨æŠœãè‰²ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚ ã€€key=0xRRGGBB ã¨ã„ã†å½¢å¼ã§ 16 é€²æ•°ã§æŠœãè‰²ã‚’æŒ‡å®šã™ã‚‹ ã¨ã€RR(èµ¤) GG(ç·‘) BB(é’)ã§å¡—ã‚‰ã‚ŒãŸéƒ¨åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€key=0xff00ff ã§ã¯ (r,g,b)=(255,0,255) ã¤ã¾ã‚ŠçœŸãƒã‚¼ãƒ³ãƒ€ã®éƒ¨ åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã™ã‚‹ã¨ã„ã†æŒ‡å®šã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'dx=',		'menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½	é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹å…ˆã®å·¦ç«¯ x åº§æ¨™ã‚’ (å¯¾è±¡ã®ãƒ¬ã‚¤ãƒ¤å†…ã®åº§æ¨™ã§)æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'dy=',		'menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½	é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹å…ˆã®ä¸Šç«¯ y åº§æ¨™ã‚’ (å¯¾è±¡ã®ãƒ¬ã‚¤ãƒ¤å†…ã®åº§æ¨™ã§)æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'sx=',		'menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½	é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹å…ƒã®å·¦ç«¯ x åº§æ¨™ã‚’ (è¿½åŠ ã—ã¦èª­ã¿è¾¼ã‚€ç”»åƒå†…ã®åº§æ¨™ã§)æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'sy=',		'menu': 'ãƒ”ã‚¯ã‚»ãƒ«å˜ä½	é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹å…ƒã®ä¸Šç«¯ y åº§æ¨™ã‚’ (è¿½åŠ ã—ã¦èª­ã¿è¾¼ã‚€ç”»åƒå†…ã®åº§æ¨™ã§)æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'sw=',		'menu': 'é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹å¹…ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'sh=',		'menu': 'é‡ã­åˆã‚ã›ã€ã‚ã‚‹ã„ã¯ã‚³ãƒ”ãƒ¼ã™ã‚‹é«˜ã•ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mode=',		'menu': 'sx sy sw sh ã®å„å±æ€§ã§æŒ‡å®šã—ãŸçŸ©å½¢é ˜åŸŸã‚’ é‡ã­åˆã‚ã›ã‚‹ã‹ã€ã‚ã‚‹ã„ã¯ å˜ç´”ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ã‹ã€ã‚ã‚‹ã„ã¯æ¼”ç®—ã‚’è¡Œã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'mode å±æ€§ã§ "pile" ã‚’æŒ‡å®šã—ãŸå ´åˆã®é‡ã­åˆã‚ã›ã®ä¸é€æ˜åº¦ã€ã‚ã‚‹ã„ã¯ "add" "sub" "mul" "dodge" "darken" "lighten" "screen" ã® ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ãŸå ´åˆã®æ¼”ç®—ã®å¼·åº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[playbgm [^]]*\%#\|^\s*@playbgm ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)‰‰‘t‚·‚é BGM ƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'start=',		'menu': 'ƒ‹[ƒvƒ`ƒ…[ƒi‚Åw’è‚µ‚½ƒ‰ƒxƒ‹‚Å BGM ‚ÌÄ¶ŠJnˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'BGM ‚ğƒ‹[ƒv‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)æ¼”å¥ã™ã‚‹ BGM ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'start=',		'menu': 'ãƒ«ãƒ¼ãƒ—ãƒãƒ¥ãƒ¼ãƒŠã§æŒ‡å®šã—ãŸãƒ©ãƒ™ãƒ«ã§ BGM ã®å†ç”Ÿé–‹å§‹ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'BGM ã‚’ãƒ«ãƒ¼ãƒ—ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[playse [^]]*\%#\|^\s*@playse ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Œø‰Ê‰¹‚ğÄ¶‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·Bˆê‚Â‚Ìƒoƒbƒtƒ@‚Å‚Í “¯‚É‚Íˆê‚Â‚ÌŒø‰Ê‰¹‚ğ–Â‚ç‚·‚±‚Æ‚ª‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)‰‰‘t‚·‚éŒø‰Ê‰¹ƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'start=',		'menu': 'ƒ‹[ƒvƒ`ƒ…[ƒi‚Åw’è‚µ‚½ƒ‰ƒxƒ‹‚Å SE ‚ÌÄ¶ŠJnˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'Œø‰Ê‰¹‚ğŒJ‚è•Ô‚µÄ¶‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'åŠ¹æœéŸ³ã‚’å†ç”Ÿã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ä¸€ã¤ã®ãƒãƒƒãƒ•ã‚¡ã§ã¯ åŒæ™‚ã«ã¯ä¸€ã¤ã®åŠ¹æœéŸ³ã‚’é³´ã‚‰ã™ã“ã¨ãŒã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)æ¼”å¥ã™ã‚‹åŠ¹æœéŸ³ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'start=',		'menu': 'ãƒ«ãƒ¼ãƒ—ãƒãƒ¥ãƒ¼ãƒŠã§æŒ‡å®šã—ãŸãƒ©ãƒ™ãƒ«ã§ SE ã®å†ç”Ÿé–‹å§‹ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'åŠ¹æœéŸ³ã‚’ç¹°ã‚Šè¿”ã—å†ç”Ÿã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[playvideo [^]]*\%#\|^\s*@playvideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': 'Ä¶‚·‚éƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': 'å†ç”Ÿã™ã‚‹ãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[position [^]]*\%#\|^\s*@position ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '‘ÎÛ‚Æ‚·‚éƒƒbƒZ[ƒWƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '‘ÎÛ‚Æ‚·‚éƒy[ƒW‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'left=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì¶’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'top=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ìã’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'width=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì•‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'height=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì‚‚³‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'frame=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚ÌƒtƒŒ[ƒ€‰æ‘œ‚Æ‚µ‚Ä•\¦‚³‚¹‚é‰æ‘œ‚ğw’è ‚µ‚Ü‚·Bg—p‚µ‚È‚¢ê‡‚Í "" ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B"" ‚ğw’è‚· ‚é‚ÆAƒƒbƒZ[ƒWƒŒƒCƒ„‚ª color ‚¨‚æ‚Ñ opacity ‘®«‚Åw’è‚µ‚½ FA”Z“x‚Å‹éŒ`‚Å•\¦‚³‚ê‚Ü‚·B @‚±‚±‚Åw’è‚µ‚½ƒtƒ@ƒCƒ‹–¼ (Šg’£q‚ğœ‚­) •”•ª‚É _m ‚ğ’Ç‰Á ‚µ‚½ƒtƒ@ƒCƒ‹‚ªA‚à‚µ‚ ‚ê‚ÎAƒ}ƒXƒN‰æ‘œ‚Æ‚µ‚Ä“Ç‚İ‚Ü‚ê‚Ü‚·B ƒ}ƒXƒN‰æ‘œ‚Í•K‚¸ 256 FƒOƒŒ[ƒXƒP[ƒ‹‚Å•Û‘¶‚µ‚Ä‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'framekey=',		'menu': 'frame ‘®«‚Åw’è‚µ‚½ƒtƒŒ[ƒ€‰æ‘œ‚ÌA‚Ç‚ÌF‚ğ”²‚«F‚Æ ‚·‚é‚©‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ”²‚«F‚Í–³Œø‚É‚È‚è‚Ü‚·B @key=0xRRGGBB ‚Æ‚¢‚¤Œ`®‚Å 16 i”‚Å”²‚«F‚ğw’è‚·‚é ‚ÆARR(Ô) GG(—Î) BB(Â)‚Å“h‚ç‚ê‚½•”•ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚µ‚Ü‚·B ‚½‚Æ‚¦‚ÎAkey=0xff00ff ‚Å‚Í (r,g,b)=(255,0,255) ‚Â‚Ü‚è^ƒ}ƒ[ƒ“ƒ_‚Ì•” •ª‚ğ”²‚«F‚Æ‚µ‚Ä“§–¾‚É‚·‚é‚Æ‚¢‚¤w’è‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì•\¦F‚ğ 0xRRGGBB Œ`®‚Åw’è ‚µ‚Ü‚·B frame ‚É "" ‚ğw’è‚µ‚½‚Æ‚«‚É—LŒø‚Å‚·B'})
-   call add(l:list, {'word': 'opacity=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì•s“§–¾“x‚ğ 0 ` 255 ‚Ì”’l‚Åw’è‚µ‚Ü ‚·(•¶š‚Ì•s“§–¾“x‚âAƒŒƒCƒ„©‘Ì‚Ì•s“§–¾“x‚Å‚Í‚ ‚è‚Ü‚¹‚ñ)B0 ‚ÅŠ®‘S ‚É“§–¾‚Å‚·Bframe ‚É "" ‚ğw’è‚µ‚½‚Æ‚«‚É—LŒø‚Å‚·B'})
-   call add(l:list, {'word': 'vertical=',		'menu': 'ƒƒbƒZ[ƒWƒŒƒCƒ„‚ğc‘‚«‚Éƒ‚[ƒh‚É‚·‚é‚É‚Í "true" ‚ğw’è‚µ‚Ü‚·B ‰¡‘‚«‚É‚·‚é‚É‚Í "false" ‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B'})
-   call add(l:list, {'word': 'draggable=',		'menu': 'true ‚Éİ’è‚·‚é‚ÆAmarginl, margint, marginr, marginb ‚Åw’è‚µ‚½ ƒ}[ƒWƒ“‚Ì•”•ª‚Å‚©‚ÂAƒtƒŒ[ƒ€‰æ‘œ‚Ì•s“§–¾“x‚ª 64 ˆÈã‚Ì‰ÓŠ‚ğAƒ}ƒEƒX‚Å ƒhƒ‰ƒbƒO‚·‚é‚±‚Æ‚É‚æ‚èƒƒbƒZ[ƒWƒŒƒCƒ„‚ğƒ†[ƒU‚ªˆÚ“®‚Å‚«‚é‚æ‚¤‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'visible=',		'menu': 'true‚Éİ’è‚·‚é‚ÆAƒƒbƒZ[ƒWƒŒƒCƒ„‚ª‰Â‹(•\¦ó‘Ô)‚É‚È‚è‚Ü‚·B'})
-	 call add(l:list, {'word': 'marginl=',		'menu': '¶—]”’(pixel’PˆÊ)ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì¶—]”’‚ğw’è‚µ‚Ü‚·B'})
-	 call add(l:list, {'word': 'margint=',		'menu': 'ã—]”’(pixel’PˆÊ)ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ìã—]”’‚ğw’è‚µ‚Ü‚·B'})
-	 call add(l:list, {'word': 'marginr=',		'menu': '‰E—]”’(pixel’PˆÊ)ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì‰E—]”’‚ğw’è‚µ‚Ü‚·B'})
-	 call add(l:list, {'word': 'marginb=',		'menu': '‰º—]”’(pixel’PˆÊ)ƒƒbƒZ[ƒWƒŒƒCƒ„‚Ì‰º—]”’‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': 'å¯¾è±¡ã¨ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'å¯¾è±¡ã¨ã™ã‚‹ãƒšãƒ¼ã‚¸ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'left=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®å·¦ç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'top=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ä¸Šç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'width=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'height=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®é«˜ã•ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'frame=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ãƒ•ãƒ¬ãƒ¼ãƒ ç”»åƒã¨ã—ã¦è¡¨ç¤ºã•ã›ã‚‹ç”»åƒã‚’æŒ‡å®š ã—ã¾ã™ã€‚ä½¿ç”¨ã—ãªã„å ´åˆã¯ "" ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚"" ã‚’æŒ‡å®šã™ ã‚‹ã¨ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ãŒ color ãŠã‚ˆã³ opacity å±æ€§ã§æŒ‡å®šã—ãŸ è‰²ã€æ¿ƒåº¦ã§çŸ©å½¢ã§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚ ã€€ã“ã“ã§æŒ‡å®šã—ãŸãƒ•ã‚¡ã‚¤ãƒ«å (æ‹¡å¼µå­ã‚’é™¤ã) éƒ¨åˆ†ã« _m ã‚’è¿½åŠ  ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ãŒã€ã‚‚ã—ã‚ã‚Œã°ã€ãƒã‚¹ã‚¯ç”»åƒã¨ã—ã¦èª­ã¿è¾¼ã¾ã‚Œã¾ã™ã€‚ ãƒã‚¹ã‚¯ç”»åƒã¯å¿…ãš 256 è‰²ã‚°ãƒ¬ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã§ä¿å­˜ã—ã¦ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'framekey=',		'menu': 'frame å±æ€§ã§æŒ‡å®šã—ãŸãƒ•ãƒ¬ãƒ¼ãƒ ç”»åƒã®ã€ã©ã®è‰²ã‚’æŠœãè‰²ã¨ ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨æŠœãè‰²ã¯ç„¡åŠ¹ã«ãªã‚Šã¾ã™ã€‚ ã€€key=0xRRGGBB ã¨ã„ã†å½¢å¼ã§ 16 é€²æ•°ã§æŠœãè‰²ã‚’æŒ‡å®šã™ã‚‹ ã¨ã€RR(èµ¤) GG(ç·‘) BB(é’)ã§å¡—ã‚‰ã‚ŒãŸéƒ¨åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã—ã¾ã™ã€‚ ãŸã¨ãˆã°ã€key=0xff00ff ã§ã¯ (r,g,b)=(255,0,255) ã¤ã¾ã‚ŠçœŸãƒã‚¼ãƒ³ãƒ€ã®éƒ¨ åˆ†ã‚’æŠœãè‰²ã¨ã—ã¦é€æ˜ã«ã™ã‚‹ã¨ã„ã†æŒ‡å®šã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®è¡¨ç¤ºè‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®š ã—ã¾ã™ã€‚ frame ã« "" ã‚’æŒ‡å®šã—ãŸã¨ãã«æœ‰åŠ¹ã§ã™ã€‚'})
+   call add(l:list, {'word': 'opacity=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ä¸é€æ˜åº¦ã‚’ 0 ï½ 255 ã®æ•°å€¤ã§æŒ‡å®šã—ã¾ ã™(æ–‡å­—ã®ä¸é€æ˜åº¦ã‚„ã€ãƒ¬ã‚¤ãƒ¤è‡ªä½“ã®ä¸é€æ˜åº¦ã§ã¯ã‚ã‚Šã¾ã›ã‚“)ã€‚0 ã§å®Œå…¨ ã«é€æ˜ã§ã™ã€‚frame ã« "" ã‚’æŒ‡å®šã—ãŸã¨ãã«æœ‰åŠ¹ã§ã™ã€‚'})
+   call add(l:list, {'word': 'vertical=',		'menu': 'ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’ç¸¦æ›¸ãã«ãƒ¢ãƒ¼ãƒ‰ã«ã™ã‚‹ã«ã¯ "true" ã‚’æŒ‡å®šã—ã¾ã™ã€‚ æ¨ªæ›¸ãã«ã™ã‚‹ã«ã¯ "false" ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚'})
+   call add(l:list, {'word': 'draggable=',		'menu': 'true ã«è¨­å®šã™ã‚‹ã¨ã€marginl, margint, marginr, marginb ã§æŒ‡å®šã—ãŸ ãƒãƒ¼ã‚¸ãƒ³ã®éƒ¨åˆ†ã§ã‹ã¤ã€ãƒ•ãƒ¬ãƒ¼ãƒ ç”»åƒã®ä¸é€æ˜åº¦ãŒ 64 ä»¥ä¸Šã®ç®‡æ‰€ã‚’ã€ãƒã‚¦ã‚¹ã§ ãƒ‰ãƒ©ãƒƒã‚°ã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã‚’ãƒ¦ãƒ¼ã‚¶ãŒç§»å‹•ã§ãã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'visible=',		'menu': 'trueã«è¨­å®šã™ã‚‹ã¨ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ãŒå¯è¦–(è¡¨ç¤ºçŠ¶æ…‹)ã«ãªã‚Šã¾ã™ã€‚'})
+	 call add(l:list, {'word': 'marginl=',		'menu': 'å·¦ä½™ç™½(pixelå˜ä½)ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®å·¦ä½™ç™½ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+	 call add(l:list, {'word': 'margint=',		'menu': 'ä¸Šä½™ç™½(pixelå˜ä½)ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ä¸Šä½™ç™½ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+	 call add(l:list, {'word': 'marginr=',		'menu': 'å³ä½™ç™½(pixelå˜ä½)ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®å³ä½™ç™½ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+	 call add(l:list, {'word': 'marginb=',		'menu': 'ä¸‹ä½™ç™½(pixelå˜ä½)ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ã®ä¸‹ä½™ç™½ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[preparevideo [^]]*\%#\|^\s*@preparevideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[ptext [^]]*\%#\|^\s*@ptext ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)•¶š‚ğ•`‰æ‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'x=',		'menu': '(•K)•¶š‚ğ•`‰æ‚·‚é‰¡ˆÊ’u‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'y=',		'menu': '(•K)•¶š‚ğ•`‰æ‚·‚écˆÊ’u‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'text=',		'menu': '(•K)•`‰æ‚·‚é•¶š—ñ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'vertical=',		'menu': 'c‘‚«‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æc‘‚«‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'angle=',		'menu': '•¶š•`‰æ‚ÌŠp“x‚ğw’è‚µ‚Ü‚·BŠp“x‚Ì 10 ”{‚Ì’l ( 0 ` 3600 ) ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'size=',		'menu': '•¶šƒTƒCƒY‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'face=',		'menu': 'ƒtƒHƒ“ƒg–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'color=',		'menu': '•¶šF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'italic=',		'menu': '•¶š‚ğÎ‘Ì‚É‚·‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚ÆÎ‘Ì‚É‚È‚è‚Ü ‚·B'})
-   call add(l:list, {'word': 'shadow=',		'menu': '•¶š‚É‰e‚ğ‚Â‚¯‚é‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æ‰e‚ª‚Â‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'edge=',		'menu': '•¶š‚ğ‘Ü•¶š ( ‰æ‚è•¶š ) ‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚Æ‘Ü•¶š‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'edgecolor=',		'menu': '•¶š‚Ì‘Ü‚ÌF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'shadowcolor=',		'menu': '‰e‚ÌF‚ğ 0xRRGGBB Œ`®‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bold=',		'menu': '•¶š‚ğ‘¾•¶š‚É‚·‚é‚©‚ğw’è‚µ‚Ü‚·B true ‚ğw’è‚·‚é‚Æ‘¾•¶š‚É‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)æ–‡å­—ã‚’æç”»ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'x=',		'menu': '(å¿…)æ–‡å­—ã‚’æç”»ã™ã‚‹æ¨ªä½ç½®ã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'y=',		'menu': '(å¿…)æ–‡å­—ã‚’æç”»ã™ã‚‹ç¸¦ä½ç½®ã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'text=',		'menu': '(å¿…)æç”»ã™ã‚‹æ–‡å­—åˆ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'vertical=',		'menu': 'ç¸¦æ›¸ãã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨ç¸¦æ›¸ãã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'angle=',		'menu': 'æ–‡å­—æç”»ã®è§’åº¦ã‚’æŒ‡å®šã—ã¾ã™ã€‚è§’åº¦ã® 10 å€ã®å€¤ ( 0 ï½ 3600 ) ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'size=',		'menu': 'æ–‡å­—ã‚µã‚¤ã‚ºã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'face=',		'menu': 'ãƒ•ã‚©ãƒ³ãƒˆåã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'color=',		'menu': 'æ–‡å­—è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'italic=',		'menu': 'æ–‡å­—ã‚’æ–œä½“ã«ã™ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨æ–œä½“ã«ãªã‚Šã¾ ã™ã€‚'})
+   call add(l:list, {'word': 'shadow=',		'menu': 'æ–‡å­—ã«å½±ã‚’ã¤ã‘ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨å½±ãŒã¤ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edge=',		'menu': 'æ–‡å­—ã‚’è¢‹æ–‡å­— ( ç¸å–ã‚Šæ–‡å­— ) ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨è¢‹æ–‡å­—ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'edgecolor=',		'menu': 'æ–‡å­—ã®è¢‹ã®è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'shadowcolor=',		'menu': 'å½±ã®è‰²ã‚’ 0xRRGGBB å½¢å¼ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bold=',		'menu': 'æ–‡å­—ã‚’å¤ªæ–‡å­—ã«ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ true ã‚’æŒ‡å®šã™ã‚‹ã¨å¤ªæ–‡å­—ã«ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[quake [^]]*\%#\|^\s*@quake ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)‚±‚±‚Åw’è‚µ‚½•¶š”‚ğ•\¦‚·‚é‚Ì‚Æ“¯‚¶‚¾‚¯‚ÌŠÔA‰æ–Ê‚ğ—h‚ç‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'timemode=',		'menu': 'time ‘®«‚Ì’PˆÊ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'hmax=',		'menu': '—h‚ê‚Ì‰¡•ûŒü‚Ö‚ÌÅ‘åU•‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 10 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'vmax=',		'menu': '—h‚ê‚Ìc•ûŒü‚Ö‚ÌÅ‘åU•‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 10 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ã“ã“ã§æŒ‡å®šã—ãŸæ–‡å­—æ•°ã‚’è¡¨ç¤ºã™ã‚‹ã®ã¨åŒã˜ã ã‘ã®æ™‚é–“ã€ç”»é¢ã‚’æºã‚‰ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'timemode=',		'menu': 'time å±æ€§ã®å˜ä½ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'hmax=',		'menu': 'æºã‚Œã®æ¨ªæ–¹å‘ã¸ã®æœ€å¤§æŒ¯å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 10 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'vmax=',		'menu': 'æºã‚Œã®ç¸¦æ–¹å‘ã¸ã®æœ€å¤§æŒ¯å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 10 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[r [^]]*\%#\|^\s*@r ','bcn',line('.'))
-   call add(l:list, {'word': 'eol=',		'menu': 'true	Config.tjs ‚Ì ignoreCR ‚ª false ‚Ìê‡AKAG ‚Í‰üs‚ÌÛ‚É r ƒ^ƒO‚ğ¶¬‚µ‚Ü‚·‚ªA‚±‚Ìu‰üs‚ÌÛ‚É¶¬‚³‚ê‚é r ƒ^ƒOv‚Ìê‡‚Í ‚±‚Ì‘®«‚ª‚ ‚èA’l‚ª true ‚É‚È‚Á‚Ä‚¢‚Ü‚·BƒVƒiƒŠƒI’†‚É‘‚©‚ê‚½ [r] ƒ^ƒO‚Ìê‡‚Í‚±‚Ì‘®«‚Í‚ ‚è‚Ü‚¹‚ñB'})
+   call add(l:list, {'word': 'eol=',		'menu': 'true	Config.tjs ã® ignoreCR ãŒ false ã®å ´åˆã€KAG ã¯æ”¹è¡Œã®éš›ã« r ã‚¿ã‚°ã‚’ç”Ÿæˆã—ã¾ã™ãŒã€ã“ã®ã€Œæ”¹è¡Œã®éš›ã«ç”Ÿæˆã•ã‚Œã‚‹ r ã‚¿ã‚°ã€ã®å ´åˆã¯ ã“ã®å±æ€§ãŒã‚ã‚Šã€å€¤ãŒ true ã«ãªã£ã¦ã„ã¾ã™ã€‚ã‚·ãƒŠãƒªã‚ªä¸­ã«æ›¸ã‹ã‚ŒãŸ [r] ã‚¿ã‚°ã®å ´åˆã¯ã“ã®å±æ€§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚'})
   elseif search('\[rclick [^]]*\%#\|^\s*@rclick ','bcn',line('.'))
-   call add(l:list, {'word': 'call=',		'menu': 'true ‚ğİ’è‚·‚é‚ÆA‰EƒNƒŠƒbƒN‚Å storage ‚Æ target ‘®«‚Åw’è‚µ‚½ ƒTƒuƒ‹[ƒ`ƒ“‚ğŒÄ‚Ño‚·‚æ‚¤‚É‚È‚è‚Ü‚·Bjump ‘®«‚Æ‚±‚Ì‘®«‚Ì—¼•û‚É false ‚ğ w’è‚·‚é‚ÆA’Êí‚Ì uƒƒbƒZ[ƒW‚ğÁ‚·v‚Ì“®ì‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'jump=',		'menu': 'true ‚ğİ’è‚·‚é‚ÆA‰EƒNƒŠƒbƒN‚Å storage ‚Æ target ‘®«‚Åw’è‚µ‚½ êŠ‚ÉƒWƒƒƒ“ƒv‚·‚é‚æ‚¤‚É‚È‚è‚Ü‚·Bcall ‘®«‚Æ‚±‚Ì‘®«‚Ì—¼•û‚É false ‚ğ w’è‚·‚é‚ÆA’Êí‚ÌuƒƒbƒZ[ƒW‚ğÁ‚·v‚Ì“®ì‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'call ‘®«‚© jump ‘®«‚É true ‚ğİ’è‚µ‚½ê‡A‚»‚ÌŒÄ‚Ño‚µæ/ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': 'call ‘®«‚© jump ‘®«‚É true ‚ğİ’è‚µ‚½ê‡A‚»‚ÌŒÄ‚Ño‚µæ/ƒWƒƒƒ“ƒvæ‚Ìƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'enabled=',		'menu': 'true ‚ğİ’è‚·‚é‚ÆA‰EƒNƒŠƒbƒN‚É‚æ‚èƒƒbƒZ[ƒWƒŒƒCƒ„‚ª‰B‚³‚ê‚½‚èA w’è‚Ìƒ‹[ƒ`ƒ“‚ªŒÄ‚Ño‚³‚ê‚½‚èAw’èêŠ‚ÉƒWƒƒƒ“ƒv‚µ‚½‚è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'name=',		'menu': 'ƒVƒXƒeƒ€ƒƒjƒ…[“à‚ÌuƒƒbƒZ[ƒW‚ğÁ‚·v‚Ìƒƒjƒ…[€–Ú–¼‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'call=',		'menu': 'true ã‚’è¨­å®šã™ã‚‹ã¨ã€å³ã‚¯ãƒªãƒƒã‚¯ã§ storage ã¨ target å±æ€§ã§æŒ‡å®šã—ãŸ ã‚µãƒ–ãƒ«ãƒ¼ãƒãƒ³ã‚’å‘¼ã³å‡ºã™ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚jump å±æ€§ã¨ã“ã®å±æ€§ã®ä¸¡æ–¹ã« false ã‚’ æŒ‡å®šã™ã‚‹ã¨ã€é€šå¸¸ã® ã€Œãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ¶ˆã™ã€ã®å‹•ä½œã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'jump=',		'menu': 'true ã‚’è¨­å®šã™ã‚‹ã¨ã€å³ã‚¯ãƒªãƒƒã‚¯ã§ storage ã¨ target å±æ€§ã§æŒ‡å®šã—ãŸ å ´æ‰€ã«ã‚¸ãƒ£ãƒ³ãƒ—ã™ã‚‹ã‚ˆã†ã«ãªã‚Šã¾ã™ã€‚call å±æ€§ã¨ã“ã®å±æ€§ã®ä¸¡æ–¹ã« false ã‚’ æŒ‡å®šã™ã‚‹ã¨ã€é€šå¸¸ã®ã€Œãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ¶ˆã™ã€ã®å‹•ä½œã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'call å±æ€§ã‹ jump å±æ€§ã« true ã‚’è¨­å®šã—ãŸå ´åˆã€ãã®å‘¼ã³å‡ºã—å…ˆ/ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': 'call å±æ€§ã‹ jump å±æ€§ã« true ã‚’è¨­å®šã—ãŸå ´åˆã€ãã®å‘¼ã³å‡ºã—å…ˆ/ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'enabled=',		'menu': 'true ã‚’è¨­å®šã™ã‚‹ã¨ã€å³ã‚¯ãƒªãƒƒã‚¯ã«ã‚ˆã‚Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒ¬ã‚¤ãƒ¤ãŒéš ã•ã‚ŒãŸã‚Šã€ æŒ‡å®šã®ãƒ«ãƒ¼ãƒãƒ³ãŒå‘¼ã³å‡ºã•ã‚ŒãŸã‚Šã€æŒ‡å®šå ´æ‰€ã«ã‚¸ãƒ£ãƒ³ãƒ—ã—ãŸã‚Šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'name=',		'menu': 'ã‚·ã‚¹ãƒ†ãƒ ãƒ¡ãƒ‹ãƒ¥ãƒ¼å†…ã®ã€Œãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’æ¶ˆã™ã€ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼é …ç›®åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[resumevideo [^]]*\%#\|^\s*@resumevideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[return [^]]*\%#\|^\s*@return ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '–ß‚èæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·Bstorage ‘®«‚ğÈ—ª‚µ‚ÄA target ‘®«‚¾‚¯‚ª‘‚©‚ê‚Ä‚¢‚é‚ÆAŒ»İ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': '–ß‚èæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'countpage=',		'menu': 'ŒÄ‚Ño‚µŒ³‚É–ß‚é‚Æ‚«‚ÉA‚±‚Ì return ƒ^ƒO‚Ì‚ ‚é êŠ‚Ìƒ‰ƒxƒ‹‚ğu“Ç‚ñ‚¾v‚Æ‚İ‚È‚·‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'æˆ»ã‚Šå…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚storage å±æ€§ã‚’çœç•¥ã—ã¦ã€ target å±æ€§ã ã‘ãŒæ›¸ã‹ã‚Œã¦ã„ã‚‹ã¨ã€ç¾åœ¨ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'æˆ»ã‚Šå…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'countpage=',		'menu': 'å‘¼ã³å‡ºã—å…ƒã«æˆ»ã‚‹ã¨ãã«ã€ã“ã® return ã‚¿ã‚°ã®ã‚ã‚‹ å ´æ‰€ã®ãƒ©ãƒ™ãƒ«ã‚’ã€Œèª­ã‚“ã ã€ã¨ã¿ãªã™ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[rewindvideo [^]]*\%#\|^\s*@rewindvideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[ruby [^]]*\%#\|^\s*@ruby ','bcn',line('.'))
-   call add(l:list, {'word': 'text=',		'menu': 'ƒ‹ƒr‚Æ‚µ‚Ä•\¦‚³‚ê‚é•¶š	ƒ‹ƒr‚Æ‚µ‚Ä•\¦‚³‚¹‚é•¶š‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'text=',		'menu': 'ãƒ«ãƒ“ã¨ã—ã¦è¡¨ç¤ºã•ã‚Œã‚‹æ–‡å­—	ãƒ«ãƒ“ã¨ã—ã¦è¡¨ç¤ºã•ã›ã‚‹æ–‡å­—ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[save [^]]*\%#\|^\s*@save ','bcn',line('.'))
-   call add(l:list, {'word': 'place=',		'menu': 'x‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'ask=',		'menu': 'true ‚ğw’è‚·‚é‚ÆAx‚ğ•Û‘¶‚·‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚ğ‚µ‚Ü‚·Bfalse ‚ğ w’è‚·‚é‚Æx‚ğ•Û‘¶‚·‚é‚©‚Ç‚¤‚©‚ÌŠm”F‚Í‚ ‚è‚Ü‚¹‚ñB‚±‚Ì‘®«‚ğÈ—ª ‚·‚é‚Æ false ‚ğw’è‚µ‚½‚Æ‚İ‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'place=',		'menu': 'æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'ask=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€æ ã‚’ä¿å­˜ã™ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã‚’ã—ã¾ã™ã€‚false ã‚’ æŒ‡å®šã™ã‚‹ã¨æ ã‚’ä¿å­˜ã™ã‚‹ã‹ã©ã†ã‹ã®ç¢ºèªã¯ã‚ã‚Šã¾ã›ã‚“ã€‚ã“ã®å±æ€§ã‚’çœç•¥ ã™ã‚‹ã¨ false ã‚’æŒ‡å®šã—ãŸã¨ã¿ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[seopt [^]]*\%#\|^\s*@seopt ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'İ’è‚ğ•ÏX‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'volume=',		'menu': 'Œø‰Ê‰¹‚Ì‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B‰Šúó‘Ô‚Ì KAG ‚Å‚Í 100 % ‚Å‚·BÈ—ª‚·‚ê‚Î‰¹—Ê‚Í•ÏX‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'gvolume=',		'menu': 'Œø‰Ê‰¹‚Ì‘åˆæ‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B‰Šúó‘Ô‚Ì KAG ‚Å‚Í 100 % ‚Å‚·BÈ—ª‚·‚ê‚Î‰¹—Ê‚Í•ÏX‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'pan=',		'menu': 'ƒpƒ“ (¶‰E‚Ì‰¹‘œˆÊ’u) ‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'è¨­å®šã‚’å¤‰æ›´ã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'volume=',		'menu': 'åŠ¹æœéŸ³ã®éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚åˆæœŸçŠ¶æ…‹ã® KAG ã§ã¯ 100 % ã§ã™ã€‚çœç•¥ã™ã‚Œã°éŸ³é‡ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'gvolume=',		'menu': 'åŠ¹æœéŸ³ã®å¤§åŸŸéŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚åˆæœŸçŠ¶æ…‹ã® KAG ã§ã¯ 100 % ã§ã™ã€‚çœç•¥ã™ã‚Œã°éŸ³é‡ã¯å¤‰æ›´ã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'pan=',		'menu': 'ãƒ‘ãƒ³ (å·¦å³ã®éŸ³åƒä½ç½®) ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[setbgmlabel [^]]*\%#\|^\s*@setbgmlabel ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)BGM ’†‚Ìƒ‹[ƒvƒ`ƒ…[ƒi‚Åw’è‚µ‚½ƒ‰ƒxƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒ‰ƒxƒ‹’Ê‰ß‚Ì‘JˆÚæƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒ‰ƒxƒ‹’Ê‰ß‚Ì‘JˆÚæƒ‰ƒxƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒ‰ƒxƒ‹’Ê‰ß‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)BGM ä¸­ã®ãƒ«ãƒ¼ãƒ—ãƒãƒ¥ãƒ¼ãƒŠã§æŒ‡å®šã—ãŸãƒ©ãƒ™ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ãƒ©ãƒ™ãƒ«é€šéæ™‚ã®é·ç§»å…ˆã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ãƒ©ãƒ™ãƒ«é€šéæ™‚ã®é·ç§»å…ˆãƒ©ãƒ™ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ãƒ©ãƒ™ãƒ«é€šéæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
   elseif search('\[setbgmstop [^]]*\%#\|^\s*@setbgmstop ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'BGM’â~‚Ì‘JˆÚæƒVƒiƒŠƒIƒtƒ@ƒCƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'BGM’â~‚Ì‘JˆÚæƒ‰ƒxƒ‹–¼‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'BGM’â~‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'BGMåœæ­¢æ™‚ã®é·ç§»å…ˆã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'BGMåœæ­¢æ™‚ã®é·ç§»å…ˆãƒ©ãƒ™ãƒ«åã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'BGMåœæ­¢æ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
   elseif search('\[startanchor [^]]*\%#\|^\s*@startanchor ','bcn',line('.'))
-   call add(l:list, {'word': 'enabled=',		'menu': '"true" ‚ğw’è‚·‚é‚©‚±‚Ì‘®«‚ğÈ—ª‚·‚é‚ÆA‚±‚Ìƒ^ƒO‚Ì‚ ‚é ‚·‚®‘O‚ÌƒZ[ƒu‰Â”\‚Èƒ‰ƒxƒ‹‚ªuÅ‰‚É–ß‚év‚Ì–ß‚èæ‚Å‚ ‚é‚Æ ‚³‚êAuÅ‰‚É–ß‚év‚Ì‹@”\‚ª—LŒø‚É‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'enabled=',		'menu': '"true" ã‚’æŒ‡å®šã™ã‚‹ã‹ã“ã®å±æ€§ã‚’çœç•¥ã™ã‚‹ã¨ã€ã“ã®ã‚¿ã‚°ã®ã‚ã‚‹ ã™ãå‰ã®ã‚»ãƒ¼ãƒ–å¯èƒ½ãªãƒ©ãƒ™ãƒ«ãŒã€Œæœ€åˆã«æˆ»ã‚‹ã€ã®æˆ»ã‚Šå…ˆã§ã‚ã‚‹ã¨ ã•ã‚Œã€ã€Œæœ€åˆã«æˆ»ã‚‹ã€ã®æ©Ÿèƒ½ãŒæœ‰åŠ¹ã«ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[stopse [^]]*\%#\|^\s*@stopse ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Œø‰Ê‰¹‚ğ’â~‚·‚éƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'åŠ¹æœéŸ³ã‚’åœæ­¢ã™ã‚‹ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[stopvideo [^]]*\%#\|^\s*@stopvideo ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[store [^]]*\%#\|^\s*@store ','bcn',line('.'))
-   call add(l:list, {'word': 'enabled=',		'menu': '(•K)x‹@”\‚ğ—LŒø‚É‚·‚éê‡‚Í true A–³Œø‚É‚·‚éê‡‚Í false ‚ğw’è ‚µ‚Ü‚·Bfalse ‚ğw’è‚·‚é‚Æx‚É‚æ‚éƒZ[ƒuEƒ[ƒh‚ª‚Å‚«‚È‚­ ‚È‚è‚Ü‚·B'})
+   call add(l:list, {'word': 'enabled=',		'menu': '(å¿…)æ æ©Ÿèƒ½ã‚’æœ‰åŠ¹ã«ã™ã‚‹å ´åˆã¯ true ã€ç„¡åŠ¹ã«ã™ã‚‹å ´åˆã¯ false ã‚’æŒ‡å®š ã—ã¾ã™ã€‚false ã‚’æŒ‡å®šã™ã‚‹ã¨æ ã«ã‚ˆã‚‹ã‚»ãƒ¼ãƒ–ãƒ»ãƒ­ãƒ¼ãƒ‰ãŒã§ããªã ãªã‚Šã¾ã™ã€‚'})
   elseif search('\[style [^]]*\%#\|^\s*@style ','bcn',line('.'))
-   call add(l:list, {'word': 'align=',		'menu': 's‚Ì•¶š‘µ‚¦‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'linespacing=',		'menu': 'sŠÔ‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·Bˆês‘S‘Ì‚Ì•‚ÍA‚±‚Ì‘®«‚Åw ’è‚µ‚½’l‚Æ linesize ‘®«‚Å w’è‚µ‚½’l‚ğ‘«‚µ‚½’l‚É‚È‚è‚Ü‚·B'})
-   call add(l:list, {'word': 'pitch=',		'menu': 'šŠÔ‚ÌƒIƒtƒZƒbƒg‚ğ pixel ’PˆÊ‚Åw’è‚µ‚Ü‚·B @0 ‚ğw’è‚·‚é‚ÆA‚»‚Ì•¶š‚ÌƒfƒtƒHƒ‹ƒg‚ÌšŠÔ‚Å•\¦‚³‚ê‚Ü‚·B•‰‚Ì”A‚½‚Æ ‚¦‚Î -1 ‚ğw’è‚·‚é‚ÆA‚»‚Ì•¶š‚ÌƒfƒtƒHƒ‹ƒg‚ÌšŠÔ -1 ‚ÌƒsƒNƒZƒ‹”•ªA•¶š ‚ª‹l‚ß‚Ä•\¦‚³‚ê‚Ü‚·B³‚Ì”‚ğ•\¦‚·‚é‚ÆšŠÔ‚ğ‚ ‚¯‚é‚±‚Æ‚ªo—ˆ‚Ü‚·B'})
-   call add(l:list, {'word': 'linesize=',		'menu': 's‚Ì•‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'autoreturn=',		'menu': '©“®‰üsE©“®‰üƒy[ƒW‚ğs‚í‚¹‚é‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'align=',		'menu': 'è¡Œã®æ–‡å­—æƒãˆã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'linespacing=',		'menu': 'è¡Œé–“ã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ä¸€è¡Œå…¨ä½“ã®å¹…ã¯ã€ã“ã®å±æ€§ã§æŒ‡ å®šã—ãŸå€¤ã¨ linesize å±æ€§ã§ æŒ‡å®šã—ãŸå€¤ã‚’è¶³ã—ãŸå€¤ã«ãªã‚Šã¾ã™ã€‚'})
+   call add(l:list, {'word': 'pitch=',		'menu': 'å­—é–“ã®ã‚ªãƒ•ã‚»ãƒƒãƒˆã‚’ pixel å˜ä½ã§æŒ‡å®šã—ã¾ã™ã€‚ ã€€0 ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ãã®æ–‡å­—ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å­—é–“ã§è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚è² ã®æ•°ã€ãŸã¨ ãˆã° -1 ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ãã®æ–‡å­—ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®å­—é–“ -1 ã®ãƒ”ã‚¯ã‚»ãƒ«æ•°åˆ†ã€æ–‡å­— ãŒè©°ã‚ã¦è¡¨ç¤ºã•ã‚Œã¾ã™ã€‚æ­£ã®æ•°ã‚’è¡¨ç¤ºã™ã‚‹ã¨å­—é–“ã‚’ã‚ã‘ã‚‹ã“ã¨ãŒå‡ºæ¥ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'linesize=',		'menu': 'è¡Œã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'autoreturn=',		'menu': 'è‡ªå‹•æ”¹è¡Œãƒ»è‡ªå‹•æ”¹ãƒšãƒ¼ã‚¸ã‚’è¡Œã‚ã›ã‚‹ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[tempload [^]]*\%#\|^\s*@tempload ','bcn',line('.'))
-   call add(l:list, {'word': 'place=',		'menu': 'x‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'se=',		'menu': '“Ç‚İ‚Ş‚Æ‚«‚ÉAŒø‰Ê‰¹‚Ìî•ñ‚à“Ç‚İ‚Ş‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'bgm=',		'menu': '“Ç‚İ‚Ş‚Æ‚«‚ÉABGM ‚Ìî•ñ‚à“Ç‚İ‚Ş‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'backlay=',		'menu': '“Ç‚İ‚Ş‚Æ‚«‚ÉA‘OŒiƒŒƒCƒ„‚Ìî•ñ‚Í“Ç‚İ‚Ü‚¸‚ÉA‚©‚Â ”wŒiƒŒƒCƒ„‚É‚Í‘OŒiƒŒƒCƒ„‚Ìî•ñ‚ğ“Ç‚İ‚Ş‚©‚Ç‚¤‚©‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'place=',		'menu': 'æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'se=',		'menu': 'èª­ã¿è¾¼ã‚€ã¨ãã«ã€åŠ¹æœéŸ³ã®æƒ…å ±ã‚‚èª­ã¿è¾¼ã‚€ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'bgm=',		'menu': 'èª­ã¿è¾¼ã‚€ã¨ãã«ã€BGM ã®æƒ…å ±ã‚‚èª­ã¿è¾¼ã‚€ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'backlay=',		'menu': 'èª­ã¿è¾¼ã‚€ã¨ãã«ã€å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã®æƒ…å ±ã¯èª­ã¿è¾¼ã¾ãšã«ã€ã‹ã¤ èƒŒæ™¯ãƒ¬ã‚¤ãƒ¤ã«ã¯å‰æ™¯ãƒ¬ã‚¤ãƒ¤ã®æƒ…å ±ã‚’èª­ã¿è¾¼ã‚€ã‹ã©ã†ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[tempsave [^]]*\%#\|^\s*@tempsave ','bcn',line('.'))
-   call add(l:list, {'word': 'place=',		'menu': 'x‚Ì”Ô†‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚ªw’è‚³‚ê‚½‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'place=',		'menu': 'æ ã®ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ãŒæŒ‡å®šã•ã‚ŒãŸã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[timeout [^]]*\%#\|^\s*@timeout ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒ^ƒCƒ€ƒAƒEƒg‚Ü‚Å‚ÌŠÔ‚ğ ms ‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒ^ƒCƒ€ƒAƒEƒg‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'se=',		'menu': 'ƒ^ƒCƒ€ƒAƒEƒg‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆã¾ã§ã®æ™‚é–“ã‚’ ms ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆæ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'se=',		'menu': 'ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆæ™‚ã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[title [^]]*\%#\|^\s*@title ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)•\¦‚µ‚½‚¢ƒ^ƒCƒgƒ‹‚ğw’è‚µ‚Ä‚­‚¾‚³‚¢B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)è¡¨ç¤ºã—ãŸã„ã‚¿ã‚¤ãƒˆãƒ«ã‚’æŒ‡å®šã—ã¦ãã ã•ã„ã€‚'})
   elseif search('\[trace [^]]*\%#\|^\s*@trace ','bcn',line('.'))
-   call add(l:list, {'word': 'exp=',		'menu': '(•K)•]‰¿‚·‚é TJS ®‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'exp=',		'menu': '(å¿…)è©•ä¾¡ã™ã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[trans [^]]*\%#\|^\s*@trans ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '‘ÎÛ‚Æ‚È‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'children=',		'menu': 'ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚Ì‘ÎÛ‚ÉqƒŒƒCƒ„‚àŠÜ‚ß‚é‚©‚Ç‚¤‚©‚ğ w’è‚µ‚Ü‚·Btrue ‚ğw’è‚·‚é‚ÆqƒŒƒCƒ„‚àŠÜ‚ß‚Ü‚·B false ‚ğw’è‚·‚é‚ÆqƒŒƒCƒ„‚ÍŠÜ‚Ü‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚ğs‚Á‚Ä‚¢‚éŠÔ‚ğ”’l‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'method=',		'menu': 'ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚Ìƒ^ƒCƒv‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'rule=',		'menu': 'ƒ†ƒjƒo[ƒTƒ‹ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚É—p‚¢‚éƒ‹[ƒ‹‰æ‘œ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'vague=',		'menu': 'ƒ†ƒjƒo[ƒTƒ‹ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚É“K—p‚·‚é ‚ ‚¢‚Ü‚¢ —Ìˆæ’l‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'from=',		'menu': 'ƒXƒNƒ[ƒ‹ƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚É‚¨‚¢‚ÄA— ƒy[ƒW‚Ì‰æ‘œ‚ª‚Ç‚Ì •ûŒü‚©‚çŒ»‚ê‚Ä‚­‚é‚©‚ğw’è‚µ‚Ü‚·B"left" = ¶A"top"= ãA "right" = ‰EA"bottom" = ‰º'})
-   call add(l:list, {'word': 'stay=',		'menu': 'ƒXƒNƒ[ƒ‹ƒgƒ‰ƒ“ƒVƒWƒ‡ƒ“‚É‚¨‚¢‚ÄA•\ƒy[ƒW‚Ì‰æ‘œ‚ª ‚»‚Ìê‚É‚Æ‚Ç‚Ü‚Á‚½‚Ü‚ÜA— ƒy[ƒW‚Ì‰æ‘œ‚ªŠO•”‚©‚ç ƒXƒNƒ[ƒ‹‚µ‚Ä‚­‚é‚© ( "stayfore" )A'})
+   call add(l:list, {'word': 'layer=',		'menu': 'å¯¾è±¡ã¨ãªã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'children=',		'menu': 'ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®å¯¾è±¡ã«å­ãƒ¬ã‚¤ãƒ¤ã‚‚å«ã‚ã‚‹ã‹ã©ã†ã‹ã‚’ æŒ‡å®šã—ã¾ã™ã€‚true ã‚’æŒ‡å®šã™ã‚‹ã¨å­ãƒ¬ã‚¤ãƒ¤ã‚‚å«ã‚ã¾ã™ã€‚ false ã‚’æŒ‡å®šã™ã‚‹ã¨å­ãƒ¬ã‚¤ãƒ¤ã¯å«ã¾ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã‚’è¡Œã£ã¦ã„ã‚‹æ™‚é–“ã‚’æ•°å€¤ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'method=',		'menu': 'ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®ã‚¿ã‚¤ãƒ—ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'rule=',		'menu': 'ãƒ¦ãƒ‹ãƒãƒ¼ã‚µãƒ«ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã«ç”¨ã„ã‚‹ãƒ«ãƒ¼ãƒ«ç”»åƒã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'vague=',		'menu': 'ãƒ¦ãƒ‹ãƒãƒ¼ã‚µãƒ«ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã«é©ç”¨ã™ã‚‹ ã‚ã„ã¾ã„ é ˜åŸŸå€¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'from=',		'menu': 'ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã«ãŠã„ã¦ã€è£ãƒšãƒ¼ã‚¸ã®ç”»åƒãŒã©ã® æ–¹å‘ã‹ã‚‰ç¾ã‚Œã¦ãã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚"left" = å·¦ã€"top"= ä¸Šã€ "right" = å³ã€"bottom" = ä¸‹'})
+   call add(l:list, {'word': 'stay=',		'menu': 'ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ãƒˆãƒ©ãƒ³ã‚·ã‚¸ãƒ§ãƒ³ã«ãŠã„ã¦ã€è¡¨ãƒšãƒ¼ã‚¸ã®ç”»åƒãŒ ãã®å ´ã«ã¨ã©ã¾ã£ãŸã¾ã¾ã€è£ãƒšãƒ¼ã‚¸ã®ç”»åƒãŒå¤–éƒ¨ã‹ã‚‰ ã‚¹ã‚¯ãƒ­ãƒ¼ãƒ«ã—ã¦ãã‚‹ã‹ ( "stayfore" )ã€'})
   elseif search('\[video [^]]*\%#\|^\s*@video ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'visible=',		'menu': 'ƒrƒfƒI/SWF ‚Ì•\¦—Ìˆæ‚ğ•\¦‚·‚é‚© ( true ‚Ìê‡ )A”ñ•\¦‚É‚·‚é ‚© ( false ‚Ìê‡ ) ‚ğw’è‚µ‚Ü‚·B ”ñ•\¦‚Å‚àƒrƒfƒI/SWF‚ÍÄ¶‚Å‚«‚Ü‚· ( “–‘R•\¦‚³‚ê‚Ü‚¹‚ñ )B'})
-   call add(l:list, {'word': 'left=',		'menu': '•\¦—Ìˆæ‚Ì¶’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'top=',		'menu': '•\¦—Ìˆæ‚Ìã’[ˆÊ’u‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'width=',		'menu': '•\¦—Ìˆæ‚Ì•‚ğw’è‚µ‚Ü‚·BŒ»ƒo[ƒWƒ‡ƒ“‚Å‚ÍƒŒƒCƒ„•`‰æƒ‚[ƒh‚Å‚Íw’è‚Í–³‹‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'height=',		'menu': '•\¦—Ìˆæ‚Ì‚‚³‚ğw’è‚µ‚Ü‚·BŒ»ƒo[ƒWƒ‡ƒ“‚Å‚ÍƒŒƒCƒ„•`‰æƒ‚[ƒh‚Å‚Íw’è‚Í–³‹‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'ƒ‹[ƒv‚ğs‚¢‚½‚¢ê‡‚Í true ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'position=',		'menu': 'w’è‚µ‚½ŠÔ‚Ü‚ÅƒrƒfƒI‚ÌÄ¶ˆÊ’u‚ğˆÚ“®‚µ‚½‚¢ê‡‚Éw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'frame=',		'menu': 'w’è‚µ‚½ˆÊ’u‚Ü‚ÅƒrƒfƒI‚ÌÄ¶ˆÊ’u‚ğˆÚ“®‚µ‚½‚¢ê‡‚Éw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mode=',		'menu': 'ƒ€[ƒr[‚Ì•`‰æƒ‚[ƒh‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'playrate=',		'menu': 'ƒƒfƒBƒA‚ÌÄ¶‘¬“x‚ğİ’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'volume=',		'menu': '‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B @100 ‚ªãŒÀ‚Å‚·B‰¹—Ê‚Ì—}§‚Ì‚İ‚ğƒTƒ|[ƒg‚µ‚Ü‚·(‘•‚Í ‰¹Œ¹‚Ì“Á«ãA‚Å‚«‚Ü‚¹‚ñ)B'})
-   call add(l:list, {'word': 'pan=',		'menu': 'ƒpƒ“ (¶‰E‚Ì‰¹‘œˆÊ’u) ‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'audiostreamnum=',		'menu': 'w’è‚µ‚½‰¹ºƒXƒgƒŠ[ƒ€”Ô†‚ğ—LŒø‚É‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'visible=',		'menu': 'ãƒ“ãƒ‡ã‚ª/SWF ã®è¡¨ç¤ºé ˜åŸŸã‚’è¡¨ç¤ºã™ã‚‹ã‹ ( true ã®å ´åˆ )ã€éè¡¨ç¤ºã«ã™ã‚‹ ã‹ ( false ã®å ´åˆ ) ã‚’æŒ‡å®šã—ã¾ã™ã€‚ éè¡¨ç¤ºã§ã‚‚ãƒ“ãƒ‡ã‚ª/SWFã¯å†ç”Ÿã§ãã¾ã™ ( å½“ç„¶è¡¨ç¤ºã•ã‚Œã¾ã›ã‚“ )ã€‚'})
+   call add(l:list, {'word': 'left=',		'menu': 'è¡¨ç¤ºé ˜åŸŸã®å·¦ç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'top=',		'menu': 'è¡¨ç¤ºé ˜åŸŸã®ä¸Šç«¯ä½ç½®ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'width=',		'menu': 'è¡¨ç¤ºé ˜åŸŸã®å¹…ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç¾ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã¯ãƒ¬ã‚¤ãƒ¤æç”»ãƒ¢ãƒ¼ãƒ‰ã§ã¯æŒ‡å®šã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'height=',		'menu': 'è¡¨ç¤ºé ˜åŸŸã®é«˜ã•ã‚’æŒ‡å®šã—ã¾ã™ã€‚ç¾ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã§ã¯ãƒ¬ã‚¤ãƒ¤æç”»ãƒ¢ãƒ¼ãƒ‰ã§ã¯æŒ‡å®šã¯ç„¡è¦–ã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'ãƒ«ãƒ¼ãƒ—ã‚’è¡Œã„ãŸã„å ´åˆã¯ true ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'position=',		'menu': 'æŒ‡å®šã—ãŸæ™‚é–“ã¾ã§ãƒ“ãƒ‡ã‚ªã®å†ç”Ÿä½ç½®ã‚’ç§»å‹•ã—ãŸã„å ´åˆã«æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'frame=',		'menu': 'æŒ‡å®šã—ãŸä½ç½®ã¾ã§ãƒ“ãƒ‡ã‚ªã®å†ç”Ÿä½ç½®ã‚’ç§»å‹•ã—ãŸã„å ´åˆã«æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mode=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã®æç”»ãƒ¢ãƒ¼ãƒ‰ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'playrate=',		'menu': 'ãƒ¡ãƒ‡ã‚£ã‚¢ã®å†ç”Ÿé€Ÿåº¦ã‚’è¨­å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'volume=',		'menu': 'éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚ ã€€100 ãŒä¸Šé™ã§ã™ã€‚éŸ³é‡ã®æŠ‘åˆ¶ã®ã¿ã‚’ã‚µãƒãƒ¼ãƒˆã—ã¾ã™(å¢—å¹…ã¯ éŸ³æºã®ç‰¹æ€§ä¸Šã€ã§ãã¾ã›ã‚“)ã€‚'})
+   call add(l:list, {'word': 'pan=',		'menu': 'ãƒ‘ãƒ³ (å·¦å³ã®éŸ³åƒä½ç½®) ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'audiostreamnum=',		'menu': 'æŒ‡å®šã—ãŸéŸ³å£°ã‚¹ãƒˆãƒªãƒ¼ãƒ ç•ªå·ã‚’æœ‰åŠ¹ã«ã—ã¾ã™ã€‚'})
   elseif search('\[videoevent [^]]*\%#\|^\s*@videoevent ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'frame=',		'menu': '(•K)ƒsƒŠƒIƒhƒCƒxƒ“ƒg‚ğ”­¶‚³‚¹‚éƒtƒŒ[ƒ€”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'frame=',		'menu': '(å¿…)ãƒ”ãƒªã‚ªãƒ‰ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç”Ÿã•ã›ã‚‹ãƒ•ãƒ¬ãƒ¼ãƒ ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[videolayer [^]]*\%#\|^\s*@videolayer ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'channel=',		'menu': '(•K)ƒŒƒCƒ„•`‰æƒ‚[ƒh‚Å‚ÍA“¯‚É“ñ‚Â‚Ìƒ`ƒƒƒ“ƒlƒ‹‚ÅƒrƒfƒI‚ğÄ¶‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '(•K)•\ƒy[ƒW("fore")‚©A— ƒy[ƒW("back")‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)•\¦‚µ‚½‚¢ƒŒƒCƒ„”Ô†‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'channel=',		'menu': '(å¿…)ãƒ¬ã‚¤ãƒ¤æç”»ãƒ¢ãƒ¼ãƒ‰ã§ã¯ã€åŒæ™‚ã«äºŒã¤ã®ãƒãƒ£ãƒ³ãƒãƒ«ã§ãƒ“ãƒ‡ã‚ªã‚’å†ç”Ÿã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': '(å¿…)è¡¨ãƒšãƒ¼ã‚¸("fore")ã‹ã€è£ãƒšãƒ¼ã‚¸("back")ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)è¡¨ç¤ºã—ãŸã„ãƒ¬ã‚¤ãƒ¤ç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[videosegloop [^]]*\%#\|^\s*@videosegloop ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'start=',		'menu': '(•K)ƒ‹[ƒv‚Ìn“_‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'end=',		'menu': '(•K)ƒ‹[ƒv‚ÌI“_‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'start=',		'menu': '(å¿…)ãƒ«ãƒ¼ãƒ—ã®å§‹ç‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'end=',		'menu': '(å¿…)ãƒ«ãƒ¼ãƒ—ã®çµ‚ç‚¹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[wa [^]]*\%#\|^\s*@wa ','bcn',line('.'))
-   call add(l:list, {'word': 'layer=',		'menu': '(•K)ƒAƒjƒ[ƒVƒ‡ƒ“‚Ì’â~‚ğ‘Ò‚Â‚·‚éƒŒƒCƒ„‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'page=',		'menu': '•\(fore)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©A— (back)‰æ–Ê‚ğ‘ÎÛ‚Æ‚·‚é‚©‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ•\ƒy[ƒW‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'seg=',		'menu': '(•K)‚±‚Ì‘®«‚Åw’è‚µ‚½ƒZƒOƒƒ“ƒg”Ô†‚ÌƒAƒjƒ[ƒVƒ‡ƒ“‚Ì’â~‚ğ‘Ò‚¿‚Ü‚·B'})
+   call add(l:list, {'word': 'layer=',		'menu': '(å¿…)ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®åœæ­¢ã‚’å¾…ã¤ã™ã‚‹ãƒ¬ã‚¤ãƒ¤ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'page=',		'menu': 'è¡¨(fore)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã€è£(back)ç”»é¢ã‚’å¯¾è±¡ã¨ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨è¡¨ãƒšãƒ¼ã‚¸ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'seg=',		'menu': '(å¿…)ã“ã®å±æ€§ã§æŒ‡å®šã—ãŸã‚»ã‚°ãƒ¡ãƒ³ãƒˆç•ªå·ã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®åœæ­¢ã‚’å¾…ã¡ã¾ã™ã€‚'})
   elseif search('\[wait [^]]*\%#\|^\s*@wait ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)ƒEƒFƒCƒg‚ğƒ~ƒŠ•b‚Åw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'mode=',		'menu': 'ƒEƒFƒCƒg‚Ì•û®‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'canskip=',		'menu': '‚±‚ÌƒEƒFƒCƒg‚ğAƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚âƒL[ƒ{[ƒh‚ÅƒXƒLƒbƒv‚Å‚«‚é‚©‚ğ w’è‚µ‚Ü‚·Bfalse ‚ğw’è‚·‚é‚ÆAƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚âƒL[ƒ{[ƒh ‚Å‚ÍA‚±‚ÌƒEƒFƒCƒg‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚¹‚ñB'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ã‚¦ã‚§ã‚¤ãƒˆã‚’ãƒŸãƒªç§’ã§æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'mode=',		'menu': 'ã‚¦ã‚§ã‚¤ãƒˆã®æ–¹å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'ã“ã®ã‚¦ã‚§ã‚¤ãƒˆã‚’ã€ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ã‚„ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã§ã‚¹ã‚­ãƒƒãƒ—ã§ãã‚‹ã‹ã‚’ æŒ‡å®šã—ã¾ã™ã€‚false ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ã‚„ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ ã§ã¯ã€ã“ã®ã‚¦ã‚§ã‚¤ãƒˆã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã›ã‚“ã€‚'})
   elseif search('\[waittrig [^]]*\%#\|^\s*@waittrig ','bcn',line('.'))
-   call add(l:list, {'word': 'name=',		'menu': '(•K)‘Ò‚ÂƒgƒŠƒK–¼‚ğw’è‚µ‚Ü‚·B @kag ƒIƒuƒWƒFƒNƒg ( MainWindow ƒNƒ‰ƒX ) ‚Ì trigger ƒƒ\ƒbƒh ‚Åˆø”‚É“¯–¼‚ÌƒgƒŠƒK–¼‚ğw’è‚·‚é‚±‚Æ‚É‚æ‚èA ƒgƒŠƒK‚ğ”­“®‚µA‘Ò‚¿ó‘Ô‚ğ‰ğœ‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆAƒNƒŠƒbƒN‚É‚æ‚èA‘Ò‚Â“®ì‚ğƒXƒLƒbƒv‚·‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B'})
-   call add(l:list, {'word': 'onskip=',		'menu': 'ƒNƒŠƒbƒN‚É‚æ‚èƒXƒLƒbƒv‚³‚ê‚½‚Æ‚«‚ÉÀs‚·‚é TJS® ‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'name=',		'menu': '(å¿…)å¾…ã¤ãƒˆãƒªã‚¬åã‚’æŒ‡å®šã—ã¾ã™ã€‚ ã€€kag ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ ( MainWindow ã‚¯ãƒ©ã‚¹ ) ã® trigger ãƒ¡ã‚½ãƒƒãƒ‰ ã§å¼•æ•°ã«åŒåã®ãƒˆãƒªã‚¬åã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã«ã‚ˆã‚Šã€ ãƒˆãƒªã‚¬ã‚’ç™ºå‹•ã—ã€å¾…ã¡çŠ¶æ…‹ã‚’è§£é™¤ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã€ã‚¯ãƒªãƒƒã‚¯ã«ã‚ˆã‚Šã€å¾…ã¤å‹•ä½œã‚’ã‚¹ã‚­ãƒƒãƒ—ã™ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚'})
+   call add(l:list, {'word': 'onskip=',		'menu': 'ã‚¯ãƒªãƒƒã‚¯ã«ã‚ˆã‚Šã‚¹ã‚­ãƒƒãƒ—ã•ã‚ŒãŸã¨ãã«å®Ÿè¡Œã™ã‚‹ TJSå¼ ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[wb [^]]*\%#\|^\s*@wb ','bcn',line('.'))
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚ÅƒtƒF[ƒh‚ÌI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§ãƒ•ã‚§ãƒ¼ãƒ‰ã®çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[wc [^]]*\%#\|^\s*@wc ','bcn',line('.'))
-   call add(l:list, {'word': 'time=',		'menu': '(•K)‚±‚±‚Åw’è‚µ‚½•¶š”‚ğ•\¦‚·‚é‚Ì‚Æ“¯‚¶‚¾‚¯‚ÌŠÔ‚ğ‘Ò‚¿‚Ü‚·B ˆê•¶š‚É•K—v‚ÈŠÔ‚Í delay ƒ^ƒO‚Åw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)ã“ã“ã§æŒ‡å®šã—ãŸæ–‡å­—æ•°ã‚’è¡¨ç¤ºã™ã‚‹ã®ã¨åŒã˜ã ã‘ã®æ™‚é–“ã‚’å¾…ã¡ã¾ã™ã€‚ ä¸€æ–‡å­—ã«å¿…è¦ãªæ™‚é–“ã¯ delay ã‚¿ã‚°ã§æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[wf [^]]*\%#\|^\s*@wf ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'ƒtƒF[ƒh‚ÌI—¹‚ğ‘Ò‚Âƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚ÅƒtƒF[ƒhI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'ãƒ•ã‚§ãƒ¼ãƒ‰ã®çµ‚äº†ã‚’å¾…ã¤ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§ãƒ•ã‚§ãƒ¼ãƒ‰çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[wheel [^]]*\%#\|^\s*@wheel ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': 'ƒWƒƒƒ“ƒvæ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚é‚ÆAŒ»İ ‚ÌƒVƒiƒŠƒIƒtƒ@ƒCƒ‹“à‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'target=',		'menu': 'ƒWƒƒƒ“ƒvæ‚Ìƒ‰ƒxƒ‹‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'func=',		'menu': 'ƒzƒC[ƒ‹‚ÉÀs‚³‚ê‚éƒƒ\ƒbƒh–¼‚ğw’è‚µ‚Ü‚·Bfunc(shift, delta, x, y) ‚ÌŒ`‚ÅŒÄ‚Ño‚³‚ê‚Ü‚·B È—ª‚·‚ê‚ÎŒÄ‚Ño‚µ‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ìƒƒ\ƒbƒhŒÄ‚Ño‚µ‚ª ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'exp=',		'menu': 'ƒzƒC[ƒ‹‚ÉÀs‚³‚ê‚é TJS ®‚ğw’è‚µ‚Ü‚·BÈ—ª‚·‚ê‚Î ®‚ÍÀs‚³‚ê‚Ü‚¹‚ñBstorage ‚â target ‚ªw’è‚³‚ê‚Ä‚¢‚½ê‡A‚±‚Ì® ‚ªÀs‚³‚ê‚Ä‚©‚çƒWƒƒƒ“ƒvæ‚ÉˆÚ“®‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'se=',		'menu': 'ƒzƒC[ƒ‹‚ÉÄ¶‚·‚éŒø‰Ê‰¹‚ğw’è‚µ‚Ü‚·Bw’è‚µ‚È‚¯‚ê‚Î Œø‰Ê‰¹‚ÍÄ¶‚³‚ê‚Ü‚¹‚ñB'})
-   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ‚Åw’è‚µ‚½Œø‰Ê‰¹‚ğ–Â‚ç‚·Œø‰Ê‰¹ƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B È—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ã€ç¾åœ¨ ã®ã‚·ãƒŠãƒªã‚ªãƒ•ã‚¡ã‚¤ãƒ«å†…ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'target=',		'menu': 'ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã®ãƒ©ãƒ™ãƒ«ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'func=',		'menu': 'ãƒ›ã‚¤ãƒ¼ãƒ«æ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰åã‚’æŒ‡å®šã—ã¾ã™ã€‚func(shift, delta, x, y) ã®å½¢ã§å‘¼ã³å‡ºã•ã‚Œã¾ã™ã€‚ çœç•¥ã™ã‚Œã°å‘¼ã³å‡ºã—ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®ãƒ¡ã‚½ãƒƒãƒ‰å‘¼ã³å‡ºã—ãŒ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'exp=',		'menu': 'ãƒ›ã‚¤ãƒ¼ãƒ«æ™‚ã«å®Ÿè¡Œã•ã‚Œã‚‹ TJS å¼ã‚’æŒ‡å®šã—ã¾ã™ã€‚çœç•¥ã™ã‚Œã° å¼ã¯å®Ÿè¡Œã•ã‚Œã¾ã›ã‚“ã€‚storage ã‚„ target ãŒæŒ‡å®šã•ã‚Œã¦ã„ãŸå ´åˆã€ã“ã®å¼ ãŒå®Ÿè¡Œã•ã‚Œã¦ã‹ã‚‰ã‚¸ãƒ£ãƒ³ãƒ—å…ˆã«ç§»å‹•ã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'se=',		'menu': 'ãƒ›ã‚¤ãƒ¼ãƒ«æ™‚ã«å†ç”Ÿã™ã‚‹åŠ¹æœéŸ³ã‚’æŒ‡å®šã—ã¾ã™ã€‚æŒ‡å®šã—ãªã‘ã‚Œã° åŠ¹æœéŸ³ã¯å†ç”Ÿã•ã‚Œã¾ã›ã‚“ã€‚'})
+   call add(l:list, {'word': 'sebuf=',		'menu': 'clickse ã§æŒ‡å®šã—ãŸåŠ¹æœéŸ³ã‚’é³´ã‚‰ã™åŠ¹æœéŸ³ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚ çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚'})
   elseif search('\[wl [^]]*\%#\|^\s*@wl ','bcn',line('.'))
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚Å BGM Ä¶‚ÌI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§ BGM å†ç”Ÿã®çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[wm [^]]*\%#\|^\s*@wm ','bcn',line('.'))
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚Å©“®ˆÚ“®‚ÌI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§è‡ªå‹•ç§»å‹•ã®çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[wp [^]]*\%#\|^\s*@wp ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'for=',		'menu': '‘Ò‚ÂƒCƒxƒ“ƒg‚Ìí—Ş‚ğw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'for=',		'menu': 'å¾…ã¤ã‚¤ãƒ™ãƒ³ãƒˆã®ç¨®é¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[wq [^]]*\%#\|^\s*@wq ','bcn',line('.'))
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚Åƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚ÌI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[ws [^]]*\%#\|^\s*@ws ','bcn',line('.'))
-   call add(l:list, {'word': 'buf=',		'menu': 'Ä¶I—¹‚ğ‘Ò‚Âƒoƒbƒtƒ@‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'canskip=',		'menu': 'Œø‰Ê‰¹Ä¶‚ğƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚ÅƒXƒLƒbƒv‚Å‚«‚é‚©‚ğ w’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'buf=',		'menu': 'å†ç”Ÿçµ‚äº†ã‚’å¾…ã¤ãƒãƒƒãƒ•ã‚¡ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'åŠ¹æœéŸ³å†ç”Ÿã‚’ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ã§ã‚¹ã‚­ãƒƒãƒ—ã§ãã‚‹ã‹ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[wt [^]]*\%#\|^\s*@wt ','bcn',line('.'))
-   call add(l:list, {'word': 'canskip=',		'menu': 'true ‚ğw’è‚·‚é‚ÆƒNƒŠƒbƒN‚Åƒgƒ‰ƒ“ƒWƒVƒ‡ƒ“‚ÌI—¹‘Ò‚¿‚ğƒXƒLƒbƒv‚Å‚«‚Ü‚·B'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'true ã‚’æŒ‡å®šã™ã‚‹ã¨ã‚¯ãƒªãƒƒã‚¯ã§ãƒˆãƒ©ãƒ³ã‚¸ã‚·ãƒ§ãƒ³ã®çµ‚äº†å¾…ã¡ã‚’ã‚¹ã‚­ãƒƒãƒ—ã§ãã¾ã™ã€‚'})
   elseif search('\[wv [^]]*\%#\|^\s*@wv ','bcn',line('.'))
-   call add(l:list, {'word': 'slot=',		'menu': 'ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†(0`)	‚±‚Ì‘€ì‚ğs‚¤ƒ€[ƒr[ƒIƒuƒWƒFƒNƒg”Ô†‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'canskip=',		'menu': 'ƒrƒfƒIÄ¶‚ğƒ}ƒEƒX‚ÌƒNƒŠƒbƒN‚ÅƒXƒLƒbƒv‚Å‚«‚é‚©‚ğ w’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'slot=',		'menu': 'ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·(0ï½)	ã“ã®æ“ä½œã‚’è¡Œã†ãƒ ãƒ¼ãƒ“ãƒ¼ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç•ªå·ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'canskip=',		'menu': 'ãƒ“ãƒ‡ã‚ªå†ç”Ÿã‚’ãƒã‚¦ã‚¹ã®ã‚¯ãƒªãƒƒã‚¯ã§ã‚¹ã‚­ãƒƒãƒ—ã§ãã‚‹ã‹ã‚’ æŒ‡å®šã—ã¾ã™ã€‚'})
   elseif search('\[xchgbgm [^]]*\%#\|^\s*@xchgbgm ','bcn',line('.'))
-   call add(l:list, {'word': 'storage=',		'menu': '(•K)Ÿ‚ÉÄ¶‚·‚é BGM ƒtƒ@ƒCƒ‹–¼‚Ü‚½‚Í CD ƒgƒ‰ƒbƒN‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'loop=',		'menu': 'BGM ‚ğƒ‹[ƒv‚·‚é‚©‚ğw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'time=',		'menu': '(•K)w’è‚µ‚½ŠÔ‚ÅŒ»İ‚Ì‹È‚ÌƒtƒF[ƒhƒAƒEƒg‚ªs‚í‚ê‚½ŒãA“¯‚¶ŠÔ‚Å w’è‚µ‚½‹È‚ÌƒtƒF[ƒhƒCƒ“‚ªs‚í‚ê‚Ü‚·B'})
-   call add(l:list, {'word': 'overlap=',		'menu': 'overlap ‚ÉŠÔ‚ğİ’è‚·‚é‚ÆA‚»‚ÌŠÔ•ªAƒtƒF[ƒhƒAƒEƒg‚ÆƒtƒF[ƒh ƒCƒ“‚ÌŠÔ‚ªd‚È‚è‚Ü‚·BÈ—ª‚·‚é‚Æ 0 ‚Å‚ ‚é‚ÆŒ©‚È‚³‚ê‚Ü‚·B ƒNƒƒXƒtƒF[ƒh‚ğs‚¤‚Æ‚«‚Éw’è‚µ‚Ü‚·B'})
-   call add(l:list, {'word': 'volume=',		'menu': 'Ÿ‚Ì‹È‚ÌƒtƒF[ƒhŒã‚É“’B‚³‚¹‚é BGM ‚Ì‰¹—Ê‚ğ % ‚Åw’è‚µ‚Ü‚·B'})
+   call add(l:list, {'word': 'storage=',		'menu': '(å¿…)æ¬¡ã«å†ç”Ÿã™ã‚‹ BGM ãƒ•ã‚¡ã‚¤ãƒ«åã¾ãŸã¯ CD ãƒˆãƒ©ãƒƒã‚¯ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'loop=',		'menu': 'BGM ã‚’ãƒ«ãƒ¼ãƒ—ã™ã‚‹ã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'time=',		'menu': '(å¿…)æŒ‡å®šã—ãŸæ™‚é–“ã§ç¾åœ¨ã®æ›²ã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆãŒè¡Œã‚ã‚ŒãŸå¾Œã€åŒã˜æ™‚é–“ã§ æŒ‡å®šã—ãŸæ›²ã®ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¤ãƒ³ãŒè¡Œã‚ã‚Œã¾ã™ã€‚'})
+   call add(l:list, {'word': 'overlap=',		'menu': 'overlap ã«æ™‚é–“ã‚’è¨­å®šã™ã‚‹ã¨ã€ãã®æ™‚é–“åˆ†ã€ãƒ•ã‚§ãƒ¼ãƒ‰ã‚¢ã‚¦ãƒˆã¨ãƒ•ã‚§ãƒ¼ãƒ‰ ã‚¤ãƒ³ã®æ™‚é–“ãŒé‡ãªã‚Šã¾ã™ã€‚çœç•¥ã™ã‚‹ã¨ 0 ã§ã‚ã‚‹ã¨è¦‹ãªã•ã‚Œã¾ã™ã€‚ ã‚¯ãƒ­ã‚¹ãƒ•ã‚§ãƒ¼ãƒ‰ã‚’è¡Œã†ã¨ãã«æŒ‡å®šã—ã¾ã™ã€‚'})
+   call add(l:list, {'word': 'volume=',		'menu': 'æ¬¡ã®æ›²ã®ãƒ•ã‚§ãƒ¼ãƒ‰å¾Œã«åˆ°é”ã•ã›ã‚‹ BGM ã®éŸ³é‡ã‚’ % ã§æŒ‡å®šã—ã¾ã™ã€‚'})
   endif "}}}
   return neocomplcache#keyword_filter(l:list, a:cur_keyword_str)
 endfunction "}}}
